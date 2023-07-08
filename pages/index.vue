@@ -10,6 +10,6 @@ export default {
 
 <style module>
   .grid {
-    align-items: center;
+    margin-top: 12%;
   }
 </style>
