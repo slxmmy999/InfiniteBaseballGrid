@@ -17,6 +17,10 @@ export default {
     ]
   },
 
+  env: {
+    baseUrl: 'http://127.0.0.1:5000' // Replace with your Flask API URL
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/global.css'

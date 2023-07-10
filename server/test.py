@@ -1,5 +1,7 @@
 from BaseballData import BaseballData
+from GameCategories import GameCategories
 
-data = BaseballData([])
+categories = GameCategories()
+categories = categories.get_grid()
 
-data.determine_possible_players()
+print(categories)

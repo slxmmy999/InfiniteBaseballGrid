@@ -24,7 +24,22 @@ class BaseballData:
             except KeyError:
                 continue
 
-    def search_players(self) -> dict:
-        url = self.parse_api_url("a")
+    def search_players(self, player):
+        url = self.parse_api_url(player)
         data = requests.get(url)
-        return data.json()
+        data = data.json()["people"]
+        return data
+    
+    def get_player_teams(self, player):
+        teams = []
+        for item in player["stats"]:
+            if item["type"]["displayName"] == "yearByYear":
+                for season in item["splits"]:
+                    try:
+                        if season["team"]["name"] in teams:
+                            continue
+                        teams.append(season["team"]["name"])
+                    except KeyError:
+                        continue
+        return teams
+

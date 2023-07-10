@@ -2,7 +2,7 @@
     <div :class="$style.grid">
         <div></div> <!-- Empty grid cell -->
         <div :class="[$style['label-container'], $style['top-label']]">
-            <img src="~/static/braves.png" :class="$style.label" />
+            <img :src="teams[0][0][0]" :class="$style.label" />
         </div>
         <div :class="[$style['label-container'], $style['top-label']]">
             <img src="~/static/braves.png" :class="$style.label" />
@@ -96,6 +96,17 @@
 
 <script>
 export default {
-  name: 'game-grid'
+  name: 'game-grid',
+
+  async asyncData ({ $axios }) {
+    const { data } = await $axios.get('http://127.0.0.1:5000/get_new_grid')
+    return { teams: data }
+  },
+
+  data () {
+    return {
+      teams: []
+    }
+  }
 }
 </script>
