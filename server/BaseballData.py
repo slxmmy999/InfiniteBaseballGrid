@@ -1,4 +1,3 @@
-import pybaseball
 import requests
 
 class BaseballData:
@@ -20,4 +19,12 @@ class BaseballData:
         data = requests.get(url)
         data = data.json()["people"][0]["stats"][-1]["splits"]
         for season in data:
-            print(f"Year: {season['season']}, Team: {season['team']['name']}")
+            try:
+                print(f"Year: {season['season']}, Team: {season['team']['name']}")
+            except KeyError:
+                continue
+
+    def search_players(self) -> dict:
+        url = self.parse_api_url("a")
+        data = requests.get(url)
+        return data.json()
