@@ -1,5 +1,8 @@
 <template>
-  <game-grid :class="$style.grid" />
+  <div>
+    <top-menu />
+    <game-grid :class="$style.grid" />
+  </div>
 </template>
 
 <script>
@@ -10,6 +13,6 @@ export default {
 
 <style module>
   .grid {
-    margin-top: 12%;
+    margin-top: 7%;
   }
 </style>
