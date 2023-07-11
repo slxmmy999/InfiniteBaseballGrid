@@ -1,25 +1,25 @@
 <template>
     <div :class="$style.grid">
         <div></div> <!-- Empty grid cell -->
-        <div :class="[$style['label-container'], $style['top-label']]">
+        <div v-if="teams.length > 0 && teams[0].length > 0" :class="[$style['label-container'], $style['top-label']]">
             <img :src="teams[0][0][0]" :class="$style.label" />
         </div>
-        <div :class="[$style['label-container'], $style['top-label']]">
-            <img src="~/static/braves.png" :class="$style.label" />
+        <div v-if="teams.length > 0 && teams[0].length > 0" :class="[$style['label-container'], $style['top-label']]">
+            <img :src="teams[0][1][0]" :class="$style.label" />
         </div>
-        <div :class="[$style['label-container'], $style['top-label']]">
-            <img src="~/static/braves.png" :class="$style.label" />
+        <div v-if="teams.length > 0 && teams[0].length > 0" :class="[$style['label-container'], $style['top-label']]">
+            <img :src="teams[0][2][0]" :class="$style.label" />
         </div>
         <div></div> <!-- Empty grid cell -->
-        <div :class="$style['label-container']">
-            <img src="~/static/braves.png" :class="$style.label" />
+        <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
+            <img :src="teams[1][0][0]" :class="$style.label" />
         </div>
         <button :class="$style['grid-item']"></button>
         <button :class="$style['grid-item']"></button>
         <button :class="$style['grid-item']"></button>
         <div></div> <!-- Empty grid cell -->
-        <div :class="$style['label-container']">
-            <img src="~/static/braves.png" :class="$style.label" />
+        <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
+            <img :src="teams[1][1][0]" :class="$style.label" />
         </div>
         <button :class="$style['grid-item']"></button>
         <button :class="$style['grid-item']"></button>
@@ -28,8 +28,8 @@
             <div :class="$style['small-text']">GUESSES</div>
             <div :class="$style['large-text']">9</div>
         </div>
-        <div :class="$style['label-container']">
-            <img src="~/static/braves.png" :class="$style.label" />
+        <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
+            <img :src="teams[1][2][0]" :class="$style.label" />
         </div>
         <button :class="$style['grid-item']"></button>
         <button :class="$style['grid-item']"></button>
@@ -97,16 +97,15 @@
 <script>
 export default {
   name: 'game-grid',
-
-  async asyncData ({ $axios }) {
-    const { data } = await $axios.get('http://127.0.0.1:5000/get_new_grid')
-    return { teams: data }
-  },
-
   data () {
     return {
       teams: []
     }
+  },
+  async created () {
+    const { data } = await this.$axios.get('http://127.0.0.1:5000/get_new_grid')
+    console.log(data)
+    this.teams = data
   }
 }
 </script>

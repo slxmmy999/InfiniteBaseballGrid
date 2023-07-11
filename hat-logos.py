@@ -6,8 +6,7 @@ for x in range(0, 201):
     if data.status_code == 200:
         try:
             title = data.text.split("<title>")[1].split("</title>")[0]
+            print(title, f"({x})")
         except:
             title = f"unknown_team{x}"
-        with open(f"./logos/{title}.svg", "wb") as f:
-            f.write(data.content)
-            print(f"Downloaded {title}.svg")
+            print(title, f"({x})")
