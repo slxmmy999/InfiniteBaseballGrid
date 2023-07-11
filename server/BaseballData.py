@@ -43,3 +43,6 @@ class BaseballData:
                         continue
         return teams
 
+    def get_player_picture(player):
+        id = player['link'].split('/')[-1]
+        return f"https://img.mlbstatic.com/mlb-photos/image/upload/w_300,q_auto:best/v1/people/{id}/headshot/67/current"
