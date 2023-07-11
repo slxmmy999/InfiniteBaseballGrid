@@ -11,7 +11,7 @@ class BaseballData:
             for y in len(self.catagories[x]):
                  """
 
-    def parse_api_url(self, query):
+    def parse_api_url(query):
         return "https://statsapi.mlb.com/api/v1/people/search?names=" + query + "&hydrate=awards,stats(group=[hitting,pitching],type=[career,yearByYear])"
 
     def determine_possible_players(self):
@@ -24,8 +24,8 @@ class BaseballData:
             except KeyError:
                 continue
 
-    def search_players(self, player):
-        url = self.parse_api_url(player)
+    def search_players(player):
+        url = BaseballData.parse_api_url(player)
         data = requests.get(url)
         data = data.json()["people"]
         return data

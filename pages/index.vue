@@ -2,6 +2,7 @@
   <div>
     <top-menu />
     <game-grid :class="$style.grid" />
+    <SearchDialog />
   </div>
 </template>
 
@@ -13,6 +14,6 @@ export default {
 
 <style module>
   .grid {
-    margin-top: 7%;
+    margin-top: 5%;
   }
 </style>

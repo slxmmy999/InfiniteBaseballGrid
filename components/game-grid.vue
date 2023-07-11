@@ -14,16 +14,16 @@
         <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
             <img :src="teams[1][0][0]" :class="$style.label" />
         </div>
-        <button :class="$style['grid-item']"></button>
-        <button :class="$style['grid-item']"></button>
-        <button :class="$style['grid-item']"></button>
+        <button @click="buttonClicked" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked" :class="$style['grid-item']"></button>
         <div></div> <!-- Empty grid cell -->
         <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
             <img :src="teams[1][1][0]" :class="$style.label" />
         </div>
-        <button :class="$style['grid-item']"></button>
-        <button :class="$style['grid-item']"></button>
-        <button :class="$style['grid-item']"></button>
+        <button @click="buttonClicked" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked" :class="$style['grid-item']"></button>
         <div>
             <div :class="$style['small-text']">GUESSES</div>
             <div :class="$style['large-text']">9</div>
@@ -31,9 +31,9 @@
         <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
             <img :src="teams[1][2][0]" :class="$style.label" />
         </div>
-        <button :class="$style['grid-item']"></button>
-        <button :class="$style['grid-item']"></button>
-        <button :class="$style['grid-item']"></button>
+        <button @click="buttonClicked" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked" :class="$style['grid-item']"></button>
         <div></div> <!-- Empty grid cell -->
     </div>
 </template>
@@ -95,11 +95,19 @@
 </style>
 
 <script>
+import { EventBus } from '~/event-bus.js'
+
 export default {
   name: 'game-grid',
   data () {
     return {
       teams: []
+    }
+  },
+  methods: {
+    buttonClicked () {
+      console.log('Button clicked. Emitting event...')
+      EventBus.$emit('show-search')
     }
   },
   async created () {
