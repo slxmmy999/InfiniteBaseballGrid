@@ -14,16 +14,16 @@
         <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
             <img :src="teams[1][0][0]" :class="$style.label" />
         </div>
-        <button @click="buttonClicked" :class="$style['grid-item']"></button>
-        <button @click="buttonClicked" :class="$style['grid-item']"></button>
-        <button @click="buttonClicked" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked('00')" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked('01')" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked('02')" :class="$style['grid-item']"></button>
         <div></div> <!-- Empty grid cell -->
         <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
             <img :src="teams[1][1][0]" :class="$style.label" />
         </div>
-        <button @click="buttonClicked" :class="$style['grid-item']"></button>
-        <button @click="buttonClicked" :class="$style['grid-item']"></button>
-        <button @click="buttonClicked" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked('10')" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked('11')" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked('12')" :class="$style['grid-item']"></button>
         <div>
             <div :class="$style['small-text']">GUESSES</div>
             <div :class="$style['large-text']">9</div>
@@ -31,9 +31,9 @@
         <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
             <img :src="teams[1][2][0]" :class="$style.label" />
         </div>
-        <button @click="buttonClicked" :class="$style['grid-item']"></button>
-        <button @click="buttonClicked" :class="$style['grid-item']"></button>
-        <button @click="buttonClicked" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked('20')" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked('21')" :class="$style['grid-item']"></button>
+        <button @click="buttonClicked('22')" :class="$style['grid-item']"></button>
         <div></div> <!-- Empty grid cell -->
     </div>
 </template>
@@ -104,9 +104,15 @@ export default {
       teams: []
     }
   },
+  async created () {
+    EventBus.$on('player-selected', () => {
+      const data = await this.$axios.get('http://
+    })
+  },
   methods: {
-    buttonClicked () {
+    buttonClicked (buttonID) {
       console.log('Button clicked. Emitting event...')
+      this.$store.commit('setSelectedGridLocation', buttonID)
       EventBus.$emit('show-search')
     }
   },

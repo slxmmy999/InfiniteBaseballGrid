@@ -17,7 +17,7 @@
               placeholder="Search...">
           </div>
           <div v-show="showDropdown" v-on-clickaway="closeDropdown" class="dropdown absolute z-20 mt-1 w-full bg-white rounded-md shadow-lg">
-              <div v-for="item in searchResults" :key="item" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+              <div v-for="item in searchResults" :key="item" class="px-4 py-2 hover:bg-gray-200 cursor-pointer" @click="playerClicked(item)">
                   {{ item }}
               </div>
           </div>
@@ -56,6 +56,12 @@ export default {
     },
     hideSearch () {
       this.showSearch = false
+      this.searchTerm = ''
+      this.$store.commit('clearAllOnExit')
+    },
+    playerClicked (player) {
+      this.$store.commit('setSelectedPlayer', player)
+      EventBus.$emit('player-selected')
     }
   }
 }

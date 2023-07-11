@@ -30,7 +30,7 @@ class BaseballData:
         data = data.json()["people"]
         return data
     
-    def get_player_teams(self, player):
+    def get_player_teams(player):
         teams = []
         for item in player["stats"]:
             if item["type"]["displayName"] == "yearByYear":

@@ -26,5 +26,18 @@ def search_players():
         return jsonify(players)
     return jsonify([])
 
+@app.route("/validate_player", methods=["GET"])
+def validate_player():
+    query = request.args.get("name")
+    team1 = request.args.get("team1")
+    team2 = request.args.get("team2")
+    player = BaseballData.get_player_teams(query)
+    if player:
+        if team1 in player and team2 in player:
+            # get player info to return
+            return
+    # return nothing
+    return jsonify({})
+
 if __name__ == '__main__':
     app.run(debug=True)
