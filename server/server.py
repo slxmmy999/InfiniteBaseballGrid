@@ -37,8 +37,10 @@ def validate_player():
         if team1 in teams and team2 in teams:
             picture = BaseballData.get_player_picture(players[0])
             name = players[0]["fullName"]
+            print("correct")
             return jsonify({"picture": picture, "name": name})
     # return nothing
+    print("incorrect")
     return jsonify({})
 
 if __name__ == '__main__':
