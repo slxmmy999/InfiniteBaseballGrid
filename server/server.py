@@ -31,11 +31,13 @@ def validate_player():
     query = request.args.get("name")
     team1 = request.args.get("team1")
     team2 = request.args.get("team2")
-    player = BaseballData.get_player_teams(query)
-    if player:
-        if team1 in player and team2 in player:
-            # get player info to return
-            return
+    players = BaseballData.search_players(query)
+    teams = BaseballData.get_player_teams(players[0])
+    if teams:
+        if team1 in teams and team2 in teams:
+            picture = BaseballData.get_player_picture(players[0])
+            name = players[0]["fullName"]
+            return jsonify({"picture": picture, "name": name})
     # return nothing
     return jsonify({})
 
