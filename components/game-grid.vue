@@ -139,7 +139,18 @@ export default {
     return {
       teams: [],
       currPlayerData: {},
-      currGridPos: ''
+      currGridPos: '',
+      gridStatus: {
+        '00': false,
+        '01': false,
+        '02': false,
+        '10': false,
+        '11': false,
+        '12': false,
+        '20': false,
+        '21': false,
+        '22': false
+      }
     }
   },
   methods: {
