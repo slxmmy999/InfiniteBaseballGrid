@@ -14,6 +14,6 @@ export default {
 
 <style module>
   .grid {
-    margin-top: 5%;
+    margin-top: 3%;
   }
 </style>

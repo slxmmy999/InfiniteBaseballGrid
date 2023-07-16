@@ -5,7 +5,7 @@ from BaseballData import BaseballData
 
 app = Flask(__name__)
 
-CORS(app, resources={r"/get_new_grid": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/get_new_grid": {"origins": "http://192.168.1.242:3000"}, r"/search_players": {"origins": "http://192.168.1.242:3000"}, r"/validate_player": {"origins": "http://192.168.1.242:3000"}})
 
 @app.route("/get_new_grid", methods=["GET"])
 def get_new_grid():
@@ -44,4 +44,4 @@ def validate_player():
     return jsonify({})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run('0.0.0.0', debug=True)
