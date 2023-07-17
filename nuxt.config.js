@@ -55,12 +55,9 @@ export default {
     baseURL: '/'
   },
 
-  generate: {
-    dir: 'dist'
-  },
+  buildDir: 'dist',
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    dir: 'dist'
   }
 }
