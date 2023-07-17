@@ -1,11 +1,14 @@
 from quart import Quart, request, jsonify
-from quart_cors import cors
 from server.GameCategories import GameCategories
 from server.BaseballData import BaseballData
 
 app = Quart(__name__)
 
-app = cors(app, origins=["https://www.infiniteimmaculategrid.com"])
+@app.after_request
+async def after_request(response):
+    response.headers["Access-Control-Allow-Origin"] = "https://www.infiniteimmaculategrid.com"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    return response
 
 @app.route("/get_new_grid", methods=["GET"])
 async def get_new_grid():
