@@ -8,7 +8,7 @@
             <a href="https://twitter.com/sam_coan">
                 <img src="~/static/twitter.svg" alt="Twitter Logo" />
             </a>
-            <a href="https://github.com/slxmmy999">
+            <a href="https://github.com/slxmmy999/InfiniteImmaculateGrid">
                 <img src="~/static/github.svg" alt="Github Logo" />
             </a>
             <a href="https://allmylinks.com/sam-coan">
