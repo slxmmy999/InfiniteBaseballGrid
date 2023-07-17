@@ -1,4 +1,4 @@
-import requests
+import httpx
 
 class BaseballData:
     def __init__(self, catagories: list) -> None:
@@ -24,11 +24,13 @@ class BaseballData:
             except KeyError:
                 continue
 
+    @staticmethod
     async def search_players(player):
         url = BaseballData.parse_api_url(player)
-        data = await requests.get(url)
-        data = data.json()["people"]
-        return data
+        async with httpx.AsyncClient() as client:
+            response = await client.get(url)
+            data = response.json()["people"]
+            return data
     
     def get_player_teams(player):
         teams = []
