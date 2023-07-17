@@ -24,9 +24,9 @@ class BaseballData:
             except KeyError:
                 continue
 
-    def search_players(player):
+    async def search_players(player):
         url = BaseballData.parse_api_url(player)
-        data = requests.get(url)
+        data = await requests.get(url)
         data = data.json()["people"]
         return data
     
