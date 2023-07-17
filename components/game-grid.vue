@@ -212,7 +212,7 @@ export default {
     }
   },
   async created () {
-    const { data } = await this.$axios.get('http://api.infiniteimmaculategrid.com/get_new_grid')
+    const { data } = await this.$axios.get('https://api.infiniteimmaculategrid.com/get_new_grid')
     this.teams = data
     EventBus.$on('player-selected', async () => {
       const player = this.$store.state.selectedPlayer
@@ -275,7 +275,7 @@ export default {
           location = 's22'
           break
       }
-      const data = await this.$axios.get(`http://api.infiniteimmaculategrid.com/validate_player?name=${player}&team1=${team1}&team2=${team2}`)
+      const data = await this.$axios.get(`https://api.infiniteimmaculategrid.com/validate_player?name=${player}&team1=${team1}&team2=${team2}`)
       if (Object.keys(data.data).length > 0) {
         this.gridStatus[location] = data.data
       }
