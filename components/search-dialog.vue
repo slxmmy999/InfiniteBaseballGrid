@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     async onInput () {
-      const data = await this.$axios.get('http://api.infiniteimmaculategrid.com/search_players?name=' + this.searchTerm)
+      const data = await this.$axios.get('https://api.infiniteimmaculategrid.com/search_players?name=' + this.searchTerm)
       this.searchResults = data.data.filter(item => item.toLowerCase().includes(this.searchTerm.toLowerCase()))
       this.showDropdown = true
     },
