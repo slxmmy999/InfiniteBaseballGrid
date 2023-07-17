@@ -22,7 +22,7 @@ export default {
   },
 
   env: {
-    baseUrl: 'http://192.168.1.242:5000' // Replace with your Flask API URL
+    baseUrl: '' // Replace with your Flask API URL
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -53,6 +53,10 @@ export default {
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/'
+  },
+
+  generate: {
+    dir: 'dist'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
