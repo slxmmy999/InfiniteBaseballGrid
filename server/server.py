@@ -5,7 +5,7 @@ from server.BaseballData import BaseballData
 
 app = Flask(__name__)
 
-CORS(app, "https://www.infiniteimmaculategrid.com")
+CORS(app, origins=["https://www.infiniteimmaculategrid.com"])
 
 @app.route("/get_new_grid", methods=["GET"])
 def get_new_grid():
