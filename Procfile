@@ -1,1 +1,1 @@
-web: gunicorn server.server:app
+web: hypercorn server.server:app
