@@ -35,10 +35,10 @@ async def validate_player():
     team1 = request.args.get("team1")
     team2 = request.args.get("team2")
     players = await BaseballData.search_players(query)
-    teams = await BaseballData.get_player_teams(players[0])
+    teams = BaseballData.get_player_teams(players[0])
     if teams:
         if team1 in teams and team2 in teams:
-            picture = await BaseballData.get_player_picture(players[0])
+            picture = BaseballData.get_player_picture(players[0])
             name = players[0]["fullName"]
             return jsonify({"picture": picture, "name": name})
     # return nothing
