@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from GameCategories import GameCategories
-from BaseballData import BaseballData
+from server.GameCategories import GameCategories
+from server.BaseballData import BaseballData
 
 app = Flask(__name__)
 
