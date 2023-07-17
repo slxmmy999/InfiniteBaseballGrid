@@ -11,7 +11,7 @@
             <a href="https://github.com/slxmmy999">
                 <img src="~/static/github.svg" alt="Github Logo" />
             </a>
-            <a href="https://yourDonationSite.com/yourDonationPage">
+            <a href="https://allmylinks.com/sam-coan">
                 <img src="~/static/donate.png" alt="Donation Logo" />
             </a>
         </div>

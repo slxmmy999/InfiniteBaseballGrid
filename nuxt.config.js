@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Practice your Immaculate Grid skills with this community supported open source version! Play as many grids as you\'d like with no daily limit!' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
