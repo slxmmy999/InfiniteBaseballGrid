@@ -34,7 +34,7 @@ async def search_players():
                     end = datetime.datetime.now().year
                 else:
                     start = data[x]['mlbDebutDate'][:4]
-                    end = data[x]['lastPlayDate'][:4]
+                    end = data[x]['lastPlayedDate'][:4]
                 players.append(data[x]["fullName"] + f" | ({start}-{end})")
             except KeyError:
                 players.append(data[x]["fullName"])
