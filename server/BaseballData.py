@@ -14,7 +14,7 @@ class BaseballData:
     def parse_api_url(query):
         return "https://statsapi.mlb.com/api/v1/people/search?names=" + query + "&hydrate=awards,stats(group=[hitting,pitching],type=[career,yearByYear])"
 
-    def determine_possible_players(self):
+    """ def determine_possible_players(self):
         url = self.parse_api_url("a")
         data = requests.get(url)
         data = data.json()["people"][0]["stats"][-1]["splits"]
@@ -22,7 +22,7 @@ class BaseballData:
             try:
                 print(f"Year: {season['season']}, Team: {season['team']['name']}")
             except KeyError:
-                continue
+                continue """
 
     @staticmethod
     async def search_players(player):
@@ -31,7 +31,42 @@ class BaseballData:
             response = await client.get(url)
             data = response.json()["people"]
             return data
+        
+    @staticmethod    
+    def __get_old_team_names(team):
+        match(team):
+            case "Cleveland Indians":
+                return "Cleveland Guardians"
+            case "California Angels":
+                return "Los Angeles Angels"
+            case "Anaheim Angels":
+                return "Los Angeles Angels"
+            case "Florida Marlins":
+                return "Miami Marlins"
+            case "Tampa Bay Devil Rays":
+                return "Tampa Bay Rays"
+            case "Montreal Expos":
+                return "Washington Nationals"
+            case "Washington Senators":
+                return "Minnesota Twins"
+            case "St. Louis Browns":
+                return "Baltimore Orioles"
+            case "Boston Braves":
+                return "Atlanta Braves"
+            case "Milwaukee Braves":
+                return "Atlanta Braves"
+            case "Brooklyn Dodgers":
+                return "Los Angeles Dodgers"
+            case "New York Giants":
+                return "San Francisco Giants"
+            case "New York Highlanders":
+                return "New York Yankees"
+            case "Philadelphia Athletics":
+                return "Oakland Athletics"
+            case _:
+                return team
     
+    @staticmethod
     def get_player_teams(player):
         teams = []
         for item in player["stats"]:
@@ -40,7 +75,7 @@ class BaseballData:
                     try:
                         if season["team"]["name"] in teams:
                             continue
-                        teams.append(season["team"]["name"])
+                        teams.append(BaseballData.__get_old_team_names(season["team"]["name"]))
                     except KeyError:
                         continue
         return teams
