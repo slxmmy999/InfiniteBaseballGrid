@@ -28,13 +28,16 @@ async def search_players():
         for x in range(len(data)):
             start = ''
             end = ''
-            if data[x]['active']:
-                start = data[x]['mlbDebutDate'][:4]
-                end = datetime.datetime.now().year
-            else:
-                start = data[x]['mlbDebutDate'][:4]
-                end = data[x]['lastPlayDate'][:4]
-            players.append(data[x]["fullName"] + f" | ({start}-{end})")
+            try:
+                if data[x]['active']:
+                    start = data[x]['mlbDebutDate'][:4]
+                    end = datetime.datetime.now().year
+                else:
+                    start = data[x]['mlbDebutDate'][:4]
+                    end = data[x]['lastPlayDate'][:4]
+                players.append(data[x]["fullName"] + f" | ({start}-{end})")
+            except KeyError:
+                players.append(data[x]["fullName"])
         return jsonify(players)
     return jsonify([])
 
