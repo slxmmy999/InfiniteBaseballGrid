@@ -1,6 +1,7 @@
 from quart import Quart, request, jsonify
 from server.GameCategories import GameCategories
 from server.BaseballData import BaseballData
+import datetime
 
 app = Quart(__name__)
 
@@ -25,7 +26,15 @@ async def search_players():
             data = data[:5]
         players = []
         for x in range(len(data)):
-            players.append(data[x]["fullName"])
+            start = ''
+            end = ''
+            if data[x]['active']:
+                start = data[x]['mlbDebutDate'][:4]
+                end = datetime.datetime.now().year
+            else:
+                start = data[x]['mlbDebutDate'][:4]
+                end = data[x]['lastPlayDate'][:4]
+            players.append(data[x]["fullName"] + f" | ({start}-{end})")
         return jsonify(players)
     return jsonify([])
 
