@@ -55,7 +55,7 @@ async def validate_player():
     teams = BaseballData.get_player_teams(player)
     if teams:
         if team1 in teams and team2 in teams:
-            picture = BaseballData.get_player_picture(players)
+            picture = BaseballData.get_player_picture(player)
             name = player["fullName"]
             return jsonify({"picture": picture, "name": name})
     # return nothing
