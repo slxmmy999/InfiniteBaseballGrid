@@ -1,4 +1,5 @@
 import httpx
+from urllib.parse import quote
 
 class BaseballData:
     def __init__(self, catagories: list) -> None:
@@ -12,7 +13,9 @@ class BaseballData:
                  """
 
     def parse_api_url(query):
-        return "https://statsapi.mlb.com/api/v1/people/search?names=" + query + "&hydrate=awards,stats(group=[hitting,pitching],type=[career,yearByYear])"
+        # In case player name is not URL safe
+        safe_query = quote(query)
+        return "https://statsapi.mlb.com/api/v1/people/search?names=" + safe_query + "&hydrate=awards,stats(group=[hitting,pitching],type=[career,yearByYear])"
 
     """ def determine_possible_players(self):
         url = self.parse_api_url("a")
