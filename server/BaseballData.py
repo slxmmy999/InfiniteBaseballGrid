@@ -69,7 +69,6 @@ class BaseballData:
     @staticmethod
     def get_player_teams(player):
         teams = []
-        print(player)
         for item in player["stats"]:
             if item["type"]["displayName"] == "yearByYear":
                 for season in item["splits"]:
