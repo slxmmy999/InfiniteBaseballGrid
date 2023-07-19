@@ -47,7 +47,12 @@ async def validate_player():
     team1 = request.args.get("team1")
     team2 = request.args.get("team2")
     players = await BaseballData.search_players(query)
-    teams = BaseballData.get_player_teams(players[0])
+    player = ''
+    for x in range(len(players)):
+        if players[x]["fullName"] == query:
+            player = players[x]
+            break
+    teams = BaseballData.get_player_teams(player)
     if teams:
         if team1 in teams and team2 in teams:
             picture = BaseballData.get_player_picture(players[0])
