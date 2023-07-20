@@ -76,6 +76,30 @@
 </template>
 
 <style module>
+    @media screen and (max-width: 768px) {
+        .grid {
+            width: 100% !important;
+            margin-top: 20% !important;
+        }
+
+        .large-text {
+            font-size: 30px !important;
+        }
+
+        .small-text {
+            font-size: 10px !important;
+        }
+
+        .playerName {
+            font-size: 8px !important;
+        }
+
+        .newgame {
+            font-size: 10px !important;
+            height: 100% !important;
+        }
+    }
+
     .grid {
         display: grid;
         width: 55%;
@@ -212,7 +236,7 @@ export default {
     }
   },
   async created () {
-    const { data } = await this.$axios.get('https://api.infiniteimmaculategrid.com/get_new_grid')
+    const { data } = await this.$axios.get('/get_new_grid')
     this.teams = data
     EventBus.$on('player-selected', async () => {
       const player = this.$store.state.selectedPlayer
@@ -275,7 +299,7 @@ export default {
           location = 's22'
           break
       }
-      const data = await this.$axios.get(`https://api.infiniteimmaculategrid.com/validate_player?name=${player}&team1=${team1}&team2=${team2}`)
+      const data = await this.$axios.get(`/validate_player?name=${player}&team1=${team1}&team2=${team2}`)
       if (Object.keys(data.data).length > 0) {
         this.gridStatus[location] = data.data
       }

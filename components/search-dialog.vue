@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     async onInput () {
-      const data = await this.$axios.get('https://api.infiniteimmaculategrid.com/search_players?name=' + this.searchTerm)
+      const data = await this.$axios.get('/search_players?name=' + this.searchTerm)
       this.searchResults = data.data.filter(item => item.toLowerCase().includes(this.searchTerm.toLowerCase()))
       this.showDropdown = true
     },
@@ -60,7 +60,7 @@ export default {
       this.$store.commit('clearAllOnExit')
     },
     playerClicked (player) {
-      this.$store.commit('setSelectedPlayer', player.split("|")[0].trim())
+      this.$store.commit('setSelectedPlayer', player.split('|')[0].trim())
       EventBus.$emit('player-selected')
     }
   }
@@ -68,6 +68,17 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 768px) {
+  .search-dialog {
+    width: 90% !important;
+  }
+
+  .search-dialog input {
+    font-size: 14px !important;
+    width: 95% !important;
+  }
+}
+
 .search-wrapper {
   position: fixed;
   top: 0;

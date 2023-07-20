@@ -19,6 +19,23 @@
 </template>
 
 <style scoped>
+
+    @media screen and (max-width: 768px) {
+        .title {
+            font-size: 1rem !important;
+            width: 50% !important;
+            text-align: center !important;
+        }
+
+        .social-icons {
+            flex-direction: column !important;
+        }
+
+        .social-icons a {
+            margin-right: 0% !important;
+            margin-bottom: 20% !important;
+        }
+    }
     .logo-svg {
         width: 100px; /* Adjust to your preference */
         height: 100px; /* Adjust to your preference */

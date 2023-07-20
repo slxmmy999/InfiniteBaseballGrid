@@ -1,6 +1,12 @@
 from quart import Quart, request, jsonify
-from server.GameCategories import GameCategories
-from server.BaseballData import BaseballData
+
+dev = False
+if dev:
+    from GameCategories import GameCategories
+    from BaseballData import BaseballData
+else:
+    from server.GameCategories import GameCategories
+    from server.BaseballData import BaseballData
 import datetime
 
 app = Quart(__name__)

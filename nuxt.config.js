@@ -1,3 +1,12 @@
+const env = "prod"; // dev, prod
+let baseURL;
+
+if(env === "dev") {
+  baseURL = "http://localhost:5000";
+} else if(env === "prod") {
+  baseURL = "https://api.infiniteimmaculategrid.com";
+}
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -19,10 +28,6 @@ export default {
 
   server: {
     host: '0.0.0.0',
-  },
-
-  env: {
-    baseUrl: '' // Replace with your Flask API URL
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -53,7 +58,13 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/'
+    baseURL: baseURL
+  },
+
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: baseURL
+    }
   },
 
   target: 'static',
