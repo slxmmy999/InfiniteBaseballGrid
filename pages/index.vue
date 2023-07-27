@@ -11,9 +11,7 @@ export default {
   name: 'IndexPage',
   // send a Google Analytics page view on page load
   mounted () {
-    this.$gtag('config', 'UA-131755589-1', {
-      page_path: this.$route.path
-    })
+    this.$gtm.trackView('/')
   }
 }
 </script>
