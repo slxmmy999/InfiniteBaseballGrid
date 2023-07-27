@@ -57,7 +57,7 @@ export default {
   ],
 
   googleAnalytics: {
-    id: 'G-G9XV3ZYH0B'
+    id: '398347851'
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
