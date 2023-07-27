@@ -5,7 +5,7 @@ import Vue from 'vue';
 import VueGtm from '@gtm-support/vue2-gtm';
 
 Vue.use(VueGtm, {
-  id: 'GT-5NPSN6J',
+  id: 'GTM-PB65MR2R',
   defer: false,
   compatibility: false,
   enabled: true,
