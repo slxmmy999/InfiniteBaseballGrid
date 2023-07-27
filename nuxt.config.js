@@ -1,17 +1,6 @@
 const env = "prod"; // dev, prod
 let baseURL;
 
-import Vue from 'vue';
-import VueGtm from '@gtm-support/vue2-gtm';
-
-Vue.use(VueGtm, {
-  id: 'GTM-PB65MR2R',
-  defer: false,
-  compatibility: false,
-  enabled: true,
-  debug: false,
-});
-
 if(env === "dev") {
   baseURL = "http://localhost:5000";
 } else if(env === "prod") {
