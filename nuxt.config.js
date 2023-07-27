@@ -82,7 +82,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    extend(config, ctx) {
+    extend(config) {
       // Add a rule to handle the .js file from vue2-gtm
       config.module.rules.push({
         test: /\.js$/,
