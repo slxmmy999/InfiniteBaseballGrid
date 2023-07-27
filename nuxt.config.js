@@ -1,6 +1,17 @@
 const env = "prod"; // dev, prod
 let baseURL;
 
+import Vue from 'vue';
+import VueGtm from '@gtm-support/vue2-gtm';
+
+Vue.use(VueGtm, {
+  id: 'G-G9XV3ZYH0B',
+  defer: false,
+  compatibility: false,
+  enabled: true,
+  debug: false,
+});
+
 if(env === "dev") {
   baseURL = "http://localhost:5000";
 } else if(env === "prod") {
@@ -82,7 +93,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    extend(config) {
+    extend(config, ctx) {
       // Add a rule to handle the .js file from vue2-gtm
       config.module.rules.push({
         test: /\.js$/,
