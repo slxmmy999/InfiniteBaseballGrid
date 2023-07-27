@@ -1,4 +1,4 @@
-const env = "dev"; // dev, prod
+const env = "prod"; // dev, prod
 let baseURL;
 
 if(env === "dev") {

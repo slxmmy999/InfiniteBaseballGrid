@@ -1,6 +1,6 @@
 from quart import Quart, request, jsonify
 
-dev = True
+dev = False
 if dev:
     from GameCategories import GameCategories
     from BaseballData import BaseballData
