@@ -11,6 +11,9 @@
             <a href="https://github.com/slxmmy999/InfiniteImmaculateGrid">
                 <img src="~/static/github.svg" alt="Github Logo" />
             </a>
+            <a href="https://discord.gg/rPBuvhqG8p">
+                <img src="~/static/discord.svg" alt="Discord" />
+            </a>
             <a href="https://allmylinks.com/sam-coan">
                 <img src="~/static/donate.png" alt="Donation Logo" />
             </a>
