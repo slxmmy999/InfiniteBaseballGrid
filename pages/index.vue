@@ -8,7 +8,11 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  // send a Google Analytics page view on page load
+  mounted () {
+    this.$ga.page('/')
+  }
 }
 </script>
 
