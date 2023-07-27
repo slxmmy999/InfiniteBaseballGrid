@@ -23,6 +23,9 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap' }
+    ],
+    script: [
+      { src: 'https://www.googletagmanager.com/gtag/js?id=G-G9XV3ZYH0B', async: true }
     ]
   },
 
