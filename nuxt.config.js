@@ -97,7 +97,10 @@ export default {
       // Add a rule to handle the .js file from vue2-gtm
       config.module.rules.push({
         test: /\.js$/,
-        include: /node_modules\/@gtm-support\/vue2-gtm/,
+        include: [
+          /node_modules\/@gtm-support\/vue2-gtm/,
+          /node_modules\/@gtm-support\/core/,
+        ],
         use: [
           {
             loader: 'babel-loader',
