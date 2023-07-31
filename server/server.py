@@ -1,6 +1,14 @@
-from quart import Quart, request, jsonify
+from quart import Quart, request, jsonify, Response
+from dotenv import load_dotenv
+import os
+from Database import Database
+from motor.motor_asyncio import AsyncIOMotorClient
 
-dev = False
+load_dotenv()
+
+database_connection_string = os.getenv("DATABASE_CONNECTION_STRING")
+
+dev = True
 if dev:
     from GameCategories import GameCategories
     from BaseballData import BaseballData
@@ -9,31 +17,34 @@ else:
     from server.BaseballData import BaseballData
 import datetime
 
+mongo_client = AsyncIOMotorClient(database_connection_string)
+db: Database = Database(mongo_client, dev)
+
 app = Quart(__name__)
 
 @app.after_request
-async def after_request(response):
+async def after_request(response: Response):
     response.headers["Access-Control-Allow-Origin"] = "https://www.infiniteimmaculategrid.com"
     response.headers["Access-Control-Allow-Headers"] = "Content-Type"
     return response
 
 @app.route("/get_new_grid", methods=["GET"])
 async def get_new_grid():
-    categories = GameCategories()
+    categories: GameCategories = GameCategories()
     return jsonify(categories.get_grid())
 
 @app.route("/search_players", methods=["GET"])
 async def search_players():
-    query = request.args.get("name")
-    players = await BaseballData.search_players(query)
-    data = players
+    query: str = request.args.get("name")
+    players: list = await BaseballData.search_players(query)
+    data: list = players
     if len(data) > 0:
         if len(data) > 5:
             data = data[:5]
-        players = []
+        players: list = []
         for x in range(len(data)):
-            start = ''
-            end = ''
+            start: str = ''
+            end: str = ''
             try:
                 if data[x]['active']:
                     start = data[x]['mlbDebutDate'][:4]
