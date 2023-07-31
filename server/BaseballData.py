@@ -66,6 +66,8 @@ class BaseballData:
                 return "New York Yankees"
             case "Philadelphia Athletics":
                 return "Oakland Athletics"
+            case "Kansas City Athletics":
+                return "Oakland Athletics"
             case _:
                 return team
     
