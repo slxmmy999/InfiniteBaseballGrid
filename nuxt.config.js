@@ -1,5 +1,5 @@
 const path = require('path')
-const env = "dev"; // dev, prod
+const env = "prod"; // dev, prod
 let baseURL;
 
 if(env === "dev") {
@@ -31,7 +31,7 @@ export default {
   },
 
   server: {
-    host: 'localhost',
+    host: '0.0.0.0',
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
