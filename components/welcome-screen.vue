@@ -5,7 +5,7 @@
         <p>
           This website is a work in progress. We are currently working on adding more features and improving the existing ones. If you have any suggestions, please let us know!
           If you are interested in the project check out the <a href="https://github.com/slxmmy999/InfiniteImmaculateGrid">GitHub</a> page. You can also join the
-          <a href="https://discord.gg/rPBuvhqG8p">Discord</a> server to get updates on the project and chat with other users, or follow me on <a href="https://twitter.com/slxmmy999">Twitter</a>.
+          <a href="https://discord.gg/rPBuvhqG8p">Discord</a> server to get updates on the project and chat with other users, or follow me on <a href="https://twitter.com/sam_coan">Twitter</a>.
         </p>
         <button @click="closeWelcome">Got it!</button>
       </div>
