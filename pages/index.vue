@@ -3,6 +3,7 @@
     <top-menu />
     <game-grid :class="$style.grid" />
     <SearchDialog />
+    <welcome-screen />
   </div>
 </template>
 

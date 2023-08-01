@@ -1,6 +1,6 @@
 from quart import Quart, request, jsonify
 
-dev = False
+dev = True
 if dev:
     from GameCategories import GameCategories
     from BaseballData import BaseballData
@@ -13,9 +13,14 @@ app = Quart(__name__)
 
 @app.after_request
 async def after_request(response):
-    response.headers["Access-Control-Allow-Origin"] = "https://www.infiniteimmaculategrid.com"
-    response.headers["Access-Control-Allow-Headers"] = "Content-Type"
-    return response
+    if dev:
+        response.headers["Access-Control-Allow-Origin"] = "http://localhost:3000"
+        response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+        return response
+    else:
+        response.headers["Access-Control-Allow-Origin"] = "https://www.infiniteimmaculategrid.com"
+        response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+        return response
 
 @app.route("/get_new_grid", methods=["GET"])
 async def get_new_grid():
