@@ -26,6 +26,11 @@ class Database:
             }
         }
         return template
+    
+    # Query the MongoDB database to find the player if they exist in the team combination
+    async def __find_player(self, teams: tuple[str, str], player: str):
+        matchup = self.__normalize_team_names(teams)
+
 
     async def add_matchup(self, team1: str, team2: str, player: str):
         await self.collection.insert_one(self.__matchup((team1, team2), player))
