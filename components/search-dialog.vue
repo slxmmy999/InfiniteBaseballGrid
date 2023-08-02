@@ -2,10 +2,9 @@
     <div class="search-wrapper" v-if="showSearch">
       <div id="headlessui-dialog-panel" class="search-dialog relative mx-auto max-w-xl transform divide-y divide-gray-100 dark:divide-gray-800 overflow-hidden rounded-xl bg-white shadow-2xl ring-1 ring-black ring-opacity-5 transition-all">
           <div class="relative" v-on-clickaway="hideSearch">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="search-icon pointer-events-none absolute left-4 top-3.5 h-5 w-5 text-gray-400">
-                  <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"></path>
-              </svg>
-              <input v-model="searchTerm"
+              <input
+              ref="searchInput"
+              v-model="searchTerm"
               @input="onInput"
               aria-expanded="false"
               aria-autocomplete="list"
@@ -27,6 +26,7 @@
 
 <script>
 import { mixin as clickaway } from 'vue-clickaway'
+import { debounce } from 'lodash'
 import { EventBus } from '~/event-bus.js'
 
 export default {
@@ -37,19 +37,45 @@ export default {
       searchTerm: '',
       showDropdown: false,
       searchResults: [],
-      showSearch: false
+      showSearch: false,
+      loading: false,
+      cancelTokenSource: null
     }
   },
   created () {
     EventBus.$on('show-search', () => {
       this.showSearch = true
+      this.$nextTick(() => {
+        this.$refs.searchInput.focus()
+      })
     })
+    this.debouncedSearch = debounce(this.search, 100)
   },
   methods: {
-    async onInput () {
-      const data = await this.$axios.get('/search_players?name=' + this.searchTerm)
-      this.searchResults = data.data.filter(item => item.toLowerCase().includes(this.searchTerm.toLowerCase()))
-      this.showDropdown = true
+    onInput () {
+      this.debouncedSearch()
+    },
+    async search () {
+      if (this.cancelTokenSource) {
+        this.cancelTokenSource.cancel('Cancelling previous request')
+      }
+      this.cancelTokenSource = this.$axios.CancelToken.source()
+      this.loading = true
+      try {
+        const data = await this.$axios.get('/search_players?name=' + this.searchTerm, {
+          cancelToken: this.cancelTokenSource.token
+        })
+        this.searchResults = data.data.filter(item => item.toLowerCase().includes(this.searchTerm.toLowerCase()))
+        this.showDropdown = true
+      } catch (error) {
+        if (this.$axios.isCancel(error)) {
+          console.log('Request cancelled', error.message)
+        } else {
+          console.error(error)
+        }
+      } finally {
+        this.loading = false
+      }
     },
     closeDropdown () {
       this.showDropdown = false
@@ -111,7 +137,7 @@ export default {
   font-size: 16px;
   border: none;
   border-radius: 6px;
-  width: 100%;
+  width: 95%;
   box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
 }
 
