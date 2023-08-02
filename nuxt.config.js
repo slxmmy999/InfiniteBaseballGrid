@@ -43,6 +43,7 @@ export default {
   plugins: [
     { src: '~/plugins/vercel.js', mode: 'client'},
     { src: '~/plugins/gtm.js', mode: 'client' },
+    { src: '~/plugins/directives.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
