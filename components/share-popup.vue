@@ -39,7 +39,7 @@ export default {
           grid: currentGrid
         }
       )
-      this.shareLink = `http://localhost:3000/?id=${id.id}`
+      this.shareLink = `http://infiniteimmaculategrid.com/?id=${id.id}`
     },
     closeModal () {
       this.isVisible = false
