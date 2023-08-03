@@ -8,7 +8,7 @@ load_dotenv()
 database_connection_string = os.getenv("DB_CONNECTION_STRING")
 dev_ip = os.getenv("DEV_IP")
 
-dev = False
+dev = True
 if dev:
     from GameCategories import GameCategories
     from BaseballData import BaseballData
@@ -87,6 +87,21 @@ async def validate_player():
             return jsonify({"picture": picture, "name": name, "rarity_score": rarity_score})
     # return nothing
     return jsonify({})
+
+@app.route("/set_shared_grid", methods=["POST"])
+async def set_shared_grid():
+    data = await request.get_json()
+    grid = data["grid"]
+    id = await db.set_shared_grid(grid)
+    return jsonify({"id": id})
+
+@app.route("/get_shared_grid", methods=["GET"])
+async def get_shared_grid():
+    id = request.args.get("id")
+    grid = await db.get_shared_grid(id)
+    if grid == []:
+        return Response(status=404)
+    return jsonify(grid)
 
 if __name__ == '__main__':
     app.run('0.0.0.0', debug=True)

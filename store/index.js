@@ -7,7 +7,8 @@ const createStore = () => {
   return new Vuex.Store({
     state: {
       selectedGridLocation: null,
-      selectedPlayer: null
+      selectedPlayer: null,
+      grid: null
     },
     mutations: {
       setSelectedGridLocation (state, item) {
@@ -19,6 +20,9 @@ const createStore = () => {
       clearAllOnExit (state) {
         state.selectedGridLocation = null
         state.selectedPlayer = null
+      },
+      setGrid (state, item) {
+        state.grid = item
       }
     }
   })
