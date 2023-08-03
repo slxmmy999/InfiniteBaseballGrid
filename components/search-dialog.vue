@@ -49,7 +49,7 @@ export default {
         this.$refs.searchInput.focus()
       })
     })
-    this.debouncedSearch = debounce(this.search, 100)
+    this.debouncedSearch = debounce(this.search, 30)
   },
   methods: {
     onInput () {
@@ -61,12 +61,13 @@ export default {
       }
       this.cancelTokenSource = this.$axios.CancelToken.source()
       this.loading = true
+      this.searchResults = ["Loading..."]
+      this.showDropdown = true
       try {
         const data = await this.$axios.get('/search_players?name=' + this.searchTerm, {
           cancelToken: this.cancelTokenSource.token
         })
-        this.searchResults = data.data.filter(item => item.toLowerCase().includes(this.searchTerm.toLowerCase()))
-        this.showDropdown = true
+        this.searchResults = data.data
       } catch (error) {
         if (this.$axios.isCancel(error)) {
           console.log('Request cancelled', error.message)
@@ -137,7 +138,7 @@ export default {
   font-size: 16px;
   border: none;
   border-radius: 6px;
-  width: 95%;
+  width: 98%;
   box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
 }
 
