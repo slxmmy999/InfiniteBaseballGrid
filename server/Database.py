@@ -19,7 +19,7 @@ class Database:
         return "".join(sorted(string))
     
     def __normalize_player_name(self, player: str, id: str) -> str:
-        return player.lower().replace(" ", "") + id
+        return player.lower().replace(" ", "").replace(".", "") + id
 
     def __matchup(self, teams: tuple[str, str], player: str) -> str:
         template = {
