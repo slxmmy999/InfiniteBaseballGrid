@@ -288,7 +288,7 @@ export default {
       data = await this.$axios.get('/get_new_grid')
       this.teams = data.data
     }
-    this.$store.commit('setGrid', data)
+    this.$store.commit('setGrid', data.data)
     EventBus.$on('player-selected', async () => {
       const player = this.$store.state.selectedPlayer
       for (const keys in this.gridStatus) {

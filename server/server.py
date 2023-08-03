@@ -99,7 +99,6 @@ async def set_shared_grid():
 async def get_shared_grid():
     id = request.args.get("id")
     grid = await db.get_shared_grid(id)
-    print(grid)
     if grid == []:
         return Response(status=404)
     return jsonify(grid)
