@@ -6,9 +6,10 @@ from motor.motor_asyncio import AsyncIOMotorClient
 
 load_dotenv()
 
-database_connection_string = os.getenv("DATABASE_CONNECTION_STRING")
+database_connection_string = os.getenv("DB_CONNECTION_STRING")
+dev_ip = os.getenv("DEV_IP")
 
-dev = True
+dev = False
 if dev:
     from GameCategories import GameCategories
     from BaseballData import BaseballData
@@ -17,6 +18,7 @@ else:
     from server.BaseballData import BaseballData
 import datetime
 
+print(dev_ip)
 mongo_client = AsyncIOMotorClient(database_connection_string)
 db: Database = Database(mongo_client, dev)
 
@@ -24,6 +26,10 @@ app = Quart(__name__)
 
 @app.after_request
 async def after_request(response: Response):
+    if dev:
+        response.headers["Access-Control-Allow-Origin"] = "*"
+        response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+        return response
     response.headers["Access-Control-Allow-Origin"] = "https://www.infiniteimmaculategrid.com"
     response.headers["Access-Control-Allow-Headers"] = "Content-Type"
     return response
@@ -74,7 +80,10 @@ async def validate_player():
         if team1 in teams and team2 in teams:
             picture = BaseballData.get_player_picture(player)
             name = player["fullName"]
-            return jsonify({"picture": picture, "name": name})
+            id = player['link'].split('/')[-1]
+            await db.update_matchup(teams=(team1, team2), player=name, id=id)
+            rarity_score = await db.calculate_rarity_score(teams=(team1, team2), player=name, id=id)
+            return jsonify({"picture": picture, "name": name, "rarity_score": rarity_score})
     # return nothing
     return jsonify({})
 

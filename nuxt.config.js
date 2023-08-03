@@ -1,3 +1,4 @@
+const path = require('path')
 const env = "prod"; // dev, prod
 let baseURL;
 
@@ -82,23 +83,19 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    extend(config) {
-      // Add a rule to handle the .js file from vue2-gtm
+    extend(config, { isDev, isClient }) {
+      // Run Babel on vue2-gtm in node_modules
       config.module.rules.push({
         test: /\.js$/,
+        loader: 'babel-loader',
         include: [
-          /node_modules\/@gtm-support\/vue2-gtm/,
-          /node_modules\/@gtm-support\/core/,
+          path.resolve(__dirname, 'node_modules/@gtm-support/vue2-gtm'),
+          path.resolve(__dirname, 'node_modules/@gtm-support/core')
         ],
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env'],
-            },
-          },
-        ],
-      });
-    },
-  },
+        options: {
+          presets: ['@babel/preset-env']
+        }
+      })
+    }
+  }
 }
