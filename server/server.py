@@ -1,4 +1,13 @@
-from quart import Quart, request, jsonify
+from quart import Quart, request, jsonify, Response
+from dotenv import load_dotenv
+import os
+from Database import Database
+from motor.motor_asyncio import AsyncIOMotorClient
+
+load_dotenv()
+
+database_connection_string = os.getenv("DB_CONNECTION_STRING")
+dev_ip = os.getenv("DEV_IP")
 
 dev = False
 if dev:
@@ -8,6 +17,10 @@ else:
     from server.GameCategories import GameCategories
     from server.BaseballData import BaseballData
 import datetime
+
+print(dev_ip)
+mongo_client = AsyncIOMotorClient(database_connection_string)
+db: Database = Database(mongo_client, dev)
 
 app = Quart(__name__)
 
@@ -24,21 +37,21 @@ async def after_request(response):
 
 @app.route("/get_new_grid", methods=["GET"])
 async def get_new_grid():
-    categories = GameCategories()
+    categories: GameCategories = GameCategories()
     return jsonify(categories.get_grid())
 
 @app.route("/search_players", methods=["GET"])
 async def search_players():
-    query = request.args.get("name")
-    players = await BaseballData.search_players(query)
-    data = players
+    query: str = request.args.get("name")
+    players: list = await BaseballData.search_players(query)
+    data: list = players
     if len(data) > 0:
         if len(data) > 5:
             data = data[:5]
-        players = []
+        players: list = []
         for x in range(len(data)):
-            start = ''
-            end = ''
+            start: str = ''
+            end: str = ''
             try:
                 if data[x]['active']:
                     start = data[x]['mlbDebutDate'][:4]
@@ -68,7 +81,10 @@ async def validate_player():
         if team1 in teams and team2 in teams:
             picture = BaseballData.get_player_picture(player)
             name = player["fullName"]
-            return jsonify({"picture": picture, "name": name})
+            id = player['link'].split('/')[-1]
+            await db.update_matchup(teams=(team1, team2), player=name, id=id)
+            rarity_score = await db.calculate_rarity_score(teams=(team1, team2), player=name, id=id)
+            return jsonify({"picture": picture, "name": name, "rarity_score": rarity_score})
     # return nothing
     return jsonify({})
 
