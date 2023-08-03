@@ -33,13 +33,15 @@ export default {
   methods: {
     async openModal () {
       this.isVisible = true
-      const currentGrid = this.$store.state.grid
-      const id = await this.$axios.$post('/set_shared_grid',
-        {
-          grid: currentGrid
-        }
-      )
-      this.shareLink = `http://infiniteimmaculategrid.com/?id=${id.id}`
+      if (this.shareLink === 'Loading...') {
+        const currentGrid = this.$store.state.grid
+        const id = await this.$axios.$post('/set_shared_grid',
+          {
+            grid: currentGrid
+          }
+        )
+        this.shareLink = `http://infiniteimmaculategrid.com/?id=${id.id}`
+      }
     },
     closeModal () {
       this.isVisible = false
