@@ -1,7 +1,6 @@
 from quart import Quart, request, jsonify, Response
 from dotenv import load_dotenv
 import os
-from Database import Database
 from motor.motor_asyncio import AsyncIOMotorClient
 
 load_dotenv()
@@ -13,9 +12,11 @@ dev = False
 if dev:
     from GameCategories import GameCategories
     from BaseballData import BaseballData
+    from Database import Database
 else:
     from server.GameCategories import GameCategories
     from server.BaseballData import BaseballData
+    from server.Database import Database
 import datetime
 
 print(dev_ip)
