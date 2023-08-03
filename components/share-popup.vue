@@ -40,7 +40,7 @@ export default {
             grid: currentGrid
           }
         )
-        this.shareLink = `http://infiniteimmaculategrid.com/?id=${id.id}`
+        this.shareLink = `https://infiniteimmaculategrid.com/?id=${id.id}`
       }
     },
     closeModal () {
