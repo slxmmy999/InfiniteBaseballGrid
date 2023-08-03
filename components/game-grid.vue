@@ -180,7 +180,7 @@
 
     .player-image {
         grid-column: span 1;
-        width: 55%;
+        width: 50%;
         object-fit: cover;
         /* Add any additional styles for the player images here */
     }
