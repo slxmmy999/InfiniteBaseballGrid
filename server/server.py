@@ -19,7 +19,6 @@ else:
     from server.Database import Database
 import datetime
 
-print(dev_ip)
 mongo_client = AsyncIOMotorClient(database_connection_string)
 db: Database = Database(mongo_client, dev)
 
