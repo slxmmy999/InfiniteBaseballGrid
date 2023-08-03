@@ -1,4 +1,5 @@
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase, AsyncIOMotorCollection
+from uuid import uuid4
 
 class Database:
     def __init__(self, mongo_client: AsyncIOMotorClient, dev: bool):
@@ -11,6 +12,7 @@ class Database:
             self.db = self.client["prod"]
 
         self.collection = self.db["matchup-statistics"]
+        self.share_collection = self.db["shared-grids"]
     
     def __normalize_team_names(self, teams: tuple[str, str]) -> str:
         string = teams[0].lower().replace(" ", "") + teams[1].lower().replace(" ", "")
@@ -61,3 +63,14 @@ class Database:
                     return int(score)
                 return score
         return 100
+    
+    async def set_shared_grid(self, grid: list[list[str]]) -> str:
+        id = str(uuid4())
+        await self.share_collection.insert_one({"id": id, "grid": grid})
+        return id
+    
+    async def get_shared_grid(self, id: str) -> list[list[str]]:
+        data = await self.share_collection.find_one({"id": id})
+        if data:
+            return data["grid"]
+        return []

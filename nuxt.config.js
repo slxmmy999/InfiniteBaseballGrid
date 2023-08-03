@@ -1,5 +1,5 @@
 const path = require('path')
-const env = "prod"; // dev, prod
+const env = "dev"; // dev, prod
 let baseURL;
 
 if(env === "dev") {

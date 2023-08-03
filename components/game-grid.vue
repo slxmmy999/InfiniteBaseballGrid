@@ -32,7 +32,9 @@
           <div :class="$style.playerName">{{ gridStatus['s02'].name }}</div>
       </div>
         <button v-else @click="buttonClicked('s02')" :class="$style['grid-item']" :disabled="gameOver"></button>
-        <div></div> <!-- Empty grid cell -->
+        <div :class="$style['share-button-container']" @click="shareGrid" >
+          <img src="~/static/share.png" alt="Share Logo" :class="$style['share-button']" />
+        </div>
         <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
             <img :src="teams[1][1][0]" :class="$style.label" />
         </div>
@@ -111,6 +113,21 @@
         .rarityScore {
             font-size: 8px !important;
         }
+    }
+
+    .share-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .share-button {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        cursor: pointer;
     }
 
     .grid {
@@ -256,11 +273,22 @@ export default {
     },
     newGame () {
       parent.location.reload()
+    },
+    shareGrid () {
+      EventBus.$emit('show-share-popup')
+      console.log('emitted share popup')
     }
   },
   async created () {
-    const { data } = await this.$axios.get('/get_new_grid')
-    this.teams = data
+    let data = ''
+    if (this.$route.query.id !== undefined) {
+      data = await this.$axios.get(`/get_shared_grid?id=${this.$route.query.id}`)
+      this.teams = data.data
+    } else {
+      data = await this.$axios.get('/get_new_grid')
+      this.teams = data.data
+    }
+    this.$store.commit('setGrid', data)
     EventBus.$on('player-selected', async () => {
       const player = this.$store.state.selectedPlayer
       for (const keys in this.gridStatus) {
