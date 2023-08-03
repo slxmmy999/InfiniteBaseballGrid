@@ -283,12 +283,12 @@ export default {
     let data = ''
     if (this.$route.query.id !== undefined) {
       data = await this.$axios.get(`/get_shared_grid?id=${this.$route.query.id}`)
-      this.teams = data.data.data
+      this.teams = data.data
     } else {
       data = await this.$axios.get('/get_new_grid')
       this.teams = data.data
     }
-    this.$store.commit('setGrid', data)
+    this.$store.commit('setGrid', data.data)
     EventBus.$on('player-selected', async () => {
       const player = this.$store.state.selectedPlayer
       for (const keys in this.gridStatus) {
@@ -302,7 +302,6 @@ export default {
       let team1 = ''
       let team2 = ''
       let location = ''
-      console.log(this.$store.state.selectedGridLocation)
       switch (this.$store.state.selectedGridLocation) {
         case 's00':
           team1 = this.teams[0][0][1]
