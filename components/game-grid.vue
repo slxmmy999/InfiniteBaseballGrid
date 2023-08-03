@@ -283,7 +283,7 @@ export default {
     let data = ''
     if (this.$route.query.id !== undefined) {
       data = await this.$axios.get(`/get_shared_grid?id=${this.$route.query.id}`)
-      this.teams = data.data
+      this.teams = data.data.data
     } else {
       data = await this.$axios.get('/get_new_grid')
       this.teams = data.data

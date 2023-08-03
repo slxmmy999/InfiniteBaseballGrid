@@ -39,7 +39,7 @@ export default {
           grid: currentGrid
         }
       )
-      this.shareLink = `https://infiniteimmaculategrid.com/?id=${id.id}`
+      this.shareLink = `http://localhost:3000/?id=${id.id}`
     },
     closeModal () {
       this.isVisible = false
@@ -56,12 +56,10 @@ export default {
     }
   },
   created () {
-    console.log('starting listener')
     EventBus.$on('show-share-popup', () => {
       console.log('showing share popup')
       this.openModal()
     })
-    console.log('listener started')
   }
 }
 </script>
