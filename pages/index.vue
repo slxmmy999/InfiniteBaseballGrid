@@ -1,10 +1,5 @@
 <template>
   <div>
-    <head>
-      <script>
-        if (top !== self) top.location.replace(self.location.href);
-      </script>
-    </head>
     <top-menu />
     <game-grid :class="$style.grid" />
     <SearchDialog />
