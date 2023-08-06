@@ -16,7 +16,6 @@
             <button class="dismiss-button" @click="closeModal">Dismiss</button>
           </div>
         </div>
-        <button class="modal-close is-large" aria-label="close" @click="closeModal"></button>
       </div>
     </template>
 
