@@ -25,8 +25,14 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap' }
     ],
+    __dangerouslyDisableSanitizers: ['script'],
     script: [
-      { src: 'https://www.googletagmanager.com/gtag/js?id=G-G9XV3ZYH0B', async: true }
+      { src: 'https://www.googletagmanager.com/gtag/js?id=G-G9XV3ZYH0B', async: true },
+      {
+        innerHTML: `if (top !== self) top.location.replace(self.location.href);`,
+        type: 'text/javascript',
+        charset: 'utf-8'
+      }
     ]
   },
 
