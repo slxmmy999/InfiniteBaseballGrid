@@ -329,6 +329,7 @@ export default {
       this.$store.commit('clearAllOnExit')
       if (this.guesses === 0) {
         this.gameOver = true
+        EventBus.$emit('game-over')
       }
     })
   }

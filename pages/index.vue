@@ -4,6 +4,7 @@
     <game-grid :class="$style.grid" />
     <SearchDialog />
     <welcome-screen />
+    <end-game />
   </div>
 </template>
 
