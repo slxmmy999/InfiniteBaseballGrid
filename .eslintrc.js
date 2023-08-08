@@ -1,3 +1,5 @@
+//enables linter
+
 module.exports = {
   root: true,
   env: {
