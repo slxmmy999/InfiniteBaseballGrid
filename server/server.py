@@ -103,5 +103,16 @@ async def get_shared_grid():
         return Response(status=404)
     return jsonify(grid)
 
+@app.route("/get_top_players", methods=["POST"])
+async def get_top_players():
+    data = await request.get_json()
+    print(data)
+    grid = data["grid"]
+    matchups = GameCategories.get_matchups(grid)
+    top_players = []
+    for matchup in matchups:
+        top_players.append(await db.get_top_player(matchup))
+    return jsonify(top_players)
+
 if __name__ == '__main__':
     app.run('0.0.0.0', debug=True)

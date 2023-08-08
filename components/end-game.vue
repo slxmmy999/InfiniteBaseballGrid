@@ -8,8 +8,8 @@
       <!-- Grid with top player answers for each space -->
       <div :class="$style.grid">
         <div v-for="(answer, idx) in topAnswersGrid.flat()" :key="idx" :class="$style.cell">
-          <img :src="answer.image" :class="$style['player-image']" :alt="answer.name + ' photo'">
-          <div :class="$style.playerName">{{ answer.name }}</div>
+          <!--img :src="answer" :class="$style['player-image']" :alt="answer + ' photo'"-->
+          <div :class="$style.playerName">{{ answer }}</div>
         </div>
       </div>
     </div>
@@ -152,51 +152,14 @@ export default {
   data () {
     return {
       gameOver: false,
-      topAnswersGrid: [
-        [{
-          name: 'Daddy Acuna',
-          image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36185.png'
-        },
-        {
-          name: 'Daddy Acuna',
-          image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36185.png'
-        },
-        {
-          name: 'Daddy Acuna',
-          image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36185.png'
-        }],
-        [{
-          name: 'Daddy Acuna',
-          image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36185.png'
-        },
-        {
-          name: 'Daddy Acuna',
-          image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36185.png'
-        },
-        {
-          name: 'Daddy Acuna',
-          image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36185.png'
-        }],
-        [{
-          name: 'Daddy Acuna',
-          image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36185.png'
-        },
-        {
-          name: 'Daddy Acuna',
-          image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36185.png'
-        },
-        {
-          name: 'Daddy Acuna',
-          image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36185.png'
-        }]
-      ]
+      topAnswersGrid: []
     }
   },
   created () {
-    EventBus.$on('game-over', () => {
+    EventBus.$on('game-over', async () => {
       this.gameOver = true
-      // const { data } = await this.$axios.get('/get_top_answers')
-      // this.topAnswersGrid = data
+      const { data } = await this.$axios.get('/get_top_players', { grid: this.$store.state.grid })
+      this.topAnswersGrid = data
     })
   },
   methods: {
