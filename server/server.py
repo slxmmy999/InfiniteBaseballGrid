@@ -8,7 +8,7 @@ load_dotenv()
 database_connection_string = os.getenv("DB_CONNECTION_STRING")
 dev_ip = os.getenv("DEV_IP")
 
-dev = False # True if dev else False
+dev = True
 if dev:
     from GameCategories import GameCategories
     from BaseballData import BaseballData

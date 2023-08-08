@@ -42,12 +42,25 @@ class Database:
         await self.collection.insert_one(self.__matchup((team1, team2), player))
 
     async def update_matchup(self, teams: tuple[str, str], player: str, id: str):
+        original_player_name = player  # Preserve original player name
         player = self.__normalize_player_name(player, id)
         matchup = self.__normalize_team_names(teams)
         if await self.collection.find_one({"team_combination": matchup}):
             if await self.__find_player(teams, player):
-                return await self.collection.update_one({"team_combination": matchup}, {"$inc": {"total_picks": 1, f"players.{player}.pick_frequency": 1}})
-            return await self.collection.update_one({"team_combination": matchup}, {"$inc": {"total_picks": 1}, "$set": {f"players.{player}": {"pick_frequency": 1}}})
+                return await self.collection.update_one(
+                    {"team_combination": matchup}, 
+                    {
+                        "$inc": {"total_picks": 1, f"players.{player}.pick_frequency": 1}, 
+                        "$set": {f"players.{player}.un_normalized_name": original_player_name}
+                    }
+                )
+            return await self.collection.update_one(
+                {"team_combination": matchup}, 
+                {
+                    "$inc": {"total_picks": 1}, 
+                    "$set": {f"players.{player}": {"pick_frequency": 1, "un_normalized_name": original_player_name}}
+                }
+            )
         return await self.__add_matchup(teams[0], teams[1], player)
     
     async def calculate_rarity_score(self, teams: tuple[str, str], player: str, id: str):
@@ -74,3 +87,12 @@ class Database:
         if data:
             return data["grid"]
         return []
+
+    async def get_top_player(self, teams: tuple[str, str]):
+        matchup = self.__normalize_team_names(teams)
+        data = await self.collection.find_one({"team_combination": matchup})
+        if data:
+            top_player = max(data["players"], key=lambda x: data["players"][x]["pick_frequency"])
+            top_player = data["players"][top_player]["un_normalized_name"]
+            return top_player
+        return None

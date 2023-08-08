@@ -1,5 +1,5 @@
 const path = require('path')
-const env = "prod"; // set to dev for development mode, prod for production mode
+const env = "dev"; // dev, prod
 let baseURL;
 
 if(env === "dev") {

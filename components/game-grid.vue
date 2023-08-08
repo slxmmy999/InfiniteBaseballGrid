@@ -234,7 +234,7 @@
 .rarityScore {
   color: white; /* Choose color according to your preference */
   background: rgba(0,0,0,0.6); /* Add a dark background for the text to be visible */
-  width: 20%;
+  width: 25%;
   text-align: center; /* To center the text */
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -354,8 +354,9 @@ export default {
         this.gridStatus[location] = data.data
       }
       this.$store.commit('clearAllOnExit')
-      if (this.guesses === 0) {
+      if (this.guesses < 1) {
         this.gameOver = true
+        EventBus.$emit('game-over')
       }
     })
   }
