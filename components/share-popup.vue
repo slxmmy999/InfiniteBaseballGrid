@@ -1,23 +1,23 @@
-  <template>
-      <div v-if="isVisible" class="modal is-active">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <div class="box">
-            <h2 class="title is-4">Share Grid</h2>
-            <p class="subtitle is-6">Use this unique link to share this grid with your friends:</p>
-            <div class="field is-grouped">
-              <p class="control is-expanded">
-                <input class="input" type="text" v-model="shareLink" readonly>
-              </p>
-              <p class="control">
-                <button class="copy-button" @click="copyLink">Copy Link</button>
-              </p>
-            </div>
-            <button class="dismiss-button" @click="closeModal">Dismiss</button>
-          </div>
+<template>
+  <div v-if="isVisible" class="modal is-active">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box">
+        <h2 class="title is-4">Share Grid</h2>
+        <p class="subtitle is-6">Use this unique link to share this grid with your friends:</p>
+        <div class="field is-grouped">
+          <p class="control is-expanded">
+            <input class="input" type="text" v-model="shareLink" readonly>
+          </p>
+          <p class="control">
+            <button class="copy-button" @click="copyLink">Copy Link</button>
+          </p>
         </div>
+        <button class="dismiss-button" @click="closeModal">Dismiss</button>
       </div>
-    </template>
+    </div>
+  </div>
+</template>
 
 <script>
 import { EventBus } from '~/event-bus.js'

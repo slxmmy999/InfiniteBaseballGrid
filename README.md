@@ -1,69 +1,95 @@
-# InfiniteImmaculateGrid
+# Infinite Immaculate Grid
 
-## Build Setup
+## About the Project
+[Infinite Immaculate Grid](https://www.infiniteimmaculategrid.com/) is an unlimited open source clone of the popular daily baseball trivia game [Immaculate Grid](https://www.immaculategrid.com/). The goal of this project is to create a community-driven, open source version of Immaculate Grid that anyone can contribute to. The project is built using [NuxtJS](https://nuxtjs.org/) for the frontend and [Quart](https://pgjones.gitlab.io/quart/) (Python) for the backend. The project is hosted on [Vercel](https://vercel.com/) and [Heroku](https://www.heroku.com/).
+
+## Contributing
+
+We welcome contributions from everyone. Here's how you can contribute:
+
+### Forking and Cloning the Repository
+
+1. **Fork the Repository**: Start by forking this repository to your own GitHub account. You can do this by clicking the "Fork" button at the top right corner of this page.
+
+2. **Clone the Repository**: After forking the repository, you'll need to clone it to your local machine to make changes. Click the "Code" button on your forked repository and copy the URL.
+
+    Open a terminal on your local machine and run the following git command:
+
+    ```bash
+    git clone "url-you-just-copied"
+    ```
+
+    Replace `"url-you-just-copied"` with the URL of your forked repository. It should look something like this:
+
+    ```bash
+    git clone https://github.com/your-username/InfiniteImmaculateGrid.git
+    ```
+
+3. **Navigate into the Directory**: Now navigate into the cloned directory:
+
+    ```bash
+    cd InfiniteImmaculateGrid
+    ```
+
+4. **Create a New Branch**: Create a new branch where you'll make your changes. You can create a branch with the following command:
+
+    ```bash
+    git checkout -b your-new-branch-name
+    ```
+
+    Replace `"your-new-branch-name"` with a name that describes the changes you're planning to make.
+
+5. **Make Your Changes**: Now you're ready to make your changes! Open up the project in your favorite text editor and get to work.
+
+Remember, once you've made your changes, you'll need to commit them, push them to your forked repository, and then open a pull request. We'll review your changes and, if everything looks good, merge them into the main project.
+
+
+## Getting Started
+
+### Set the development variables
+
+The frontend and backend both have variables that need to be changed in order to set the project to "development mode", which configures the project to run correctly in your local environment. Here's how you can get the project ready to run on your machine:
+
+1. Set `env` variable in the file [`nuxt.config.js`](nuxt.config.js) to `"dev"` like so:
+   ```js
+   const env = "dev";
+   ```
+
+2. Set the `dev` variable in the file [`server/server.py`](server/server.py) to `True` like so:
+    ```py
+    dev = True
+    ```
+
+### Install Python and Node requirements
 
 ```bash
-# install dependencies
-$ npm install
+# Install Python requirements
+pip install -r requirements.txt
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+# Install Node modules
+npm install
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+### Run the NuxtJS frontend
 
-## Special Directories
+```bash
+# Start the hot-reloading development server on localhost:3000
+npm run dev
+```
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+### Run the Quart backend
+In a separate terminal window, run the following command to start the backend server:
 
-### `assets`
+```bash
+python server/server.py
+```
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+### Open the project in your browser
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+Open your browser and navigate to [localhost:3000](http://localhost:3000) to see the project running in your browser.
 
-### `components`
+## Asking for Help
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+I strongly believe that anyone should be able to contribute to projects they care about, no matter their skill level or abilities. I am always here to help anyone who may need it so feel free to reach out to me with any questions you may have. If you need any help anywhere in the contribution process, you can ask for help in the [Discord Server](https://discord.gg/rPBuvhqG8p) or in the 
+[GitHub Discussions](https://github.com/slxmmy999/InfiniteImmaculateGrid/discussions) 
+section of this repository.
