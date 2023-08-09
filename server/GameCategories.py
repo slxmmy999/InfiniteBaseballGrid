@@ -63,6 +63,13 @@ class GameCategories:
 
     def get_grid(self):
         return self.categories
+    
+    @staticmethod
+    def get_matchups(categories: list[list[tuple]]) -> list[tuple]:
+        matchups = []
+        for category in categories:
+            matchups.append((category[0][1], category[1][1]))
+        return matchups
 
     def __str_(self) -> str:
         return str(self.categories)

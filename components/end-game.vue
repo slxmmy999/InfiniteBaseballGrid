@@ -158,7 +158,7 @@ export default {
   created () {
     EventBus.$on('game-over', async () => {
       this.gameOver = true
-      const { data } = await this.$axios.get('/get_top_players', { grid: this.$store.state.grid })
+      const { data } = await this.$axios.post('/get_top_players', { grid: this.$store.state.grid })
       this.topAnswersGrid = data
     })
   },
