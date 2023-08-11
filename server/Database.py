@@ -58,7 +58,7 @@ class Database:
                 {"team_combination": matchup}, 
                 {
                     "$inc": {"total_picks": 1}, 
-                    "$set": {f"players.{player}": {"pick_frequency": 1, "un_normalized_name": original_player_name}}
+                    "$set": {f"players.{player}": {"un_normalized_name": original_player_name}}
                 }
             )
         return await self.__add_matchup(teams[0], teams[1], player)
@@ -93,6 +93,8 @@ class Database:
         data = await self.collection.find_one({"team_combination": matchup})
         if data:
             top_player = max(data["players"], key=lambda x: data["players"][x]["pick_frequency"])
-            top_player = data["players"][top_player]["un_normalized_name"]
-            return top_player
-        return None
+            if "un_normalized_name" in data["players"][top_player]:
+                top_player = data["players"][top_player]["un_normalized_name"]
+                return top_player
+            return "Player"
+        return "none"

@@ -131,3 +131,5 @@ dist
 .pnp.*
 
 __pycache__/
+
+data_analysis.py

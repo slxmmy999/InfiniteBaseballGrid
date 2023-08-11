@@ -7,7 +7,7 @@
       <button :class="$style['popup-button']" @click="goToMenu()">Main Menu</button>
       <!-- Grid with top player answers for each space -->
       <div :class="$style.grid">
-        <div v-for="(answer, idx) in topAnswersGrid.flat()" :key="idx" :class="$style.cell">
+        <div v-for="(answer, idx) in rotatedGrid" :key="idx" :class="$style.cell">
           <!--img :src="answer" :class="$style['player-image']" :alt="answer + ' photo'"-->
           <div :class="$style.playerName">{{ answer }}</div>
         </div>
@@ -168,6 +168,26 @@ export default {
     },
     goToMenu () {
       this.gameOver = false
+    }
+  },
+  computed: {
+    rotatedGrid () {
+      // Assuming topAnswersGrid is a 3x3 array representing your original grid
+      const originalGrid = this.topAnswersGrid
+
+      console.log(originalGrid)
+
+      // Create a new grid by taking the columns of the original grid as rows
+      const newGrid = []
+      for (let col = 0; col < originalGrid.length; col++) {
+        const newRow = []
+        for (let row = originalGrid.length - 1; row >= 0; row--) {
+          newRow.push(originalGrid[row][col])
+        }
+        newGrid.push(newRow)
+      }
+
+      return newGrid.flat()
     }
   }
 }

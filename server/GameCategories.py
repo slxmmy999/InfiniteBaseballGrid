@@ -66,9 +66,8 @@ class GameCategories:
     
     @staticmethod
     def get_matchups(categories: list[list[tuple]]) -> list[tuple]:
-        matchups = []
-        for category in categories:
-            matchups.append((category[0][1], category[1][1]))
+        teams_top, teams_left = (categories[0], categories[1])
+        matchups = [(top[1], left[1]) for top in teams_top for left in teams_left]
         return matchups
 
     def __str_(self) -> str:
