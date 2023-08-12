@@ -1,0 +1,1740 @@
+('St. Louis Cardinals', 'San Diego Padres')
+Most picked: mattcarpenter572761 with 524 picks
+Least picked: billgreif115123 with 1 picks
+
+('Texas Rangers', 'Colorado Rockies')
+Most picked: jongray592351 with 333 picks
+Least picked: eddiebutler572750 with 1 picks
+
+('Atlanta Braves', 'Milwaukee Brewers')
+Most picked: williamcontreras661388 with 605 picks
+Least picked: eddieperez120407 with 1 picks
+
+('Boston Red Sox', 'Detroit Tigers')
+Most picked: eduardorodriguez593958 with 428 picks
+Least picked: j.d.martinez502110 with 1 picks
+
+('Atlanta Braves', 'Cincinnati Reds')
+Most picked: adamduvall594807 with 311 picks
+Least picked: mikestanton122681 with 1 picks
+
+('Miami Marlins', 'Washington Nationals')
+Most picked: joshbell605137 with 228 picks
+Least picked: brettcarroll448276 with 1 picks
+
+('Tampa Bay Rays', 'Minnesota Twins')
+Most picked: nelsoncruz443558 with 267 picks
+Least picked: midrecummings112937 with 1 picks
+
+('Houston Astros', 'St. Louis Cardinals')
+Most picked: lanceberkman204020 with 457 picks
+Least picked: scipiospinks122601 with 1 picks
+
+('Philadelphia Phillies', 'San Diego Padres')
+Most picked: johnkruk117339 with 155 picks
+Least picked: rodrigolopez150438 with 1 picks
+
+('Tampa Bay Rays', 'St. Louis Cardinals')
+Most picked: randyarozarena668227 with 899 picks
+Least picked: mikedifelice113358 with 1 picks
+
+('Minnesota Twins', 'Seattle Mariners')
+Most picked: nelsoncruz443558 with 361 picks
+Least picked: stevebraun111404 with 1 picks
+
+('New York Yankees', 'Toronto Blue Jays')
+Most picked: joshdonaldson518626 with 961 picks
+Least picked: cliffjohnson116573 with 1 picks
+
+('Toronto Blue Jays', 'Minnesota Twins')
+Most picked: joseberrios621244 with 581 picks
+Least picked: jaimegarcia448802 with 1 picks
+
+('Houston Astros', 'Atlanta Braves')
+Most picked: charliemorton450203 with 486 picks
+Least picked: kylefarnsworth150035 with 1 picks
+
+('Minnesota Twins', 'Atlanta Braves')
+Most picked: eddierosario592696 with 520 picks
+Least picked: johnryanmurphy571974 with 1 picks
+
+('Atlanta Braves', 'St. Louis Cardinals')
+Most picked: marcellozuna542303 with 799 picks
+Least picked: jorgesosa407901 with 1 picks
+
+('Boston Red Sox', 'Minnesota Twins')
+Most picked: davidortiz120074 with 923 picks
+Least picked: garygaetti114508 with 1 picks
+
+('New York Mets', 'St. Louis Cardinals')
+Most picked: keithhernandez115826 with 344 picks
+Least picked: billpulsipher120802 with 1 picks
+
+('Baltimore Orioles', 'Miami Marlins')
+Most picked: jeffconine112559 with 149 picks
+Least picked: jimmyyacabonis642231 with 1 picks
+
+('Tampa Bay Rays', 'Oakland Athletics')
+Most picked: josecanseco111962 with 139 picks
+Least picked: adampiatt276516 with 1 picks
+
+('Baltimore Orioles', 'Washington Nationals')
+Most picked: mattwieters446308 with 250 picks
+Least picked: stevekline117157 with 1 picks
+
+('Toronto Blue Jays', 'Chicago White Sox')
+Most picked: markbuehrle279824 with 253 picks
+Least picked: luisandujar110279 with 1 picks
+
+('Los Angeles Angels', 'Seattle Mariners')
+Most picked: chonefiggins408210 with 184 picks
+Least picked: toddcruz112907 with 1 picks
+
+('Tampa Bay Rays', 'Kansas City Royals')
+Most picked: jamesshields448306 with 151 picks
+Least picked: natekarns501992 with 1 picks
+
+('Atlanta Braves', 'Colorado Rockies')
+Most picked: bradhand543272 with 217 picks
+Least picked: juliantavarez123118 with 1 picks
+
+('Tampa Bay Rays', 'Atlanta Braves')
+Most picked: charliemorton450203 with 621 picks
+Least picked: tonygraffanino115017 with 1 picks
+
+('Chicago Cubs', 'St. Louis Cardinals')
+Most picked: willsoncontreras575929 with 1064 picks
+Least picked: josemartinez500874 with 1 picks
+
+('New York Yankees', 'Seattle Mariners')
+Most picked: ichirosuzuki400085 with 806 picks
+Least picked: toddwilliams124343 with 1 picks
+
+('New York Yankees', 'Los Angeles Dodgers')
+Most picked: joeygallo608336 with 962 picks
+Least picked: wilsonbetemit400140 with 1 picks
+
+('Cleveland Guardians', 'Atlanta Braves')
+Most picked: eddierosario592696 with 432 picks
+Least picked: ryanlavarnway543432 with 1 picks
+
+('Miami Marlins', 'Cincinnati Reds')
+Most picked: johnnycueto456501 with 242 picks
+Least picked: kevingregg276514 with 1 picks
+
+('Chicago White Sox', 'Oakland Athletics')
+Most picked: liamhendriks521230 with 294 picks
+Least picked: stanbahnsen110434 with 1 picks
+
+('Boston Red Sox', 'Arizona Diamondbacks')
+Most picked: jdmartinez502110 with 521 picks
+Least picked: vicentepadilla218894 with 1 picks
+
+('New York Yankees', 'Chicago Cubs')
+Most picked: anthonyrizzo519203 with 1768 picks
+Least picked: bobbyshantz122060 with 1 picks
+
+('St. Louis Cardinals', 'Colorado Rockies')
+Most picked: nolanarenado571448 with 1297 picks
+Least picked: larrybigbie406933 with 1 picks
+
+('New York Yankees', 'San Diego Padres')
+Most picked: mattcarpenter572761 with 497 picks
+Least picked: paulquantrill120824 with 1 picks
+
+('Houston Astros', 'New York Mets')
+Most picked: justinverlander434378 with 1969 picks
+Least picked: peteharnisch115487 with 1 picks
+
+('New York Yankees', 'St. Louis Cardinals')
+Most picked: harrisonbader664056 with 1303 picks
+Least picked: markreynolds448602 with 1 picks
+
+('Boston Red Sox', 'New York Mets')
+Most picked: tommypham502054 with 262 picks
+Least picked: jimdwyer113673 with 1 picks
+
+('Toronto Blue Jays', 'Kansas City Royals')
+Most picked: whitmerrifield593160 with 843 picks
+Least picked: patborders111232 with 1 picks
+
+('Detroit Tigers', 'Seattle Mariners')
+Most picked: eugeniosuarez553993 with 69 picks
+Least picked: tonybernazard110918 with 1 picks
+
+('Seattle Mariners', 'Pittsburgh Pirates')
+Most picked: carlossantana467793 with 417 picks
+Least picked: bobbylafromboise489039 with 1 picks
+
+('Minnesota Twins', 'Texas Rangers')
+Most picked: joeygallo608336 with 511 picks
+Least picked: philnevin119732 with 1 picks
+
+('New York Mets', 'Washington Nationals')
+Most picked: maxscherzer453286 with 1151 picks
+Least picked: scottstrickland232994 with 1 picks
+
+('Atlanta Braves', 'Chicago Cubs')
+Most picked: dansbyswanson621020 with 1230 picks
+Least picked: toddhollandsworth116075 with 1 picks
+
+('Philadelphia Phillies', 'Cincinnati Reds')
+Most picked: nickcastellanos592206 with 808 picks
+Least picked: johndenny113272 with 1 picks
+
+('Seattle Mariners', 'Washington Nationals')
+Most picked: randyjohnson116615 with 244 picks
+Least picked: dennismartinez118371 with 1 picks
+
+('Los Angeles Angels', 'New York Mets')
+Most picked: eduardoescobar500871 with 465 picks
+Least picked: johnbuck407833 with 1 picks
+
+('Cleveland Guardians', 'San Francisco Giants')
+Most picked: kennylofton117863 with 128 picks
+Least picked: bobnieman119791 with 1 picks
+
+('Atlanta Braves', 'New York Mets')
+Most picked: tomglavine114849 with 573 picks
+Least picked: danaeveland445968 with 1 picks
+
+('Kansas City Royals', 'Philadelphia Phillies')
+Most picked: carlossantana467793 with 143 picks
+Least picked: josedejesus113213 with 1 picks
+
+('New York Yankees', 'New York Mets')
+Most picked: darrylstrawberry122864 with 388 picks
+Least picked: kellystinnett122803 with 1 picks
+
+('New York Yankees', 'Los Angeles Angels')
+Most picked: giourshela570482 with 377 picks
+Least picked: stevebarber110550 with 1 picks
+
+('Los Angeles Dodgers', 'San Diego Padres')
+Most picked: mannymachado592518 with 1323 picks
+Least picked: budnorris502032 with 1 picks
+
+('Los Angeles Angels', 'Atlanta Braves')
+Most picked: raiseliglesias628452 with 473 picks
+Least picked: hoytwilhelm124261 with 1 picks
+
+('New York Yankees', 'Houston Astros')
+Most picked: gerritcole543037 with 1714 picks
+Least picked: peteincaviglia116386 with 1 picks
+
+('Philadelphia Phillies', 'Los Angeles Dodgers')
+Most picked: treaturner607208 with 1586 picks
+Least picked: aloliver119983 with 1 picks
+
+('Cleveland Guardians', 'New York Mets')
+Most picked: franciscolindor596019 with 1285 picks
+Least picked: wilsonramos467092 with 1 picks
+
+('Kansas City Royals', 'Milwaukee Brewers')
+Most picked: lorenzocain456715 with 519 picks
+Least picked: mikeboddicker111139 with 1 picks
+
+('New York Mets', 'Los Angeles Dodgers')
+Most picked: maxscherzer453286 with 1180 picks
+Least picked: donaase110003 with 1 picks
+
+('Cleveland Guardians', 'Kansas City Royals')
+Most picked: carlossantana467793 with 466 picks
+Least picked: tedpower120728 with 1 picks
+
+('Kansas City Royals', 'Los Angeles Angels')
+Most picked: mikemoustakas519058 with 394 picks
+Least picked: blakewood502028 with 1 picks
+
+('New York Mets', 'Chicago Cubs')
+Most picked: javierbaez595879 with 1114 picks
+Least picked: ronnycedeno430592 with 1 picks
+
+('New York Yankees', 'Atlanta Braves')
+Most picked: andruwjones116662 with 387 picks
+Least picked: lyleoverbay407489 with 1 picks
+
+('Tampa Bay Rays', 'San Francisco Giants')
+Most picked: evanlongoria446334 with 887 picks
+Least picked: damianmoss150305 with 1 picks
+
+('Toronto Blue Jays', 'San Francisco Giants')
+Most picked: brandonbelt474832 with 633 picks
+Least picked: aloliver119983 with 1 picks
+
+('Toronto Blue Jays', 'Los Angeles Dodgers')
+Most picked: hyunjinryu547943 with 617 picks
+Least picked: josecruzjr112903 with 1 picks
+
+('Tampa Bay Rays', 'Toronto Blue Jays')
+Most picked: kevinkiermaier595281 with 1009 picks
+Least picked: danaeveland445968 with 1 picks
+
+('Detroit Tigers', 'Atlanta Braves')
+Most picked: robbiegrossman543257 with 180 picks
+Least picked: patdobson113410 with 1 picks
+
+('Toronto Blue Jays', 'New York Mets')
+Most picked: chrisbassitt605135 with 391 picks
+Least picked: dominicleone608678 with 1 picks
+
+('Los Angeles Angels', 'Milwaukee Brewers')
+Most picked: hunterrenfroe592669 with 601 picks
+Least picked: donniemoore119292 with 1 picks
+
+('Atlanta Braves', 'Los Angeles Dodgers')
+Most picked: freddiefreeman518692 with 1696 picks
+Least picked: jimjohnson462382 with 1 picks
+
+('Colorado Rockies', 'San Francisco Giants')
+Most picked: krisbryant592178 with 805 picks
+Least picked: dustanmohr407380 with 1 picks
+
+('Los Angeles Dodgers', 'San Francisco Giants')
+Most picked: jocpederson592626 with 911 picks
+Least picked: hankbehrman110804 with 1 picks
+
+('New York Yankees', 'Miami Marlins')
+Most picked: giancarlostanton519317 with 1496 picks
+Least picked: paulquantrill120824 with 1 picks
+
+('Oakland Athletics', 'Atlanta Braves')
+Most picked: mattolson621566 with 1019 picks
+Least picked: kurtabbott110011 with 1 picks
+
+('Chicago White Sox', 'Houston Astros')
+Most picked: joseabreu547989 with 876 picks
+Least picked: brettmyers408206 with 1 picks
+
+('Milwaukee Brewers', 'San Diego Padres')
+Most picked: joshhader623352 with 871 picks
+Least picked: russellbranyan137140 with 1 picks
+
+('Detroit Tigers', 'Miami Marlins')
+Most picked: miguelcabrera408234 with 1089 picks
+Least picked: markredman150230 with 1 picks
+
+('Cleveland Guardians', 'St. Louis Cardinals')
+Most picked: andrewmiller453192 with 291 picks
+Least picked: ronvillone123725 with 1 picks
+
+('Kansas City Royals', 'Washington Nationals')
+Most picked: michaelataylor572191 with 293 picks
+Least picked: scottservice122012 with 1 picks
+
+('Miami Marlins', 'Philadelphia Phillies')
+Most picked: jeansegura516416 with 722 picks
+Least picked: naterobertson425146 with 1 picks
+
+('Washington Nationals', 'San Diego Padres')
+Most picked: juansoto665742 with 1413 picks
+Least picked: joshwilson425543 with 1 picks
+
+('New York Yankees', 'Chicago White Sox')
+Most picked: andrewbenintendi643217 with 600 picks
+Least picked: carlosmay118468 with 1 picks
+
+('New York Yankees', 'Tampa Bay Rays')
+Most picked: wadeboggs111153 with 432 picks
+Least picked: vidalnuno573064 with 1 picks
+
+('Houston Astros', 'Philadelphia Phillies')
+Most picked: hectorneris593576 with 365 picks
+Least picked: humbertoquintero279827 with 1 picks
+
+('Los Angeles Angels', 'St. Louis Cardinals')
+Most picked: albertpujols405395 with 1424 picks
+Least picked: bobduliba113611 with 1 picks
+
+('Arizona Diamondbacks', 'San Francisco Giants')
+Most picked: madisonbumgarner518516 with 664 picks
+Least picked: alanembree113833 with 1 picks
+
+('St. Louis Cardinals', 'Arizona Diamondbacks')
+Most picked: paulgoldschmidt502671 with 1318 picks
+Least picked: randychoate329092 with 1 picks
+
+('New York Yankees', 'Oakland Athletics')
+Most picked: jasongiambi114739 with 609 picks
+Least picked: curtblefary111096 with 1 picks
+
+('San Diego Padres', 'San Francisco Giants')
+Most picked: taylorrogers573124 with 220 picks
+Least picked: stevereed121002 with 1 picks
+
+('New York Yankees', 'Philadelphia Phillies')
+Most picked: didigregorius544369 with 928 picks
+Least picked: stanjavier116506 with 1 picks
+
+('Cleveland Guardians', 'Philadelphia Phillies')
+Most picked: clifflee117599 with 408 picks
+Least picked: ezequielcarrera485567 with 1 picks
+
+('Toronto Blue Jays', 'Arizona Diamondbacks')
+Most picked: daultonvarsho662139 with 461 picks
+Least picked: lourdesgurrieljr.666971 with 1 picks
+
+('New York Yankees', 'Pittsburgh Pirates')
+Most picked: gerritcole543037 with 1144 picks
+Least picked: leemazzilli118499 with 1 picks
+
+('New York Yankees', 'Arizona Diamondbacks')
+Most picked: randyjohnson116615 with 1192 picks
+Least picked: jonathanalbaladejo452293 with 1 picks
+
+('Los Angeles Angels', 'Philadelphia Phillies')
+Most picked: brandonmarsh669016 with 585 picks
+Least picked: toddfrohwirth114458 with 1 picks
+
+('Miami Marlins', 'New York Mets')
+Most picked: davidrobertson502085 with 429 picks
+Least picked: billyhamilton571740 with 1 picks
+
+('New York Yankees', 'Minnesota Twins')
+Most picked: joeygallo608336 with 618 picks
+Least picked: corygearrin518715 with 1 picks
+
+('New York Yankees', 'Washington Nationals')
+Most picked: lukevoit572228 with 374 picks
+Least picked: ronvillone123725 with 1 picks
+
+('Seattle Mariners', 'St. Louis Cardinals')
+Most picked: koltenwong543939 with 499 picks
+Least picked: jefffassero114032 with 1 picks
+
+('New York Mets', 'San Diego Padres')
+Most picked: tommypham502054 with 329 picks
+Least picked: henryblanco111072 with 1 picks
+
+('Baltimore Orioles', 'New York Mets')
+Most picked: jamesmccann543510 with 428 picks
+Least picked: hobielandrith117456 with 1 picks
+
+('Minnesota Twins', 'Houston Astros')
+Most picked: carloscorrea621043 with 1140 picks
+Least picked: philnevin119732 with 1 picks
+
+('Washington Nationals', 'Chicago Cubs')
+Most picked: kyleschwarber656941 with 577 picks
+Least picked: stevensouzajr519306 with 1 picks
+
+('Detroit Tigers', 'Los Angeles Angels')
+Most picked: michaellorenzen547179 with 209 picks
+Least picked: donlee117602 with 1 picks
+
+('Boston Red Sox', 'Houston Astros')
+Most picked: christianvazquez543877 with 704 picks
+Least picked: bradpeacock502748 with 1 picks
+
+('Tampa Bay Rays', 'Houston Astros')
+Most picked: josesiri642350 with 539 picks
+Least picked: lukescott432928 with 1 picks
+
+('Washington Nationals', 'St. Louis Cardinals')
+Most picked: lanethomas657041 with 204 picks
+Least picked: jefffassero114032 with 1 picks
+
+('Chicago White Sox', 'Atlanta Braves')
+Most picked: craigkimbrel518886 with 204 picks
+Least picked: rossdetwiler446321 with 1 picks
+
+('Tampa Bay Rays', 'Texas Rangers')
+Most picked: nathaniellowe663993 with 231 picks
+Least picked: freddyguzman430686 with 1 picks
+
+('Detroit Tigers', 'Houston Astros')
+Most picked: justinverlander434378 with 1455 picks
+Least picked: gustriandos123464 with 1 picks
+
+('Cleveland Guardians', 'Houston Astros')
+Most picked: michaelbrantley488726 with 460 picks
+Least picked: jimgentile114696 with 1 picks
+
+('Miami Marlins', 'St. Louis Cardinals')
+Most picked: marcellozuna542303 with 689 picks
+Least picked: wadeleblanc453281 with 1 picks
+
+('Boston Red Sox', 'New York Yankees')
+Most picked: baberuth121578 with 1141 picks
+Least picked: alanembree113833 with 1 picks
+
+('Houston Astros', 'Texas Rangers')
+Most picked: nolanryan121597 with 1153 picks
+Least picked: cjnitkowski119809 with 1 picks
+
+('Boston Red Sox', 'Chicago White Sox')
+Most picked: chrissale519242 with 733 picks
+Least picked: tonypena120370 with 1 picks
+
+('Chicago Cubs', 'San Diego Padres')
+Most picked: yudarvish506433 with 626 picks
+Least picked: marvellwynne124636 with 1 picks
+
+('Chicago White Sox', 'Chicago Cubs')
+Most picked: nickmadrigal663611 with 385 picks
+Least picked: moedrabowsky113539 with 1 picks
+
+('Chicago Cubs', 'Los Angeles Dodgers')
+Most picked: codybellinger641355 with 1852 picks
+Least picked: royhenshaw115794 with 1 picks
+
+('Miami Marlins', 'Chicago Cubs')
+Most picked: jorgesoler624585 with 547 picks
+Least picked: colinrea607067 with 1 picks
+
+('Detroit Tigers', 'Texas Rangers')
+Most picked: maxscherzer453286 with 506 picks
+Least picked: johnnygrubb115205 with 1 picks
+
+('Boston Red Sox', 'Los Angeles Dodgers')
+Most picked: mookiebetts605141 with 1076 picks
+Least picked: j.d.martinez502110 with 1 picks
+
+('Texas Rangers', 'Arizona Diamondbacks')
+Most picked: maxscherzer453286 with 268 picks
+Least picked: dennysreyes121096 with 1 picks
+
+('Los Angeles Angels', 'San Diego Padres')
+Most picked: brandondrury592273 with 354 picks
+Least picked: craiglefferts117628 with 1 picks
+
+('Kansas City Royals', 'Chicago Cubs')
+Most picked: aroldischapman547973 with 490 picks
+Least picked: tomgoodwin114961 with 1 picks
+
+('Baltimore Orioles', 'New York Yankees')
+Most picked: aaronhicks543305 with 746 picks
+Least picked: curtblefary111096 with 1 picks
+
+('Houston Astros', 'Milwaukee Brewers')
+Most picked: zackgreinke425844 with 224 picks
+Least picked: edwinmaysonet446474 with 1 picks
+
+('Toronto Blue Jays', 'Miami Marlins')
+Most picked: josereyes408314 with 178 picks
+Least picked: tomkoehler543408 with 1 picks
+
+('Seattle Mariners', 'Miami Marlins')
+Most picked: ichirosuzuki400085 with 561 picks
+Least picked: ronvillone123725 with 1 picks
+
+('Oakland Athletics', 'San Diego Padres')
+Most picked: seanmanaea640455 with 302 picks
+Least picked: olliebrown111581 with 1 picks
+
+('Baltimore Orioles', 'Chicago Cubs')
+Most picked: treymancini641820 with 785 picks
+Least picked: stevebarber110550 with 1 picks
+
+('Boston Red Sox', 'Cleveland Guardians')
+Most picked: mannyramirez120903 with 459 picks
+Least picked: mickeyvernon123711 with 1 picks
+
+('Milwaukee Brewers', 'Los Angeles Dodgers')
+Most picked: zackgreinke425844 with 231 picks
+Least picked: jimmywynn124634 with 1 picks
+
+('Houston Astros', 'San Francisco Giants')
+Most picked: hunterpence452254 with 313 picks
+Least picked: jackiebrandt111388 with 1 picks
+
+('St. Louis Cardinals', 'San Francisco Giants')
+Most picked: carlosbeltran136860 with 139 picks
+Least picked: rogerconnor112589 with 1 picks
+
+('Atlanta Braves', 'Miami Marlins')
+Most picked: jorgesoler624585 with 835 picks
+Least picked: javiervazquez134320 with 1 picks
+
+('Cleveland Guardians', 'Oakland Athletics')
+Most picked: cococrisp424825 with 189 picks
+Least picked: jimgentile114696 with 1 picks
+
+('Oakland Athletics', 'Arizona Diamondbacks')
+Most picked: starlingmarte516782 with 128 picks
+Least picked: mikefetters114097 with 1 picks
+
+('Los Angeles Angels', 'Washington Nationals')
+Most picked: anthonyrendon543685 with 1084 picks
+Least picked: ramonortiz150009 with 1 picks
+
+('Cleveland Guardians', 'Minnesota Twins')
+Most picked: jimthome123272 with 225 picks
+Least picked: wilsonramos467092 with 1 picks
+
+('Baltimore Orioles', 'Houston Astros')
+Most picked: treymancini641820 with 860 picks
+Least picked: rayknight117191 with 1 picks
+
+('Kansas City Royals', 'Arizona Diamondbacks')
+Most picked: zackgreinke425844 with 887 picks
+Least picked: emiliobonifacio466988 with 1 picks
+
+('Tampa Bay Rays', 'San Diego Padres')
+Most picked: blakesnell605483 with 805 picks
+Least picked: ryanwebb444436 with 1 picks
+
+('Los Angeles Angels', 'Oakland Athletics')
+Most picked: reggiejackson116439 with 168 picks
+Least picked: mikemagnante118141 with 1 picks
+
+('Houston Astros', 'Seattle Mariners')
+Most picked: randyjohnson116615 with 350 picks
+Least picked: wadeleblanc453281 with 1 picks
+
+('Minnesota Twins', 'Milwaukee Brewers')
+Most picked: paulmolitor119236 with 303 picks
+Least picked: rickdempsey113264 with 1 picks
+
+('Kansas City Royals', 'Houston Astros')
+Most picked: zackgreinke425844 with 1086 picks
+Least picked: jimyork124676 with 1 picks
+
+('Cleveland Guardians', 'Colorado Rockies')
+Most picked: nolanjones666134 with 139 picks
+Least picked: alanembree113833 with 1 picks
+
+('Minnesota Twins', 'Oakland Athletics')
+Most picked: joshdonaldson518626 with 311 picks
+Least picked: keithatherton110362 with 1 picks
+
+('Toronto Blue Jays', 'Houston Astros')
+Most picked: georgespringer543807 with 1256 picks
+Least picked: johnmayberry118480 with 1 picks
+
+('Chicago White Sox', 'Detroit Tigers')
+Most picked: magglioordonez120044 with 267 picks
+Least picked: lerrinlagrow117410 with 1 picks
+
+('Chicago White Sox', 'Washington Nationals')
+Most picked: adameaton594809 with 354 picks
+Least picked: mattthornton407819 with 1 picks
+
+('Baltimore Orioles', 'Kansas City Royals')
+Most picked: jordanlyles543475 with 157 picks
+Least picked: toddcruz112907 with 1 picks
+
+('New York Yankees', 'Milwaukee Brewers')
+Most picked: ccsabathia282332 with 680 picks
+Least picked: tonyfernandez114079 with 1 picks
+
+('Miami Marlins', 'Milwaukee Brewers')
+Most picked: christianyelich592885 with 971 picks
+Least picked: joseurena570632 with 1 picks
+
+('Tampa Bay Rays', 'Milwaukee Brewers')
+Most picked: willyadames642715 with 631 picks
+Least picked: lukemaile571912 with 1 picks
+
+('Tampa Bay Rays', 'Chicago Cubs')
+Most picked: benzobrist450314 with 584 picks
+Least picked: joselobaton446653 with 1 picks
+
+('Kansas City Royals', 'Texas Rangers')
+Most picked: aroldischapman547973 with 646 picks
+Least picked: gregcadaret111854 with 1 picks
+
+('New York Mets', 'Arizona Diamondbacks')
+Most picked: eduardoescobar500871 with 404 picks
+Least picked: jakehager606993 with 1 picks
+
+('Los Angeles Angels', 'Chicago Cubs')
+Most picked: tommylastella600303 with 232 picks
+Least picked: danbriggs111462 with 1 picks
+
+('Houston Astros', 'Arizona Diamondbacks')
+Most picked: zackgreinke425844 with 493 picks
+Least picked: chrissnyder430965 with 1 picks
+
+('Boston Red Sox', 'Kansas City Royals')
+Most picked: andrewbenintendi643217 with 783 picks
+Least picked: joefoy114368 with 1 picks
+
+('Cleveland Guardians', 'Washington Nationals')
+Most picked: joshbell605137 with 507 picks
+Least picked: rossgrimsley115171 with 1 picks
+
+('Detroit Tigers', 'Philadelphia Phillies')
+Most picked: nickcastellanos592206 with 457 picks
+Least picked: lilstoner122834 with 1 picks
+
+('Toronto Blue Jays', 'Chicago Cubs')
+Most picked: marcusstroman573186 with 823 picks
+Least picked: josemolina150040 with 1 picks
+
+('Detroit Tigers', 'New York Mets')
+Most picked: javierbaez595879 with 801 picks
+Least picked: bubbatrammell123438 with 1 picks
+
+('Los Angeles Angels', 'Colorado Rockies')
+Most picked: cjcron543068 with 774 picks
+Least picked: renegonzales114922 with 1 picks
+
+('Pittsburgh Pirates', 'St. Louis Cardinals')
+Most picked: davidfreese501896 with 285 picks
+Least picked: juniorfernandez658551 with 1 picks
+
+('Tampa Bay Rays', 'Colorado Rockies')
+Most picked: cjcron543068 with 155 picks
+Least picked: c.j.cron543068 with 1 picks
+
+('Boston Red Sox', 'Atlanta Braves')
+Most picked: adamduvall594807 with 644 picks
+Least picked: bobbythomson123308 with 1 picks
+
+('Detroit Tigers', 'Oakland Athletics')
+Most picked: yoeniscespedes493316 with 164 picks
+Least picked: buddygroom115183 with 1 picks
+
+('Kansas City Royals', 'Atlanta Braves')
+Most picked: jorgesoler624585 with 583 picks
+Least picked: robertohernandez115832 with 1 picks
+
+('Detroit Tigers', 'Pittsburgh Pirates')
+Most picked: austinmeadows640457 with 161 picks
+Least picked: davejohnson116578 with 1 picks
+
+('New York Yankees', 'Texas Rangers')
+Most picked: joeygallo608336 with 656 picks
+Least picked: donslaught122317 with 1 picks
+
+('Seattle Mariners', 'Atlanta Braves')
+Most picked: robinsoncano429664 with 179 picks
+Least picked: mattwisler605538 with 1 picks
+
+('Cincinnati Reds', 'St. Louis Cardinals')
+Most picked: scottrolen121409 with 357 picks
+Least picked: bretttomko123387 with 1 picks
+
+('Atlanta Braves', 'San Francisco Giants')
+Most picked: jocpederson592626 with 674 picks
+Least picked: billmckechnie118766 with 1 picks
+
+('Oakland Athletics', 'Pittsburgh Pirates')
+Most picked: starlingmarte516782 with 242 picks
+Least picked: chrisresop434592 with 1 picks
+
+('Milwaukee Brewers', 'Pittsburgh Pirates')
+Most picked: andrewmccutchen457705 with 807 picks
+Least picked: neftalifeliz491703 with 1 picks
+
+('Chicago White Sox', 'Arizona Diamondbacks')
+Most picked: ajpollock572041 with 209 picks
+Least picked: kyledrabek475138 with 1 picks
+
+('Toronto Blue Jays', 'Colorado Rockies')
+Most picked: troytulowitzki453064 with 700 picks
+Least picked: lancepainter120183 with 1 picks
+
+('Boston Red Sox', 'Texas Rangers')
+Most picked: nathaneovaldi543135 with 555 picks
+Least picked: brandonsnyder474319 with 1 picks
+
+('Houston Astros', 'Oakland Athletics')
+Most picked: tonykemp643393 with 365 picks
+Least picked: jimcorsi112704 with 1 picks
+
+('Toronto Blue Jays', 'Texas Rangers')
+Most picked: marcussemien543760 with 945 picks
+Least picked: victorcruz112908 with 1 picks
+
+('Boston Red Sox', 'Pittsburgh Pirates')
+Most picked: richhill448179 with 606 picks
+Least picked: johnnygooch114940 with 1 picks
+
+('Boston Red Sox', 'St. Louis Cardinals')
+Most picked: jonlester452657 with 277 picks
+Least picked: felipelopez150479 with 1 picks
+
+('Toronto Blue Jays', 'St. Louis Cardinals')
+Most picked: pauldejong657557 with 415 picks
+Least picked: coreypatterson279913 with 1 picks
+
+('Washington Nationals', 'Arizona Diamondbacks')
+Most picked: maxscherzer453286 with 312 picks
+Least picked: ryanchurch425508 with 1 picks
+
+('Minnesota Twins', 'Washington Nationals')
+Most picked: nelsoncruz443558 with 244 picks
+Least picked: luisayala425646 with 1 picks
+
+('Milwaukee Brewers', 'Colorado Rockies')
+Most picked: brentsuter608718 with 120 picks
+Least picked: brettanderson474463 with 1 picks
+
+('Philadelphia Phillies', 'Washington Nationals')
+Most picked: bryceharper547180 with 1331 picks
+Least picked: grantjackson116428 with 1 picks
+
+('Pittsburgh Pirates', 'San Diego Padres')
+Most picked: joshbell605137 with 305 picks
+Least picked: bobowchinko120132 with 1 picks
+
+('Houston Astros', 'Los Angeles Angels')
+Most picked: nolanryan121597 with 608 picks
+Least picked: bobelinsky110812 with 1 picks
+
+('Chicago White Sox', 'Pittsburgh Pirates')
+Most picked: joshharrison543281 with 200 picks
+Least picked: halrhyne121132 with 1 picks
+
+('Oakland Athletics', 'San Francisco Giants')
+Most picked: barryzito217096 with 509 picks
+Least picked: corbanjoseph543377 with 1 picks
+
+('New York Yankees', 'Cincinnati Reds')
+Most picked: aroldischapman547973 with 794 picks
+Least picked: gregcadaret111854 with 1 picks
+
+('Pittsburgh Pirates', 'Arizona Diamondbacks')
+Most picked: starlingmarte516782 with 293 picks
+Least picked: johnmcdonald150348 with 1 picks
+
+('Colorado Rockies', 'San Diego Padres')
+Most picked: juricksonprofar595777 with 475 picks
+Least picked: jasonmarquis150302 with 1 picks
+
+('Boston Red Sox', 'Los Angeles Angels')
+Most picked: hunterrenfroe592669 with 600 picks
+Least picked: mikeeasler113701 with 1 picks
+
+('Chicago White Sox', 'St. Louis Cardinals')
+Most picked: lancelynn458681 with 363 picks
+Least picked: kipwells150337 with 1 picks
+
+('Oakland Athletics', 'Washington Nationals')
+Most picked: seandoolittle448281 with 463 picks
+Least picked: frednorman119837 with 1 picks
+
+('Toronto Blue Jays', 'Philadelphia Phillies')
+Most picked: royhalladay136880 with 1055 picks
+Least picked: joaquinbenoit276542 with 1 picks
+
+('Oakland Athletics', 'Colorado Rockies')
+Most picked: mattholliday407812 with 164 picks
+Least picked: gregsmith460105 with 1 picks
+
+('Toronto Blue Jays', 'Pittsburgh Pirates')
+Most picked: josebautista430832 with 317 picks
+Least picked: benitosantiago121693 with 1 picks
+
+('Atlanta Braves', 'San Diego Padres')
+Most picked: gregmaddux118120 with 184 picks
+Least picked: patdobson113410 with 1 picks
+
+('Toronto Blue Jays', 'Atlanta Braves')
+Most picked: joshdonaldson518626 with 473 picks
+Least picked: miguelbatista110683 with 1 picks
+
+('New York Mets', 'Philadelphia Phillies')
+Most picked: zackwheeler554430 with 462 picks
+Least picked: davidnewhan209315 with 1 picks
+
+('Chicago White Sox', 'Miami Marlins')
+Most picked: jakeburger669394 with 360 picks
+Least picked: odrisamerdespaigne628333 with 1 picks
+
+('Toronto Blue Jays', 'Milwaukee Brewers')
+Most picked: rowdytellez642133 with 568 picks
+Least picked: jeremyjeffress502026 with 1 picks
+
+('Philadelphia Phillies', 'Milwaukee Brewers')
+Most picked: andrewmccutchen457705 with 482 picks
+Least picked: jeffjuden116785 with 1 picks
+
+('Baltimore Orioles', 'Pittsburgh Pirates')
+Most picked: adamfrazier624428 with 324 picks
+Least picked: yamaiconavarro501605 with 1 picks
+
+('Boston Red Sox', 'Oakland Athletics')
+Most picked: johnnydamon113028 with 377 picks
+Least picked: alsimmons122240 with 1 picks
+
+('New York Yankees', 'Kansas City Royals')
+Most picked: aroldischapman547973 with 878 picks
+Least picked: mikearmstrong110326 with 1 picks
+
+('Milwaukee Brewers', 'St. Louis Cardinals')
+Most picked: koltenwong543939 with 731 picks
+Least picked: tylerwebb643778 with 1 picks
+
+('Houston Astros', 'Los Angeles Dodgers')
+Most picked: zackgreinke425844 with 526 picks
+Least picked: randywolf150116 with 1 picks
+
+('Cleveland Guardians', 'Arizona Diamondbacks')
+Most picked: trevorbauer545333 with 246 picks
+Least picked: jorgejulio406402 with 1 picks
+
+('Minnesota Twins', 'Los Angeles Angels')
+Most picked: toriihunter116338 with 272 picks
+Least picked: blakeparker453284 with 1 picks
+
+('Boston Red Sox', 'Tampa Bay Rays')
+Most picked: davidprice456034 with 442 picks
+Least picked: chadbradford136268 with 1 picks
+
+('Chicago White Sox', 'Los Angeles Dodgers')
+Most picked: joekelly523260 with 596 picks
+Least picked: calabrams110026 with 1 picks
+
+('Kansas City Royals', 'Pittsburgh Pirates')
+Most picked: carlossantana467793 with 579 picks
+Least picked: genegarber114577 with 1 picks
+
+('Kansas City Royals', 'New York Mets')
+Most picked: carlosbeltran136860 with 255 picks
+Least picked: glendonrusch121556 with 1 picks
+
+('Toronto Blue Jays', 'San Diego Padres')
+Most picked: robertoalomar110183 with 87 picks
+Least picked: chrisgomez114909 with 1 picks
+
+('Minnesota Twins', 'Los Angeles Dodgers')
+Most picked: joeygallo608336 with 786 picks
+Least picked: bobbydarwin113059 with 1 picks
+
+('Toronto Blue Jays', 'Oakland Athletics')
+Most picked: mattchapman656305 with 738 picks
+Least picked: daverevering121092 with 1 picks
+
+('Texas Rangers', 'San Diego Padres')
+Most picked: yudarvish506433 with 546 picks
+Least picked: mikehargrove115474 with 1 picks
+
+('Cleveland Guardians', 'Milwaukee Brewers')
+Most picked: ccsabathia282332 with 409 picks
+Least picked: jamieeasterly113711 with 1 picks
+
+('Minnesota Twins', 'Miami Marlins')
+Most picked: luisarraez650333 with 730 picks
+Least picked: loganforsythe523253 with 1 picks
+
+('Baltimore Orioles', 'Los Angeles Angels')
+Most picked: marktrumbo444432 with 360 picks
+Least picked: parkerbridwell592170 with 1 picks
+
+('Minnesota Twins', 'San Diego Padres')
+Most picked: nelsoncruz443558 with 355 picks
+Least picked: timmelville543532 with 1 picks
+
+('Atlanta Braves', 'Pittsburgh Pirates')
+Most picked: charliemorton450203 with 261 picks
+Least picked: davidross424325 with 1 picks
+
+('Tampa Bay Rays', 'Pittsburgh Pirates')
+Most picked: chrisarcher502042 with 524 picks
+Least picked: erikbedard407853 with 1 picks
+
+('Toronto Blue Jays', 'Cleveland Guardians')
+Most picked: edwinencarnacion429665 with 305 picks
+Least picked: maurogozzo115000 with 1 picks
+
+('Tampa Bay Rays', 'Cleveland Guardians')
+Most picked: coreykluber446372 with 210 picks
+Least picked: rickwhite124184 with 1 picks
+
+('Oakland Athletics', 'Texas Rangers')
+Most picked: marcussemien543760 with 553 picks
+Least picked: bretttomko123387 with 1 picks
+
+('New York Yankees', 'Colorado Rockies')
+Most picked: djlemahieu518934 with 913 picks
+Least picked: joeharvey642840 with 1 picks
+
+('Seattle Mariners', 'Arizona Diamondbacks')
+Most picked: randyjohnson116615 with 707 picks
+Least picked: jackcust400091 with 1 picks
+
+('Tampa Bay Rays', 'Philadelphia Phillies')
+Most picked: zacheflin621107 with 476 picks
+Least picked: marlonanderson136724 with 1 picks
+
+('Boston Red Sox', 'San Diego Padres')
+Most picked: xanderbogaerts593428 with 1323 picks
+Least picked: clameredith448592 with 1 picks
+
+('Baltimore Orioles', 'Chicago White Sox')
+Most picked: haroldbaines110456 with 128 picks
+Least picked: jerryadair110042 with 1 picks
+
+('Boston Red Sox', 'Colorado Rockies')
+Most picked: trevorstory596115 with 1064 picks
+Least picked: juliantavarez123118 with 1 picks
+
+('Chicago White Sox', 'Kansas City Royals')
+Most picked: andrewbenintendi643217 with 443 picks
+Least picked: cheslorcuthbert596144 with 1 picks
+
+('Miami Marlins', 'Pittsburgh Pirates')
+Most picked: jacobstallings607732 with 332 picks
+Least picked: arquimedescaminero491708 with 1 picks
+
+('Boston Red Sox', 'Cincinnati Reds')
+Most picked: bronsonarroyo276520 with 373 picks
+Least picked: brucechen136600 with 1 picks
+
+('Detroit Tigers', 'Chicago Cubs')
+Most picked: javierbaez595879 with 1158 picks
+Least picked: halmanders118228 with 1 picks
+
+('Detroit Tigers', 'San Diego Padres')
+Most picked: iankinsler435079 with 97 picks
+Least picked: sidmonge119249 with 1 picks
+
+('Washington Nationals', 'Milwaukee Brewers')
+Most picked: lukevoit572228 with 181 picks
+Least picked: tommymilone543548 with 1 picks
+
+('Baltimore Orioles', 'Boston Red Sox')
+Most picked: stevepearce456665 with 281 picks
+Least picked: darnellmcdonald150021 with 1 picks
+
+('Oakland Athletics', 'Chicago Cubs')
+Most picked: jonlester452657 with 192 picks
+Least picked: tommydavis113112 with 1 picks
+
+('Cincinnati Reds', 'Pittsburgh Pirates')
+Most picked: kevinnewman621028 with 181 picks
+Least picked: lloydmcclendon118576 with 1 picks
+
+('Los Angeles Angels', 'Texas Rangers')
+Most picked: joshhamilton285078 with 513 picks
+Least picked: davechalk112168 with 1 picks
+
+('Boston Red Sox', 'Miami Marlins')
+Most picked: hanleyramirez434670 with 283 picks
+Least picked: mattmantei118256 with 1 picks
+
+('Milwaukee Brewers', 'Arizona Diamondbacks')
+Most picked: zackgreinke425844 with 207 picks
+Least picked: devonwhite124164 with 1 picks
+
+('Cleveland Guardians', 'Chicago Cubs')
+Most picked: jasonkipnis543401 with 457 picks
+Least picked: dougjones116682 with 1 picks
+
+('Oakland Athletics', 'Milwaukee Brewers')
+Most picked: rolliefingers114129 with 133 picks
+Least picked: danaeveland445968 with 1 picks
+
+('New York Yankees', 'Detroit Tigers')
+Most picked: curtisgranderson434158 with 529 picks
+Least picked: jackphillips120519 with 1 picks
+
+('Boston Red Sox', 'San Francisco Giants')
+Most picked: pablosandoval467055 with 756 picks
+Least picked: davidaardsma430911 with 1 picks
+
+('Cleveland Guardians', 'Detroit Tigers')
+Most picked: victormartinez400121 with 161 picks
+Least picked: patdobson113410 with 1 picks
+
+('Texas Rangers', 'Chicago Cubs')
+Most picked: aroldischapman547973 with 350 picks
+Least picked: tysonmiller668338 with 1 picks
+
+('Philadelphia Phillies', 'Pittsburgh Pirates')
+Most picked: andrewmccutchen457705 with 940 picks
+Least picked: wallybackman110419 with 1 picks
+
+('Seattle Mariners', 'Chicago Cubs')
+Most picked: jamiemoyer119469 with 144 picks
+Least picked: greghibbard115884 with 1 picks
+
+('Cleveland Guardians', 'San Diego Padres')
+Most picked: joshbell605137 with 558 picks
+Least picked: broderickperkins120420 with 1 picks
+
+('Baltimore Orioles', 'Texas Rangers')
+Most picked: nelsoncruz443558 with 293 picks
+Least picked: peteincaviglia116386 with 1 picks
+
+('Chicago Cubs', 'Pittsburgh Pirates')
+Most picked: aramisramirez133380 with 246 picks
+Least picked: bobbyshantz122060 with 1 picks
+
+('Arizona Diamondbacks', 'Los Angeles Dodgers')
+Most picked: zackgreinke425844 with 432 picks
+Least picked: henryblanco111072 with 1 picks
+
+('Los Angeles Angels', 'Arizona Diamondbacks')
+Most picked: justinupton457708 with 170 picks
+Least picked: jasongrimsley115169 with 1 picks
+
+('Baltimore Orioles', 'St. Louis Cardinals')
+Most picked: jackflaherty656427 with 647 picks
+Least picked: hermanbronkie111506 with 1 picks
+
+('Pittsburgh Pirates', 'Los Angeles Dodgers')
+Most picked: richhill448179 with 655 picks
+Least picked: ginocimoli112293 with 1 picks
+
+('Minnesota Twins', 'Chicago Cubs')
+Most picked: michaelfulmer605242 with 78 picks
+Least picked: joedecker113188 with 1 picks
+
+('Baltimore Orioles', 'Tampa Bay Rays')
+Most picked: nelsoncruz443558 with 159 picks
+Least picked: natekarns501992 with 1 picks
+
+('Philadelphia Phillies', 'Chicago Cubs')
+Most picked: kyleschwarber656941 with 1013 picks
+Least picked: eddiewaitkus123795 with 1 picks
+
+('Baltimore Orioles', 'Atlanta Braves')
+Most picked: nickmarkakis455976 with 566 picks
+Least picked: generobertson121290 with 1 picks
+
+('Oakland Athletics', 'Los Angeles Dodgers')
+Most picked: maxmuncy571970 with 429 picks
+Least picked: jimgentile114696 with 1 picks
+
+('Chicago White Sox', 'Philadelphia Phillies')
+Most picked: craigkimbrel518886 with 307 picks
+Least picked: dannytartabull123096 with 1 picks
+
+('Los Angeles Angels', 'Los Angeles Dodgers')
+Most picked: albertpujols405395 with 763 picks
+Least picked: raulmondesi119247 with 1 picks
+
+('Texas Rangers', 'Cincinnati Reds')
+Most picked: aroldischapman547973 with 381 picks
+Least picked: philgosselin594838 with 1 picks
+
+('Philadelphia Phillies', 'Arizona Diamondbacks')
+Most picked: curtschilling121811 with 314 picks
+Least picked: rodrigolopez150438 with 1 picks
+
+('Texas Rangers', 'St. Louis Cardinals')
+Most picked: jordanmontgomery656756 with 285 picks
+Least picked: criscarpenter112021 with 1 picks
+
+('Pittsburgh Pirates', 'San Francisco Giants')
+Most picked: barrybonds111188 with 873 picks
+Least picked: jeffrobinson121315 with 1 picks
+
+('Chicago Cubs', 'Milwaukee Brewers')
+Most picked: victorcaratini605170 with 168 picks
+Least picked: robertmachado118079 with 1 picks
+
+('Texas Rangers', 'New York Mets')
+Most picked: maxscherzer453286 with 983 picks
+Least picked: markclark112332 with 1 picks
+
+('Atlanta Braves', 'Washington Nationals')
+Most picked: bradhand543272 with 169 picks
+Least picked: juliantavarez123118 with 1 picks
+
+('Houston Astros', 'Miami Marlins')
+Most picked: yuligurriel493329 with 498 picks
+Least picked: randywolf150116 with 1 picks
+
+('Cincinnati Reds', 'Los Angeles Dodgers')
+Most picked: trevorbauer545333 with 527 picks
+Least picked: donzimmer124768 with 1 picks
+
+('Philadelphia Phillies', 'Colorado Rockies')
+Most picked: bradhand543272 with 287 picks
+Least picked: turkwendell124084 with 1 picks
+
+('Baltimore Orioles', 'Cleveland Guardians')
+Most picked: jimthome123272 with 185 picks
+Least picked: martycordova112682 with 1 picks
+
+('Milwaukee Brewers', 'San Francisco Giants')
+Most picked: andrewmccutchen457705 with 216 picks
+Least picked: jeffreyhammonds115394 with 1 picks
+
+('Detroit Tigers', 'Washington Nationals')
+Most picked: maxscherzer453286 with 759 picks
+Least picked: deivicruz112897 with 1 picks
+
+('Cincinnati Reds', 'San Francisco Giants')
+Most picked: johnnycueto456501 with 355 picks
+Least picked: jeffreyhammonds115394 with 1 picks
+
+('Texas Rangers', 'Miami Marlins')
+Most picked: ivanrodriguez121358 with 328 picks
+Least picked: robbnen119718 with 1 picks
+
+('Kansas City Royals', 'Miami Marlins')
+Most picked: jorgesoler624585 with 668 picks
+Least picked: miguelolivo400018 with 1 picks
+
+('New York Yankees', 'San Francisco Giants')
+Most picked: carlosrodon607074 with 772 picks
+Least picked: tonylazzeri117577 with 1 picks
+
+('Seattle Mariners', 'New York Mets')
+Most picked: robinsoncano429664 with 547 picks
+Least picked: ronnycedeno430592 with 1 picks
+
+('New York Yankees', 'Cleveland Guardians')
+Most picked: ccsabathia282332 with 492 picks
+Least picked: daviddellucci113240 with 1 picks
+
+('Miami Marlins', 'Arizona Diamondbacks')
+Most picked: zacgallen668678 with 198 picks
+Least picked: yusmeiropetit433589 with 1 picks
+
+('Boston Red Sox', 'Philadelphia Phillies')
+Most picked: kyleschwarber656941 with 777 picks
+Least picked: kylekendrick452718 with 1 picks
+
+('Chicago White Sox', 'Seattle Mariners')
+Most picked: kengriffeyjr115135 with 342 picks
+Least picked: kengriffeyjr.115135 with 1 picks
+
+('Baltimore Orioles', 'Toronto Blue Jays')
+Most picked: kevingausman592332 with 366 picks
+Least picked: jimmyparedes517370 with 1 picks
+
+('Texas Rangers', 'Atlanta Braves')
+Most picked: markteixeira407893 with 239 picks
+Least picked: philgosselin594838 with 1 picks
+
+('Seattle Mariners', 'Milwaukee Brewers')
+Most picked: koltenwong543939 with 423 picks
+Least picked: luissardinas596143 with 1 picks
+
+('Tampa Bay Rays', 'Arizona Diamondbacks')
+Most picked: evanlongoria446334 with 459 picks
+Least picked: midrecummings112937 with 1 picks
+
+('Detroit Tigers', 'St. Louis Cardinals')
+Most picked: jhonnyperalta425509 with 170 picks
+Least picked: leedressen113558 with 1 picks
+
+('Oakland Athletics', 'New York Mets')
+Most picked: markcanha592192 with 531 picks
+Least picked: kurtabbott110011 with 1 picks
+
+('Chicago White Sox', 'Los Angeles Angels')
+Most picked: lucasgiolito608337 with 629 picks
+Least picked: timnordbrook119831 with 1 picks
+
+('Texas Rangers', 'Los Angeles Dodgers')
+Most picked: coreyseager608369 with 1211 picks
+Least picked: toddzeile124755 with 1 picks
+
+('Baltimore Orioles', 'Los Angeles Dodgers')
+Most picked: mannymachado592518 with 1123 picks
+Least picked: greggolson120002 with 1 picks
+
+('New York Mets', 'Cincinnati Reds')
+Most picked: tommypham502054 with 244 picks
+Least picked: rickreed120999 with 1 picks
+
+('Texas Rangers', 'Washington Nationals')
+Most picked: maxscherzer453286 with 705 picks
+Least picked: kenhill115941 with 1 picks
+
+('Tampa Bay Rays', 'Miami Marlins')
+Most picked: joeywendle621563 with 387 picks
+Least picked: charlesjohnson116569 with 1 picks
+
+('St. Louis Cardinals', 'Los Angeles Dodgers')
+Most picked: albertpujols405395 with 1360 picks
+Least picked: ericdavis113102 with 1 picks
+
+('Washington Nationals', 'Los Angeles Dodgers')
+Most picked: treaturner607208 with 1281 picks
+Least picked: cesarizturis285131 with 1 picks
+
+('Miami Marlins', 'Colorado Rockies')
+Most picked: bradhand543272 with 81 picks
+Least picked: frankcastillo112113 with 1 picks
+
+('Boston Red Sox', 'Milwaukee Brewers')
+Most picked: jackiebradleyjr598265 with 478 picks
+Least picked: markclear112382 with 1 picks
+
+('Baltimore Orioles', 'San Diego Padres')
+Most picked: mannymachado592518 with 1059 picks
+Least picked: wadeleblanc453281 with 1 picks
+
+('Atlanta Braves', 'Philadelphia Phillies')
+Most picked: craigkimbrel518886 with 519 picks
+Least picked: buckywalters123898 with 1 picks
+
+('Arizona Diamondbacks', 'San Diego Padres')
+Most picked: markmelancon453343 with 147 picks
+Least picked: jongarland279782 with 1 picks
+
+('New York Mets', 'Pittsburgh Pirates')
+Most picked: danielvogelbach596129 with 525 picks
+Least picked: joeorsulak120068 with 1 picks
+
+('Chicago Cubs', 'Cincinnati Reds')
+Most picked: aroldischapman547973 with 563 picks
+Least picked: kaldaniels113039 with 1 picks
+
+('Detroit Tigers', 'Cincinnati Reds')
+Most picked: nickcastellanos592206 with 373 picks
+Least picked: franciscocordero150188 with 1 picks
+
+('Miami Marlins', 'Los Angeles Dodgers')
+Most picked: miguelrojas500743 with 526 picks
+Least picked: javyguerra457915 with 1 picks
+
+('Tampa Bay Rays', 'Los Angeles Dodgers')
+Most picked: davidprice456034 with 443 picks
+Least picked: danaeveland445968 with 1 picks
+
+('Tampa Bay Rays', 'Cincinnati Reds')
+Most picked: tommypham502054 with 130 picks
+Least picked: burkebadenhop488674 with 1 picks
+
+('Atlanta Braves', 'Arizona Diamondbacks')
+Most picked: justinupton457708 with 212 picks
+Least picked: raulmondesi119247 with 1 picks
+
+('Minnesota Twins', 'New York Mets')
+Most picked: johansantana276371 with 495 picks
+Least picked: scotterickson113884 with 1 picks
+
+('Minnesota Twins', 'Philadelphia Phillies')
+Most picked: jimthome123272 with 172 picks
+Least picked: juancastro112128 with 1 picks
+
+('New York Mets', 'San Francisco Giants')
+Most picked: michaelconforto624424 with 382 picks
+Least picked: norichikaaoki493114 with 1 picks
+
+('Oakland Athletics', 'St. Louis Cardinals')
+Most picked: markmcgwire118743 with 822 picks
+Least picked: joshlucas572998 with 1 picks
+
+('Baltimore Orioles', 'Milwaukee Brewers')
+Most picked: jonathanschoop570731 with 149 picks
+Least picked: j.j.hardy429666 with 1 picks
+
+('Cincinnati Reds', 'Arizona Diamondbacks')
+Most picked: trevorbauer545333 with 155 picks
+Least picked: chrismichalak136422 with 1 picks
+
+('Washington Nationals', 'Pittsburgh Pirates')
+Most picked: joshbell605137 with 551 picks
+Least picked: billalmon110181 with 1 picks
+
+('Cincinnati Reds', 'San Diego Padres')
+Most picked: brandondrury592273 with 316 picks
+Least picked: russellbranyan137140 with 1 picks
+
+('Tampa Bay Rays', 'Los Angeles Angels')
+Most picked: hunterrenfroe592669 with 202 picks
+Least picked: anthonybemboom621532 with 1 picks
+
+('Oakland Athletics', 'Philadelphia Phillies')
+Most picked: cristianpache665506 with 334 picks
+Least picked: mikesweeney123041 with 1 picks
+
+('Chicago White Sox', 'San Diego Padres')
+Most picked: jamesshields448306 with 472 picks
+Least picked: kevinwalker276526 with 1 picks
+
+('Chicago White Sox', 'Cincinnati Reds')
+Most picked: adamdunn276055 with 307 picks
+Least picked: zachduke435043 with 1 picks
+
+('Minnesota Twins', 'Pittsburgh Pirates')
+Most picked: richhill448179 with 201 picks
+Least picked: brianbass430654 with 1 picks
+
+('Boston Red Sox', 'Washington Nationals')
+Most picked: kyleschwarber656941 with 576 picks
+Least picked: timmccarver118563 with 1 picks
+
+('Washington Nationals', 'San Francisco Giants')
+Most picked: hunterstrickland519326 with 136 picks
+Least picked: georgeriley121209 with 1 picks
+
+('Cleveland Guardians', 'Pittsburgh Pirates')
+Most picked: carlossantana467793 with 517 picks
+Least picked: gregallen656185 with 1 picks
+
+('Houston Astros', 'Pittsburgh Pirates')
+Most picked: gerritcole543037 with 1188 picks
+Least picked: wadeleblanc453281 with 1 picks
+
+('Tampa Bay Rays', 'Detroit Tigers')
+Most picked: davidprice456034 with 382 picks
+Least picked: danmiceli119023 with 1 picks
+
+('Detroit Tigers', 'Los Angeles Dodgers')
+Most picked: maxscherzer453286 with 708 picks
+Least picked: j.d.martinez502110 with 1 picks
+
+('New York Mets', 'Colorado Rockies')
+Most picked: adamottavino493603 with 245 picks
+Least picked: kanedavis282327 with 1 picks
+
+('Detroit Tigers', 'Arizona Diamondbacks')
+Most picked: maxscherzer453286 with 416 picks
+Least picked: j.d.martinez502110 with 1 picks
+
+('Cincinnati Reds', 'Milwaukee Brewers')
+Most picked: jessewinker608385 with 322 picks
+Least picked: yovanigallardo451596 with 1 picks
+
+('Oakland Athletics', 'Miami Marlins')
+Most picked: jesusluzardo666200 with 275 picks
+Least picked: edvosberg123756 with 1 picks
+
+('Colorado Rockies', 'Los Angeles Dodgers')
+Most picked: mattkemp461314 with 188 picks
+Least picked: mattherges150382 with 1 picks
+
+('Los Angeles Angels', 'Pittsburgh Pirates')
+Most picked: richhill448179 with 153 picks
+Least picked: jimfregosi114414 with 1 picks
+
+('Philadelphia Phillies', 'San Francisco Giants')
+Most picked: hunterpence452254 with 398 picks
+Least picked: johnbowker435624 with 1 picks
+
+('Washington Nationals', 'Cincinnati Reds')
+Most picked: adamdunn276055 with 182 picks
+Least picked: ramonortiz150009 with 1 picks
+
+('Detroit Tigers', 'Minnesota Twins')
+Most picked: toriihunter116338 with 168 picks
+Least picked: doccramer112785 with 1 picks
+
+('Tampa Bay Rays', 'Seattle Mariners')
+Most picked: mikezunino572287 with 218 picks
+Least picked: caseykotchman425773 with 1 picks
+
+('Cleveland Guardians', 'Cincinnati Reds')
+Most picked: trevorbauer545333 with 497 picks
+Least picked: jeffshaw122079 with 1 picks
+
+('Chicago White Sox', 'New York Mets')
+Most picked: jamesmccann543510 with 234 picks
+Least picked: robertohernandez115832 with 1 picks
+
+('Baltimore Orioles', 'Seattle Mariners')
+Most picked: adamfrazier624428 with 348 picks
+Least picked: jeffmanto118259 with 1 picks
+
+('Boston Red Sox', 'Toronto Blue Jays')
+Most picked: rogerclemens112388 with 414 picks
+Least picked: johnmcdonald150348 with 1 picks
+
+('Washington Nationals', 'Colorado Rockies')
+Most picked: iandesmond435622 with 201 picks
+Least picked: jeffparrett120245 with 1 picks
+
+('Philadelphia Phillies', 'St. Louis Cardinals')
+Most picked: scottrolen121409 with 395 picks
+Least picked: bobbylocke117850 with 1 picks
+
+('Kansas City Royals', 'San Francisco Giants')
+Most picked: johnnycueto456501 with 315 picks
+Least picked: michaeltucker123494 with 1 picks
+
+('Baltimore Orioles', 'Colorado Rockies')
+Most picked: ubaldojimenez434622 with 397 picks
+Least picked: larrybigbie406933 with 1 picks
+
+('Houston Astros', 'Chicago Cubs')
+Most picked: treymancini641820 with 810 picks
+Least picked: jimmystewart122779 with 1 picks
+
+('Seattle Mariners', 'Philadelphia Phillies')
+Most picked: jeansegura516416 with 373 picks
+Least picked: travisjankowski608671 with 1 picks
+
+('Texas Rangers', 'Milwaukee Brewers')
+Most picked: princefielder425902 with 634 picks
+Least picked: joshlindblom458676 with 1 picks
+
+('Tampa Bay Rays', 'Chicago White Sox')
+Most picked: jamesshields448306 with 241 picks
+Least picked: tanyonsturtze122915 with 1 picks
+
+('Baltimore Orioles', 'Minnesota Twins')
+Most picked: jorgelopez605347 with 279 picks
+Least picked: dangraham115024 with 1 picks
+
+('Kansas City Royals', 'San Diego Padres')
+Most picked: erichosmer543333 with 762 picks
+Least picked: mikefiore114142 with 1 picks
+
+('Kansas City Royals', 'Cincinnati Reds')
+Most picked: aroldischapman547973 with 460 picks
+Least picked: brucechen136600 with 1 picks
+
+('Detroit Tigers', 'Milwaukee Brewers')
+Most picked: princefielder425902 with 702 picks
+Least picked: garysutherland122999 with 1 picks
+
+('Seattle Mariners', 'San Francisco Giants')
+Most picked: mitchhaniger571745 with 396 picks
+Least picked: chrisray444884 with 1 picks
+
+('Seattle Mariners', 'Texas Rangers')
+Most picked: alexrodriguez121347 with 567 picks
+Least picked: richhinton115975 with 1 picks
+
+('Toronto Blue Jays', 'Cincinnati Reds')
+Most picked: edwinencarnacion429665 with 356 picks
+Least picked: dionernavarro425900 with 1 picks
+
+('Seattle Mariners', 'Cincinnati Reds')
+Most picked: kengriffeyjr115135 with 651 picks
+Least picked: kengriffeyjr.115135 with 1 picks
+
+('Toronto Blue Jays', 'Los Angeles Angels')
+Most picked: randalgrichuk545341 with 222 picks
+Least picked: glenallenhill115935 with 1 picks
+
+('Tampa Bay Rays', 'Washington Nationals')
+Most picked: nelsoncruz443558 with 174 picks
+Least picked: joebeimel346847 with 1 picks
+
+('Baltimore Orioles', 'Philadelphia Phillies')
+Most picked: kylegibson502043 with 350 picks
+Least picked: joelbennett150098 with 1 picks
+
+('New York Mets', 'Milwaukee Brewers')
+Most picked: danielvogelbach596129 with 668 picks
+Least picked: anthonyswarzak461872 with 1 picks
+
+('Minnesota Twins', 'Colorado Rockies')
+Most picked: justinmorneau408047 with 252 picks
+Least picked: c.j.cron543068 with 1 picks
+
+('Chicago White Sox', 'Texas Rangers')
+Most picked: elvisandrus462101 with 357 picks
+Least picked: mikedevereaux113306 with 1 picks
+
+('Chicago White Sox', 'Milwaukee Brewers')
+Most picked: yasmanigrandal518735 with 299 picks
+Least picked: edfarmer114011 with 1 picks
+
+('Toronto Blue Jays', 'Seattle Mariners')
+Most picked: teoscarhernandez606192 with 902 picks
+Least picked: johnparrish332292 with 1 picks
+
+('Texas Rangers', 'Pittsburgh Pirates')
+Most picked: austinhedges595978 with 172 picks
+Least picked: drewhutchison571800 with 1 picks
+
+('Toronto Blue Jays', 'Washington Nationals')
+Most picked: bradhand543272 with 103 picks
+Least picked: cesarizturis285131 with 1 picks
+
+('Baltimore Orioles', 'Oakland Athletics')
+Most picked: shintarofujinami660261 with 333 picks
+Least picked: danjohnson430681 with 1 picks
+
+('Pittsburgh Pirates', 'Colorado Rockies')
+Most picked: connorjoe656582 with 395 picks
+Least picked: shawnchacon276336 with 1 picks
+
+('Los Angeles Angels', 'Cincinnati Reds')
+Most picked: brandondrury592273 with 224 picks
+Least picked: russellbranyan137140 with 1 picks
+
+('Boston Red Sox', 'Seattle Mariners')
+Most picked: jamespaxton572020 with 651 picks
+Least picked: joseofferman119948 with 1 picks
+
+('Cleveland Guardians', 'Los Angeles Angels')
+Most picked: noahsyndergaard592789 with 207 picks
+Least picked: tedbowsfield111311 with 1 picks
+
+('Miami Marlins', 'San Francisco Giants')
+Most picked: johnnycueto456501 with 198 picks
+Least picked: guillermomota150407 with 1 picks
+
+('Houston Astros', 'Washington Nationals')
+Most picked: willharris501789 with 305 picks
+Least picked: ronbrand111383 with 1 picks
+
+('Kansas City Royals', 'Los Angeles Dodgers')
+Most picked: zackgreinke425844 with 1075 picks
+Least picked: chrisgwynn115271 with 1 picks
+
+('Boston Red Sox', 'Chicago Cubs')
+Most picked: kyleschwarber656941 with 598 picks
+Least picked: heathcliffslocumb122329 with 1 picks
+
+('Kansas City Royals', 'Seattle Mariners')
+Most picked: carlossantana467793 with 296 picks
+Least picked: joseofferman119948 with 1 picks
+
+('Oakland Athletics', 'Seattle Mariners')
+Most picked: rickeyhenderson115749 with 187 picks
+Least picked: marcrzepczynski519240 with 1 picks
+
+('Chicago Cubs', 'Colorado Rockies')
+Most picked: krisbryant592178 with 1465 picks
+Least picked: chrisrusin543734 with 1 picks
+
+('Houston Astros', 'Colorado Rockies')
+Most picked: dexterfowler451594 with 135 picks
+Least picked: willharris501789 with 1 picks
+
+('Seattle Mariners', 'San Diego Padres')
+Most picked: nelsoncruz443558 with 212 picks
+Least picked: nickmargevicius676606 with 1 picks
+
+('Toronto Blue Jays', 'Detroit Tigers')
+Most picked: davidprice456034 with 363 picks
+Least picked: juanacevedo110032 with 1 picks
+
+('Los Angeles Angels', 'San Francisco Giants')
+Most picked: timlincecum453311 with 280 picks
+Least picked: chrisstratton608717 with 1 picks
+
+('Kansas City Royals', 'Oakland Athletics')
+Most picked: billybutler456714 with 265 picks
+Least picked: estebangerman407397 with 1 picks
+
+('Arizona Diamondbacks', 'Colorado Rockies')
+Most picked: markreynolds448602 with 78 picks
+Least picked: jorgejulio406402 with 1 picks
+
+('Texas Rangers', 'San Francisco Giants')
+Most picked: hunterpence452254 with 266 picks
+Least picked: bretttomko123387 with 1 picks
+
+('Cleveland Guardians', 'Los Angeles Dodgers')
+Most picked: amedrosario642708 with 680 picks
+Least picked: karimgarcia114588 with 1 picks
+
+('Chicago White Sox', 'San Francisco Giants')
+Most picked: carlosrodon607074 with 222 picks
+Least picked: berthaas115273 with 1 picks
+
+('Baltimore Orioles', 'Cincinnati Reds')
+Most picked: frankrobinson121311 with 272 picks
+Least picked: danstraily573185 with 1 picks
+
+('Cleveland Guardians', 'Texas Rangers')
+Most picked: coreykluber446372 with 233 picks
+Least picked: ricocarty112071 with 1 picks
+
+('Chicago Cubs', 'San Francisco Giants')
+Most picked: krisbryant592178 with 1017 picks
+Least picked: stevebarber110550 with 1 picks
+
+('Tampa Bay Rays', 'New York Mets')
+Most picked: brooksraley548384 with 234 picks
+Least picked: geraldwilliams124314 with 1 picks
+
+('Cleveland Guardians', 'Miami Marlins')
+Most picked: joshbell605137 with 611 picks
+Least picked: shawnarmstrong542888 with 1 picks
+
+('Oakland Athletics', 'Cincinnati Reds')
+Most picked: sonnygray543243 with 302 picks
+Least picked: andyabad407577 with 1 picks
+
+('Kansas City Royals', 'Minnesota Twins')
+Most picked: michaelataylor572191 with 195 picks
+Least picked: paulabbott110015 with 1 picks
+
+('Cleveland Guardians', 'Seattle Mariners')
+Most picked: carlossantana467793 with 290 picks
+Least picked: jimessian113909 with 1 picks
+
+('Houston Astros', 'San Diego Padres')
+Most picked: joemusgrove605397 with 405 picks
+Least picked: curtblefary111096 with 1 picks
+
+('Minnesota Twins', 'Cincinnati Reds')
+Most picked: sonnygray543243 with 471 picks
+Least picked: chadmoeller150224 with 1 picks
+
+('Miami Marlins', 'San Diego Padres')
+Most picked: joshbell605137 with 251 picks
+Least picked: joshwilson425543 with 1 picks
+
+('Detroit Tigers', 'Colorado Rockies')
+Most picked: cjcron543068 with 256 picks
+Least picked: c.j.cron543068 with 1 picks
+
+('Detroit Tigers', 'San Francisco Giants')
+Most picked: darrellevans113935 with 40 picks
+Least picked: markleiter117653 with 1 picks
+
+('Kansas City Royals', 'St. Louis Cardinals')
+Most picked: carlosbeltran136860 with 178 picks
+Least picked: dennysreyes121096 with 1 picks
+
+('Texas Rangers', 'Philadelphia Phillies')
+Most picked: colehamels430935 with 487 picks
+Least picked: joelyrodriguez570257 with 1 picks
+
+('Baltimore Orioles', 'Arizona Diamondbacks')
+Most picked: adamjones430945 with 314 picks
+Least picked: mikemorgan119374 with 1 picks
+
+('Los Angeles Angels', 'Miami Marlins')
+Most picked: justinbour571506 with 127 picks
+Least picked: jameshoyt624586 with 1 picks
+
+('Chicago Cubs', 'Arizona Diamondbacks')
+Most picked: markgrace115007 with 262 picks
+Least picked: scotthairston430668 with 1 picks
+
+('Chicago White Sox', 'Cleveland Guardians')
+Most picked: jimthome123272 with 278 picks
+Least picked: tylerclippard461325 with 1 picks
+
+('Houston Astros', 'Cincinnati Reds')
+Most picked: joemorgan119371 with 287 picks
+Least picked: mikeburns446916 with 1 picks
+
+('Minnesota Twins', 'St. Louis Cardinals')
+Most picked: lancelynn458681 with 75 picks
+Least picked: a.j.pierzynski150229 with 1 picks
+
+('Seattle Mariners', 'Colorado Rockies')
+Most picked: jamiemoyer119469 with 129 picks
+Least picked: ericanthony110285 with 1 picks
+
+('Kansas City Royals', 'Colorado Rockies')
+Most picked: mikemoustakas519058 with 321 picks
+Least picked: chrisstynes122918 with 1 picks
+
+('Baltimore Orioles', 'Detroit Tigers')
+Most picked: jonathanschoop570731 with 434 picks
+Least picked: gustriandos123464 with 1 picks
+
+('Detroit Tigers', 'Kansas City Royals')
+Most picked: omarinfante408299 with 108 picks
+Least picked: chadkreuter117316 with 1 picks
+
+('Chicago White Sox', 'Minnesota Twins')
+Most picked: jimthome123272 with 175 picks
+Least picked: patborders111232 with 1 picks
+
+('Cincinnati Reds', 'Colorado Rockies')
+Most picked: mikemoustakas519058 with 287 picks
+Least picked: darnellcoles112491 with 1 picks
+
+('Minnesota Twins', 'San Francisco Giants')
+Most picked: taylorrogers573124 with 196 picks
+Least picked: gilcoan112426 with 1 picks
+
+('Seattle Mariners', 'Los Angeles Dodgers')
+Most picked: ajpollock572041 with 350 picks
+Least picked: bradgulden115238 with 1 picks
+
+('Baltimore Orioles', 'San Francisco Giants')
+Most picked: kevingausman592332 with 226 picks
+Least picked: russortiz133460 with 1 picks
+
+('Chicago White Sox', 'Colorado Rockies')
+Most picked: justinmorneau408047 with 44 picks
+Least picked: jaysonnix434624 with 1 picks
+
+('Minnesota Twins', 'Arizona Diamondbacks')
+Most picked: eduardoescobar500871 with 264 picks
+Least picked: jddurbin429716 with 1 picks
+
