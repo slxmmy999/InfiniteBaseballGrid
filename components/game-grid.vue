@@ -82,7 +82,7 @@
       </div>
         <button v-else @click="buttonClicked('s22')" :class="$style['grid-item']" :disabled="gameOver"></button>
         <button v-if="gameOver" :class="$style.newgame" @click="newGame()">New Grid</button>
-        <div v-else></div> <!-- Empty grid cell -->
+        <button v-else :class="$style.giveUp" @click="gameOver = true">Give Up</button>
     </div>
 </template>
 
@@ -110,9 +110,32 @@
             height: 100% !important;
         }
 
+        .giveUp {
+            font-size: 10px !important;
+            height: 100% !important;
+        }
+
         .rarityScore {
             font-size: 8px !important;
         }
+    }
+
+    .giveUp {
+      grid-column: 5 5;
+      width: 100%;
+      height: 50%;
+      border-radius: 15px;
+      background-color: #f44336; /* You can adjust this color */
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+  }
+
+    .giveUp:hover {
+        background-color: #ff1a1a; /* Adjust as needed */
     }
 
     .share-button-container {
@@ -144,7 +167,7 @@
         width: 100%;
         height: 50%;
         border-radius: 15px;
-        background-color: red;
+        background-color: #00e600;
         color: white;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
@@ -154,7 +177,7 @@
     }
 
     .newgame:hover {
-        background-color: #ff1a1a;
+        background-color: green;
     }
 
     .label {
