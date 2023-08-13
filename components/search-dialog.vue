@@ -87,7 +87,7 @@ export default {
       this.$store.commit('clearAllOnExit')
     },
     playerClicked (player) {
-      this.$store.commit('setSelectedPlayer', player.split('|')[0].trim())
+      this.$store.commit('setSelectedPlayer', player)
       EventBus.$emit('player-selected')
     }
   }

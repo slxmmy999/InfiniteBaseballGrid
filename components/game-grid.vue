@@ -257,7 +257,7 @@
 .rarityScore {
   color: white; /* Choose color according to your preference */
   background: rgba(0,0,0,0.6); /* Add a dark background for the text to be visible */
-  width: 20%;
+  width: 25%;
   text-align: center; /* To center the text */
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -313,7 +313,10 @@ export default {
     }
     this.$store.commit('setGrid', data.data)
     EventBus.$on('player-selected', async () => {
-      const player = this.$store.state.selectedPlayer
+      const playerData = this.$store.state.selectedPlayer
+      const player = playerData.split('|')[0].trim()
+      const start = playerData.split('|')[1].trim().split('-')[0].trim().split('(')[1].trim()
+      const end = playerData.split('|')[1].trim().split('-')[1].trim().split(')')[0].trim()
       for (const keys in this.gridStatus) {
         if (this.gridStatus[keys] !== false) {
           if (this.gridStatus[keys].name === player) {
@@ -372,7 +375,7 @@ export default {
           location = 's22'
           break
       }
-      const data = await this.$axios.get(`/validate_player?name=${player}&team1=${team1}&team2=${team2}`)
+      const data = await this.$axios.get(`/validate_player?name=${player}&team1=${team1}&team2=${team2}&start=${start}&end=${end}`)
       if (Object.keys(data.data).length > 0) {
         this.gridStatus[location] = data.data
       }

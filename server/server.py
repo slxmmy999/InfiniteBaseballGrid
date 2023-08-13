@@ -70,12 +70,23 @@ async def validate_player():
     query = request.args.get("name")
     team1 = request.args.get("team1")
     team2 = request.args.get("team2")
+    start = request.args.get("start")
+    end = request.args.get("end")
     players = await BaseballData.search_players(query)
     player = ''
-    for x in range(len(players)):
-        if players[x]["fullName"] == query:
-            player = players[x]
-            break
+    if len(players) > 1:
+        for x in range(len(players)):
+            if players[x]["fullName"] == query:
+                try:
+                    if players[x]['active']:
+                        if start == players[x]['mlbDebutDate'][:4]:
+                            player = players[x]
+                    else:
+                        if start == players[x]['mlbDebutDate'][:4] and end == players[x]['lastPlayedDate'][:4]:
+                            player = players[x]
+                except KeyError:
+                    continue
+    else: player = players[0]
     teams = BaseballData.get_player_teams(player)
     if teams:
         if team1 in teams and team2 in teams:
