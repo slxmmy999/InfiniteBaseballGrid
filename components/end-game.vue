@@ -5,16 +5,21 @@
       <p :class="$style.text">You scored {{ $store.state.score }} points!</p>
       <button :class="$style['popup-button']" @click="newGame()">Play Again</button>
       <button :class="$style['popup-button']" @click="goToMenu()">Main Menu</button>
+      <!-- Top Logos -->
+      <div v-if="topLogos.length > 0" :class="$style.topLogos">
+        <img v-for="(logo, index) in topLogos" :key="index" :src="logo[0]" alt="Team Logo">
+      </div>
       <!-- Grid with top player answers for each space -->
-      <div v-if="topAnswersGrid.length > 0" :class="$style.grid">
+      <div v-if="topAnswersGrid.length > 0 && leftLogos.length > 0" :class="$style.grid">
         <div v-for="(answer, idx) in rotatedGrid" :key="idx" :class="$style.cell">
-          <!--img :src="answer" :class="$style['player-image']" :alt="answer + ' photo'"-->
+          <img :src="leftLogos[idx % 3][0]" alt="Team Logo">
           <div :class="$style.playerName">{{ answer }}</div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
 <style module>
 .popup {
   position: fixed;
@@ -114,6 +119,31 @@
   font-size: 14px;
   text-align: center;
 }
+
+.topLogos {
+  display: flex;
+  justify-content: center;
+}
+
+.cell {
+  /* Existing styles */
+  flex-direction: row; /* Adjust layout */
+}
+
+.cell img {
+  /* Style your left logos here */
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; /* Add space between the logo and content */
+}
+
+.topLogos img {
+  /* Style your top logos here */
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; /* Add space between logos */
+}
+
 </style>
 
 <script>
@@ -123,11 +153,15 @@ export default {
   data () {
     return {
       gameOver: false,
-      topAnswersGrid: []
+      topAnswersGrid: [],
+      topLogos: [],
+      leftLogos: []
     }
   },
   created () {
     EventBus.$on('game-over', async () => {
+      this.topLogos = this.$store.state.grid[0]
+      this.leftLogos = this.$store.state.grid[1]
       this.gameOver = true
       const { data } = await this.$axios.post('/get_top_players', { grid: this.$store.state.grid })
       this.topAnswersGrid = data
@@ -154,8 +188,6 @@ export default {
       for (let i = 0; i < flatList.length; i += 3) {
         originalGrid.push(flatList.slice(i, i + 3))
       }
-
-      console.log(originalGrid)
 
       // Transpose the 3x3 grid (switch rows and columns)
       const transposedGrid = originalGrid[0].map((_, colIndex) => originalGrid.map(row => row[colIndex]))

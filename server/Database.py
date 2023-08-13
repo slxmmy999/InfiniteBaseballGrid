@@ -93,7 +93,12 @@ class Database:
         data = await self.collection.find_one({"team_combination": matchup})
         if data:
             try:
-                top_player = max(data["players"], key=lambda x: data["players"][x]["pick_frequency"])
+                def key_function(x):
+                    try:
+                        return data["players"][x]["pick_frequency"]
+                    except KeyError:
+                        return -1
+                top_player = max(data["players"], key=key_function)
                 if "un_normalized_name" in data["players"][top_player]:
                     top_player = data["players"][top_player]["un_normalized_name"]
                     return top_player
