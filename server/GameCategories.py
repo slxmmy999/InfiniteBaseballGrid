@@ -64,5 +64,5 @@ class GameCategories:
     def get_grid(self):
         return self.categories
 
-    def __str_(self) -> str:
+    def __str__(self) -> str:
         return str(self.categories)

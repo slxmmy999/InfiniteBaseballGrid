@@ -1,8 +1,8 @@
 const path = require('path')
-const env = "prod"; // set to dev for development mode, prod for production mode
+const env = "dev"; // set to dev for development mode, prod for production mode
 let baseURL;
 
-if(env === "dev") {
+if(env === "prod") {
   baseURL = "http://localhost:5000";
 } else if(env === "prod") {
   baseURL = "https://api.infiniteimmaculategrid.com";
