@@ -151,3 +151,11 @@ class BaseballData:
     def get_player_picture(player):
         id = player['link'].split('/')[-1]
         return f"https://img.mlbstatic.com/mlb-photos/image/upload/w_300,q_auto:best/v1/people/{id}/headshot/67/current"
+    
+    @staticmethod
+    async def lookup_by_id(id):
+        async with httpx.AsyncClient() as client:
+            url = f"https://statsapi.mlb.com/api/v1/people/{id}"
+            response = await client.get(url)
+            data = response.json()
+            return data

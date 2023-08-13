@@ -6,7 +6,7 @@
       <button :class="$style['popup-button']" @click="newGame()">Play Again</button>
       <button :class="$style['popup-button']" @click="goToMenu()">Main Menu</button>
       <!-- Grid with top player answers for each space -->
-      <div :class="$style.grid">
+      <div v-if="topAnswersGrid.length > 0" :class="$style.grid">
         <div v-for="(answer, idx) in rotatedGrid" :key="idx" :class="$style.cell">
           <!--img :src="answer" :class="$style['player-image']" :alt="answer + ' photo'"-->
           <div :class="$style.playerName">{{ answer }}</div>
@@ -43,31 +43,24 @@
   overflow-y: auto;
 }
 .grid {
+  display: grid; /* Change to grid display */
+  grid-template-columns: repeat(3, 1fr); /* Define 3 columns */
+  gap: 10px; /* Optional: Add some space between cells */
   padding-top: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   margin: auto;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
 .cell {
-  border-radius: 0px;
+  border-radius: 5px;
   aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  border-color: #111;
-  width: 90%;
-  height: 90%;
+  border: #fff solid 2px;
+  width: 100%; /* Set to 100% to fill the grid cell */
+  height: auto; /* Allow height to be determined by aspect ratio */
   background-color: #202020;
 }
 
@@ -107,28 +100,6 @@
 
 .popup-button:hover {
   background-color: #ff1a1a;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-  margin: auto;
-  width: 100%;
-  max-width: 500px;
-}
-
-.row {
-  display: flex;
-}
-
-.cell {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #fff;
-  padding: 10px;
 }
 
 .player-image {
@@ -172,22 +143,25 @@ export default {
   },
   computed: {
     rotatedGrid () {
-      // Assuming topAnswersGrid is a 3x3 array representing your original grid
-      const originalGrid = this.topAnswersGrid
+      // Assuming flatList is a flat array representing your 3x3 grid
+      const flatList = this.topAnswersGrid
+
+      console.log(this.topAnswersGrid)
+      console.log(flatList)
+
+      // Reshape the flat list into a 3x3 grid
+      const originalGrid = []
+      for (let i = 0; i < flatList.length; i += 3) {
+        originalGrid.push(flatList.slice(i, i + 3))
+      }
 
       console.log(originalGrid)
 
-      // Create a new grid by taking the columns of the original grid as rows
-      const newGrid = []
-      for (let col = 0; col < originalGrid.length; col++) {
-        const newRow = []
-        for (let row = originalGrid.length - 1; row >= 0; row--) {
-          newRow.push(originalGrid[row][col])
-        }
-        newGrid.push(newRow)
-      }
+      // Transpose the 3x3 grid (switch rows and columns)
+      const transposedGrid = originalGrid[0].map((_, colIndex) => originalGrid.map(row => row[colIndex]))
 
-      return newGrid.flat()
+      // If you want to keep the result as a flat list, you can flatten it again
+      return transposedGrid.flat()
     }
   }
 }

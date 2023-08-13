@@ -58,7 +58,7 @@ class Database:
                 {"team_combination": matchup}, 
                 {
                     "$inc": {"total_picks": 1}, 
-                    "$set": {f"players.{player}": {"un_normalized_name": original_player_name}}
+                    "$set": {f"players.{player}": {"un_normalized_name": original_player_name, "pick_frequency": 1}}
                 }
             )
         return await self.__add_matchup(teams[0], teams[1], player)
@@ -92,9 +92,18 @@ class Database:
         matchup = self.__normalize_team_names(teams)
         data = await self.collection.find_one({"team_combination": matchup})
         if data:
-            top_player = max(data["players"], key=lambda x: data["players"][x]["pick_frequency"])
-            if "un_normalized_name" in data["players"][top_player]:
-                top_player = data["players"][top_player]["un_normalized_name"]
-                return top_player
-            return "Player"
-        return "none"
+            try:
+                top_player = max(data["players"], key=lambda x: data["players"][x]["pick_frequency"])
+                if "un_normalized_name" in data["players"][top_player]:
+                    top_player = data["players"][top_player]["un_normalized_name"]
+                    return top_player
+                print(f"un_normalized_name not in data for {data['players'][top_player]}")
+                return 0
+            except KeyError:
+                print(f"KeyError: {data['players']}")
+                return 0
+        print(f"Matchup {matchup} not found")
+        return 0
+    
+    async def add_player_name(self, matchup: str, name: str):
+        await self.collection.update_one({"team_combination": matchup}, {"$set": {f"players.{self.__normalize_player_name(name)}.un_normalized_name": name}})
