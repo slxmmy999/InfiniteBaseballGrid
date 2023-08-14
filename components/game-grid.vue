@@ -378,7 +378,6 @@ export default {
       if (Object.keys(data.data).length > 0) {
         this.gridStatus[location] = data.data
       }
-      this.$store.commit('clearAllOnExit')
       this.guesses--
       if (this.guesses === 0) {
         this.gameOver = true
