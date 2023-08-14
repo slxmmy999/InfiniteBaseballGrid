@@ -324,7 +324,6 @@ export default {
           }
         }
       }
-      this.guesses--
       let team1 = ''
       let team2 = ''
       let location = ''
@@ -380,6 +379,7 @@ export default {
         this.gridStatus[location] = data.data
       }
       this.$store.commit('clearAllOnExit')
+      this.guesses--
       if (this.guesses === 0) {
         this.gameOver = true
       }
