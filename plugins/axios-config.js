@@ -4,7 +4,7 @@ export default function ({ $axios }) {
             const baseURL = `http://localhost:5000/`;
             $axios.defaults.baseURL = baseURL;
         } else {
-            const baseURL = `https://api.${window.location.hostname}/`;
+            const baseURL = `https://api.${window.location.hostname.replace(/^www\./, '')}/`;
             $axios.defaults.baseURL = baseURL;
         }
     }
