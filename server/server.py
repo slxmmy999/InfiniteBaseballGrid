@@ -31,7 +31,7 @@ async def after_request(response):
         response.headers["Access-Control-Allow-Headers"] = "Content-Type"
         return response
     else:
-        response.headers["Access-Control-Allow-Origin"] = "https://www.infiniteimmaculategrid.com"
+        response.headers["Access-Control-Allow-Origin"] = ["https://www.infiniteimmaculategrid.com", "https://www.infinitebaseballgrid.com"]
         response.headers["Access-Control-Allow-Headers"] = "Content-Type"
         return response
 
