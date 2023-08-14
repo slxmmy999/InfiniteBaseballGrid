@@ -1,7 +1,7 @@
 <template>
     <div class="welcome-screen" v-if="showWelcome">
       <div class="content">
-        <h1>Welcome to Infinite Immaculate Grid!</h1>
+        <h1>Welcome to Infinite Baseball Grid!</h1>
         <p>
           This website is a work in progress. We are currently working on adding more features and improving the existing ones. If you have any suggestions, please let us know!
           If you are interested in the project check out the <a href="https://github.com/slxmmy999/InfiniteImmaculateGrid">GitHub</a> page. You can also join the

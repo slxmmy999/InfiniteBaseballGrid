@@ -1,12 +1,4 @@
 const path = require('path')
-const env = "prod"; // set to dev for development mode, prod for production mode
-let baseURL;
-
-if(env === "dev") {
-  baseURL = "http://localhost:5000";
-} else if(env === "prod") {
-  baseURL = "https://api.infiniteimmaculategrid.com";
-}
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -50,6 +42,7 @@ export default {
     { src: '~/plugins/vercel.js', mode: 'client'},
     { src: '~/plugins/gtm.js', mode: 'client' },
     { src: '~/plugins/directives.js', mode: 'client' },
+    { src: '~/plugins/axios-config.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -71,18 +64,6 @@ export default {
 
   googleAnalytics: {
     id: 'G-G9XV3ZYH0B'
-  },
-
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: baseURL
-  },
-
-  publicRuntimeConfig: {
-    axios: {
-      browserBaseURL: baseURL
-    }
   },
 
   target: 'static',
