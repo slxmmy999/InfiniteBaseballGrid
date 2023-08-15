@@ -92,7 +92,7 @@
           <button :class="$style.newgame" @click="newGame()">New Grid</button>
           <button :class="$style.stats" @click="goToStats()">Stats</button>
         </div>
-        <button v-else :class="$style.giveUp" @click="gameOver = true">Give Up</button>
+        <button v-else :class="$style.giveUp" @click="giveUp()">Give Up</button>
     </div>
 </template>
 
@@ -329,6 +329,10 @@ export default {
       console.log('emitted share popup')
     },
     goToStats () {
+      EventBus.$emit('game-over')
+    },
+    giveUp () {
+      this.gameOver = true
       EventBus.$emit('game-over')
     }
   },
