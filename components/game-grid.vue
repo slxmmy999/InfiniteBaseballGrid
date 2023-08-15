@@ -4,16 +4,20 @@
         <div v-if="teams.length > 0 && teams[0].length > 0" :class="[$style['label-container'], $style['top-label']]">
             <img :src="teams[0][0][0]" :class="$style.label" />
         </div>
+        <div v-else></div> <!-- Empty grid cell -->
         <div v-if="teams.length > 0 && teams[0].length > 0" :class="[$style['label-container'], $style['top-label']]">
             <img :src="teams[0][1][0]" :class="$style.label" />
         </div>
+        <div v-else></div> <!-- Empty grid cell -->
         <div v-if="teams.length > 0 && teams[0].length > 0" :class="[$style['label-container'], $style['top-label']]">
             <img :src="teams[0][2][0]" :class="$style.label" />
         </div>
+        <div v-else></div> <!-- Empty grid cell -->
         <div></div> <!-- Empty grid cell -->
         <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
             <img :src="teams[1][0][0]" :class="$style.label" />
         </div>
+        <div v-else></div> <!-- Empty grid cell -->
         <div v-if="gridStatus['s00'] != false" :class="$style.imageContainer">
           <div :class="$style.rarityScore">{{ gridStatus['s00'].rarity_score }}%</div>
           <img :src="gridStatus['s00'].picture" :class="$style['player-image']" :alt="gridStatus['s00'].name + ' photo'">
@@ -38,6 +42,7 @@
         <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
             <img :src="teams[1][1][0]" :class="$style.label" />
         </div>
+        <div v-else></div> <!-- Empty grid cell -->
         <div v-if="gridStatus['s10'] != false" :class="$style.imageContainer">
           <div :class="$style.rarityScore">{{ gridStatus['s10'].rarity_score }}%</div>
           <img :src="gridStatus['s10'].picture" :class="$style['player-image']" :alt="gridStatus['s10'].name + ' photo'">
@@ -63,6 +68,7 @@
         <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
             <img :src="teams[1][2][0]" :class="$style.label" />
         </div>
+        <div v-else></div> <!-- Empty grid cell -->
         <div v-if="gridStatus['s20'] != false" :class="$style.imageContainer">
           <div :class="$style.rarityScore">{{ gridStatus['s20'].rarity_score }}%</div>
           <img :src="gridStatus['s20'].picture" :class="$style['player-image']" :alt="gridStatus['s20'].name + ' photo'">
@@ -81,7 +87,10 @@
           <div :class="$style.playerName">{{ gridStatus['s22'].name }}</div>
       </div>
         <button v-else @click="buttonClicked('s22')" :class="$style['grid-item']" :disabled="gameOver"></button>
-        <button v-if="gameOver" :class="$style.newgame" @click="newGame()">New Grid</button>
+        <div v-if="gameOver">
+          <button :class="$style.newgame" @click="newGame()">New Grid</button>
+          <button :class="$style.stats" @click="goToStats()">Stats</button>
+        </div>
         <div v-else></div> <!-- Empty grid cell -->
     </div>
 </template>
@@ -107,7 +116,6 @@
 
         .newgame {
             font-size: 10px !important;
-            height: 100% !important;
         }
 
         .rarityScore {
@@ -148,14 +156,32 @@
         color: white;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 90%;
         border: none;
         cursor: pointer;
     }
 
+    .stats {
+      grid-column: 5 5;
+      width: 100%;
+      height: 50%;
+      border-radius: 15px;
+      background-color: green;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 90%;
+      border: none;
+      cursor: pointer;
+  }
+
     .newgame:hover {
         background-color: #ff1a1a;
     }
+
+    .stats:hover {
+      background-color: #00cc00;
+  }
 
     .label {
         grid-column: span 1;
@@ -277,6 +303,9 @@ export default {
     shareGrid () {
       EventBus.$emit('show-share-popup')
       console.log('emitted share popup')
+    },
+    goToStats () {
+      EventBus.$emit('game-over')
     }
   },
   async created () {

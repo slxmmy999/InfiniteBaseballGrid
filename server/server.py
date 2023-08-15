@@ -8,7 +8,7 @@ load_dotenv()
 database_connection_string = os.getenv("DB_CONNECTION_STRING")
 dev_ip = os.getenv("DEV_IP")
 
-dev = True
+dev = False
 if dev:
     from GameCategories import GameCategories
     from BaseballData import BaseballData
@@ -20,7 +20,7 @@ else:
 import datetime
 
 mongo_client = AsyncIOMotorClient(database_connection_string)
-db: Database = Database(mongo_client, False)
+db: Database = Database(mongo_client, dev)
 
 app = Quart(__name__)
 
@@ -108,9 +108,12 @@ async def get_top_players():
     data = await request.get_json()
     grid = data["grid"]
     matchups = GameCategories.get_matchups(grid)
-    top_players = []
-    for matchup in matchups:
-        top_players.append(await db.get_top_player(matchup))
+    top_players = [[], [], []]
+    for i in range(9):
+        if len(top_players[i%3]) < 3:
+            player = await db.get_top_player(matchups[i])
+            if player:
+                top_players[i%3].append(player)
     return jsonify(top_players)
 
 if __name__ == '__main__':

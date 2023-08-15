@@ -147,10 +147,17 @@ class BaseballData:
                     except KeyError:
                         continue
         return teams
-
-    def get_player_picture(player):
-        id = player['link'].split('/')[-1]
-        return f"https://img.mlbstatic.com/mlb-photos/image/upload/w_300,q_auto:best/v1/people/{id}/headshot/67/current"
+    
+    @staticmethod
+    def get_player_picture(player=None, id=None):
+        try:
+            if not player and not id:
+                raise ValueError("Must provide either player or id")
+            if player:
+                id = player['id']
+            return f"https://img.mlbstatic.com/mlb-photos/image/upload/w_300,q_auto:best/v1/people/{id}/headshot/67/current"
+        except KeyError:
+            return ""
     
     @staticmethod
     async def lookup_by_id(id):

@@ -1,5 +1,6 @@
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase, AsyncIOMotorCollection
 from uuid import uuid4
+from BaseballData import BaseballData
 
 class Database:
     def __init__(self, mongo_client: AsyncIOMotorClient, dev: bool):
@@ -20,6 +21,9 @@ class Database:
     
     def __normalize_player_name(self, player: str, id: str) -> str:
         return player.lower().replace(" ", "").replace(".", "") + id
+    
+    def __get_id(self, player: str):
+        return player[-6:]
 
     def __matchup(self, teams: tuple[str, str], player: str) -> str:
         template = {
@@ -87,27 +91,25 @@ class Database:
         if data:
             return data["grid"]
         return []
+    
+    def key_function(self, x, data):
+        try:
+            return data["players"][x]["pick_frequency"]
+        except KeyError:
+            return -1
 
     async def get_top_player(self, teams: tuple[str, str]):
         matchup = self.__normalize_team_names(teams)
         data = await self.collection.find_one({"team_combination": matchup})
         if data:
-            try:
-                def key_function(x):
-                    try:
-                        return data["players"][x]["pick_frequency"]
-                    except KeyError:
-                        return -1
-                top_player = max(data["players"], key=key_function)
+                top_player = max(data["players"], key=lambda x: self.key_function(x, data))
                 if "un_normalized_name" in data["players"][top_player]:
-                    top_player = data["players"][top_player]["un_normalized_name"]
-                    return top_player
-                print(f"un_normalized_name not in data for {data['players'][top_player]}")
+                    top_player_name = data["players"][top_player]["un_normalized_name"]
+                    top_player_id = self.__get_id(top_player)
+                    top_player_rarity = await self.calculate_rarity_score(teams, top_player_name, top_player_id)
+                    top_player_picture = BaseballData.get_player_picture(id=top_player_id)
+                    return {"name": top_player_name, "picture": top_player_picture, "rarity_score": top_player_rarity}
                 return 0
-            except KeyError:
-                print(f"KeyError: {data['players']}")
-                return 0
-        print(f"Matchup {matchup} not found")
         return 0
     
     async def add_player_name(self, matchup: str, name: str):
