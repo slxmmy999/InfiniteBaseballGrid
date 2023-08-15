@@ -133,5 +133,8 @@ dist
 __pycache__/
 
 data_analysis.py
+
+player_names.py
+clean_share.py
 data.txt
 full_data.txt

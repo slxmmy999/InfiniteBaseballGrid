@@ -1,5 +1,6 @@
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase, AsyncIOMotorCollection
 from uuid import uuid4
+from BaseballData import BaseballData
 
 class Database:
     def __init__(self, mongo_client: AsyncIOMotorClient, dev: bool):
@@ -20,6 +21,9 @@ class Database:
     
     def __normalize_player_name(self, player: str, id: str) -> str:
         return player.lower().replace(" ", "").replace(".", "") + id
+    
+    def __get_id(self, player: str):
+        return player[-6:]
 
     def __matchup(self, teams: tuple[str, str], player: str) -> str:
         template = {
@@ -42,12 +46,25 @@ class Database:
         await self.collection.insert_one(self.__matchup((team1, team2), player))
 
     async def update_matchup(self, teams: tuple[str, str], player: str, id: str):
+        original_player_name = player  # Preserve original player name
         player = self.__normalize_player_name(player, id)
         matchup = self.__normalize_team_names(teams)
         if await self.collection.find_one({"team_combination": matchup}):
             if await self.__find_player(teams, player):
-                return await self.collection.update_one({"team_combination": matchup}, {"$inc": {"total_picks": 1, f"players.{player}.pick_frequency": 1}})
-            return await self.collection.update_one({"team_combination": matchup}, {"$inc": {"total_picks": 1}, "$set": {f"players.{player}": {"pick_frequency": 1}}})
+                return await self.collection.update_one(
+                    {"team_combination": matchup}, 
+                    {
+                        "$inc": {"total_picks": 1, f"players.{player}.pick_frequency": 1}, 
+                        "$set": {f"players.{player}.un_normalized_name": original_player_name}
+                    }
+                )
+            return await self.collection.update_one(
+                {"team_combination": matchup}, 
+                {
+                    "$inc": {"total_picks": 1}, 
+                    "$set": {f"players.{player}": {"un_normalized_name": original_player_name, "pick_frequency": 1}}
+                }
+            )
         return await self.__add_matchup(teams[0], teams[1], player)
     
     async def calculate_rarity_score(self, teams: tuple[str, str], player: str, id: str):
@@ -75,6 +92,30 @@ class Database:
             return data["grid"]
         return []
     
+
+    def key_function(self, x, data):
+        try:
+            return data["players"][x]["pick_frequency"]
+        except KeyError:
+            return -1
+
+    async def get_top_player(self, teams: tuple[str, str]):
+        matchup = self.__normalize_team_names(teams)
+        data = await self.collection.find_one({"team_combination": matchup})
+        if data:
+                top_player = max(data["players"], key=lambda x: self.key_function(x, data))
+                if "un_normalized_name" in data["players"][top_player]:
+                    top_player_name = data["players"][top_player]["un_normalized_name"]
+                    top_player_id = self.__get_id(top_player)
+                    top_player_rarity = await self.calculate_rarity_score(teams, top_player_name, top_player_id)
+                    top_player_picture = BaseballData.get_player_picture(id=top_player_id)
+                    return {"name": top_player_name, "picture": top_player_picture, "rarity_score": top_player_rarity}
+                return 0
+        return 0
+    
+    async def add_player_name(self, matchup: str, name: str):
+        await self.collection.update_one({"team_combination": matchup}, {"$set": {f"players.{self.__normalize_player_name(name)}.un_normalized_name": name}})
+
     @staticmethod
     def unnormalize_team_names(normalized_string: str) -> tuple[str, str]:
         mlb_teams = [
@@ -119,5 +160,3 @@ class Database:
                 if normalized == normalized_string:
                     return team1, team2
         return None
-
-

@@ -6,6 +6,7 @@
     <SearchDialog />
     <welcome-screen />
     <share-popup />
+    <end-game />
   </div>
 </template>
 
