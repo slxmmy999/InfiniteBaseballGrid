@@ -1,6 +1,6 @@
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase, AsyncIOMotorCollection
 from uuid import uuid4
-from BaseballData import BaseballData
+from server.BaseballData import BaseballData
 
 class Database:
     def __init__(self, mongo_client: AsyncIOMotorClient, dev: bool):
