@@ -334,6 +334,7 @@ export default {
     giveUp () {
       this.gameOver = true
       EventBus.$emit('game-over')
+      this.guesses = 0
     }
   },
   async created () {
