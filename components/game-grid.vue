@@ -87,11 +87,12 @@
           <div :class="$style.playerName">{{ gridStatus['s22'].name }}</div>
       </div>
         <button v-else @click="buttonClicked('s22')" :class="$style['grid-item']" :disabled="gameOver"></button>
+
         <div v-if="gameOver">
           <button :class="$style.newgame" @click="newGame()">New Grid</button>
           <button :class="$style.stats" @click="goToStats()">Stats</button>
         </div>
-        <div v-else></div> <!-- Empty grid cell -->
+        <button v-else :class="$style.giveUp" @click="gameOver = true">Give Up</button>
     </div>
 </template>
 
@@ -118,9 +119,32 @@
             font-size: 10px !important;
         }
 
+        .giveUp {
+            font-size: 10px !important;
+            height: 100% !important;
+        }
+
         .rarityScore {
             font-size: 8px !important;
         }
+    }
+
+    .giveUp {
+      grid-column: 5 5;
+      width: 100%;
+      height: 50%;
+      border-radius: 15px;
+      background-color: #f44336; /* You can adjust this color */
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+  }
+
+    .giveUp:hover {
+        background-color: #ff1a1a; /* Adjust as needed */
     }
 
     .share-button-container {
@@ -152,7 +176,7 @@
         width: 100%;
         height: 50%;
         border-radius: 15px;
-        background-color: red;
+        background-color: #00e600;
         color: white;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
@@ -176,7 +200,7 @@
   }
 
     .newgame:hover {
-        background-color: #ff1a1a;
+        background-color: green;
     }
 
     .stats:hover {
@@ -319,7 +343,10 @@ export default {
     }
     this.$store.commit('setGrid', data.data)
     EventBus.$on('player-selected', async () => {
-      const player = this.$store.state.selectedPlayer
+      const playerData = this.$store.state.selectedPlayer
+      const player = playerData.split('|')[0].trim()
+      const start = playerData.split('|')[1].trim().split('-')[0].trim().split('(')[1].trim()
+      const end = playerData.split('|')[1].trim().split('-')[1].trim().split(')')[0].trim()
       for (const keys in this.gridStatus) {
         if (this.gridStatus[keys] !== false) {
           if (this.gridStatus[keys].name === player) {
@@ -327,7 +354,6 @@ export default {
           }
         }
       }
-      this.guesses--
       let team1 = ''
       let team2 = ''
       let location = ''
@@ -378,12 +404,12 @@ export default {
           location = 's22'
           break
       }
-      const data = await this.$axios.get(`/validate_player?name=${player}&team1=${team1}&team2=${team2}`)
+      const data = await this.$axios.get(`/validate_player?name=${player}&team1=${team1}&team2=${team2}&start=${start}&end=${end}`)
       if (Object.keys(data.data).length > 0) {
         this.gridStatus[location] = data.data
       }
-      this.$store.commit('clearAllOnExit')
-      if (this.guesses < 1) {
+      this.guesses--
+      if (this.guesses === 0) {
         this.gameOver = true
         EventBus.$emit('game-over')
       }

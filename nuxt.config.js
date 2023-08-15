@@ -1,24 +1,16 @@
 const path = require('path')
-const env = "prod"; // dev, prod
-let baseURL;
-
-if(env === "dev") {
-  baseURL = "http://localhost:5000";
-} else if(env === "prod") {
-  baseURL = "https://api.infiniteimmaculategrid.com";
-}
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Infinite Immaculate Grid',
+    title: 'Infinite Baseball Grid',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Practice your Immaculate Grid skills with this community supported open source version! Play as many grids as you\'d like with no daily limit!' },
+      { hid: 'description', name: 'description', content: 'Practice your Immaculate Grid skills with this community supported open source version! Play as many grids as you\'d like with no daily limit! This is a seperate community project not associated with Sports Reference or Immaculate Grid.' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -50,6 +42,7 @@ export default {
     { src: '~/plugins/vercel.js', mode: 'client'},
     { src: '~/plugins/gtm.js', mode: 'client' },
     { src: '~/plugins/directives.js', mode: 'client' },
+    { src: '~/plugins/axios-config.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -71,18 +64,6 @@ export default {
 
   googleAnalytics: {
     id: 'G-G9XV3ZYH0B'
-  },
-
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: baseURL
-  },
-
-  publicRuntimeConfig: {
-    axios: {
-      browserBaseURL: baseURL
-    }
   },
 
   target: 'static',

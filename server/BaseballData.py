@@ -29,6 +29,8 @@ class BaseballData:
 
     @staticmethod
     async def search_players(player):
+        if "'" in player:
+            player = player.split("'")[0]
         url = BaseballData.parse_api_url(player)
         async with httpx.AsyncClient() as client:
             response = await client.get(url)

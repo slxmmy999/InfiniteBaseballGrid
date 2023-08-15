@@ -1,5 +1,6 @@
 <template>
   <div>
+    <notification-banner v-if="showBanner" @close="closeBanner" />
     <top-menu />
     <game-grid :class="$style.grid" />
     <SearchDialog />
@@ -12,6 +13,17 @@
 <script>
 export default {
   name: 'IndexPage',
+  data () {
+    return {
+      showBanner: true
+    }
+  },
+
+  methods: {
+    closeBanner () {
+      this.showBanner = false
+    }
+  },
   // send a Google Analytics page view on page load
   mounted () {
     this.$gtm.trackView('/')

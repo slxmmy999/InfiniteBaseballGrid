@@ -70,5 +70,5 @@ class GameCategories:
         matchups = [(top[1], left[1]) for top in teams_top for left in teams_left]
         return matchups
 
-    def __str_(self) -> str:
+    def __str__(self) -> str:
         return str(self.categories)

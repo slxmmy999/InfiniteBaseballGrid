@@ -92,6 +92,7 @@ class Database:
             return data["grid"]
         return []
     
+
     def key_function(self, x, data):
         try:
             return data["players"][x]["pick_frequency"]
@@ -114,3 +115,48 @@ class Database:
     
     async def add_player_name(self, matchup: str, name: str):
         await self.collection.update_one({"team_combination": matchup}, {"$set": {f"players.{self.__normalize_player_name(name)}.un_normalized_name": name}})
+
+    @staticmethod
+    def unnormalize_team_names(normalized_string: str) -> tuple[str, str]:
+        mlb_teams = [
+            "Baltimore Orioles",
+            "Boston Red Sox",
+            "New York Yankees",
+            "Tampa Bay Rays",
+            "Toronto Blue Jays",
+            "Chicago White Sox",
+            "Cleveland Guardians",
+            "Detroit Tigers",
+            "Kansas City Royals",
+            "Minnesota Twins",
+            "Houston Astros",
+            "Los Angeles Angels",
+            "Oakland Athletics",
+            "Seattle Mariners",
+            "Texas Rangers",
+            "Atlanta Braves",
+            "Miami Marlins",
+            "New York Mets",
+            "Philadelphia Phillies",
+            "Washington Nationals",
+            "Chicago Cubs",
+            "Cincinnati Reds",
+            "Milwaukee Brewers",
+            "Pittsburgh Pirates",
+            "St. Louis Cardinals",
+            "Arizona Diamondbacks",
+            "Colorado Rockies",
+            "Los Angeles Dodgers",
+            "San Diego Padres",
+            "San Francisco Giants",
+        ]
+
+        for i, team1 in enumerate(mlb_teams):
+            for team2 in mlb_teams[i + 1:]:
+                # Lowercase and combine the names
+                combined = team1.lower().replace(" ", "") + team2.lower().replace(" ", "")
+                normalized = "".join(sorted(combined))
+                # Check if the sorted string matches
+                if normalized == normalized_string:
+                    return team1, team2
+        return None
