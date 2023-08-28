@@ -1,6 +1,5 @@
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase, AsyncIOMotorCollection
 from uuid import uuid4
-from server.BaseballData import BaseballData
 
 class Database:
     def __init__(self, mongo_client: AsyncIOMotorClient, dev: bool):
@@ -9,8 +8,12 @@ class Database:
         # Set the database to the dev database if dev is True, otherwise set it to the prod database (in order to avoid overwriting the prod database because I'm a dumbass)
         if dev:
             self.db = self.client["dev"]
+            from BaseballData import BaseballData
+            self.BaseballData = BaseballData
         else:
             self.db = self.client["prod"]
+            from server.BaseballData import BaseballData
+            self.BaseballData = BaseballData
 
         self.collection = self.db["matchup-statistics"]
         self.share_collection = self.db["shared-grids"]
@@ -108,7 +111,7 @@ class Database:
                     top_player_name = data["players"][top_player]["un_normalized_name"]
                     top_player_id = self.__get_id(top_player)
                     top_player_rarity = await self.calculate_rarity_score(teams, top_player_name, top_player_id)
-                    top_player_picture = BaseballData.get_player_picture(id=top_player_id)
+                    top_player_picture = self.BaseballData.get_player_picture(id=top_player_id)
                     return {"name": top_player_name, "picture": top_player_picture, "rarity_score": top_player_rarity}
                 return 0
         return 0

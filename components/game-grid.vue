@@ -1,4 +1,5 @@
 <template>
+  <div>
     <div :class="$style.grid">
         <div></div> <!-- Empty grid cell -->
         <div v-if="teams.length > 0 && teams[0].length > 0" :class="[$style['label-container'], $style['top-label']]">
@@ -61,9 +62,12 @@
           <div :class="$style.playerName">{{ gridStatus['s12'].name }}</div>
       </div>
         <button v-else @click="buttonClicked('s12')" :class="$style['grid-item']" :disabled="gameOver"></button>
-        <div>
+        <div v-if="unlimitedMode == false">
             <div :class="$style['small-text']">GUESSES</div>
             <div :class="$style['large-text']">{{ guesses }}</div>
+        </div>
+        <div v-else>
+            <div :class="$style['large-text']">&infin;</div>
         </div>
         <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
             <img :src="teams[1][2][0]" :class="$style.label" />
@@ -94,6 +98,10 @@
         </div>
         <button v-else :class="$style.giveUp" @click="giveUp()">Give Up</button>
     </div>
+    <div :class="$style.unlimitedMode">
+      <button v-if="unlimitedMode == false" @click="unlimitedMode = true" :class="$style.unlimitedModeButton">Unlimited Mode</button>
+    </div>
+  </div>
 </template>
 
 <style module>
@@ -146,6 +154,30 @@
     .giveUp:hover {
         background-color: #ff1a1a; /* Adjust as needed */
     }
+
+    .unlimitedMode {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2%;
+      width: 10%;
+      height: 100%;
+  }
+
+    .unlimitedModeButton {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      background-color: #00e600; /* You can adjust this color */
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+  }
 
     .share-button-container {
         display: flex;
@@ -301,6 +333,7 @@ export default {
     return {
       teams: [],
       guesses: 9,
+      unlimitedMode: false,
       gameOver: false,
       gridStatus: {
         s00: false,
@@ -414,7 +447,11 @@ export default {
         this.gridStatus[location] = data.data
       }
       this.guesses--
-      if (this.guesses === 0) {
+      if (this.guesses === 0 && this.unlimitedMode === false) {
+        this.gameOver = true
+        EventBus.$emit('game-over')
+      }
+      if (this.gridStatus.s00 !== false && this.gridStatus.s01 !== false && this.gridStatus.s02 !== false && this.gridStatus.s10 !== false && this.gridStatus.s11 !== false && this.gridStatus.s12 !== false && this.gridStatus.s20 !== false && this.gridStatus.s21 !== false && this.gridStatus.s22 !== false && this.unlimitedMode === true) {
         this.gameOver = true
         EventBus.$emit('game-over')
       }
