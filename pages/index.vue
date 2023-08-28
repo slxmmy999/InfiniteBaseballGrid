@@ -15,7 +15,7 @@ export default {
   name: 'IndexPage',
   data () {
     return {
-      showBanner: true
+      showBanner: false
     }
   },
 
