@@ -20,7 +20,7 @@ else:
 import datetime
 
 mongo_client = AsyncIOMotorClient(database_connection_string)
-db: Database = Database(mongo_client, False)
+db: Database = Database(mongo_client, dev)
 
 app = Quart(__name__)
 
