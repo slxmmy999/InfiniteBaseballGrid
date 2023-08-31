@@ -67,7 +67,8 @@
             <div :class="$style['large-text']">{{ guesses }}</div>
         </div>
         <div v-else>
-            <div :class="$style['large-text']">&infin;</div>
+          <div :class="$style['small-text']">GUESSES</div>
+          <div :class="$style['large-text']">&infin;</div>
         </div>
         <div v-if="teams.length > 1 && teams[1].length > 0" :class="$style['label-container']">
             <img :src="teams[1][2][0]" :class="$style.label" />
