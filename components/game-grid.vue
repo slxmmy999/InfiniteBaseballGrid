@@ -135,6 +135,10 @@
         .rarityScore {
             font-size: 8px !important;
         }
+
+        .unlimitedMode {
+            width: 40% !important;
+        }
     }
 
     .giveUp {
