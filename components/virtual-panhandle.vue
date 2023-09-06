@@ -3,7 +3,10 @@
     <div class="banner-content">
       <h1>Help me keep the site ad free! (and also feed me)</h1>
       <p>I am a college student working two jobs just to pay rent and feed myself. All of your <a href="https://allmylinks.com/sam-coan">donations</a> ensure I can keep the site ad free and also not be homeless! Thank you!</p>
-      <button @click="closeBanner" class="close-button">Shut up nerd</button>
+      <div class="buttons">
+        <button @click="donate" class="close-button">Donate</button>
+        <button @click="closeBanner" class="close-button">Shut up nerd</button>
+      </div>
     </div>
   </div>
 </template>
@@ -26,6 +29,9 @@ export default {
     closeBanner () {
       this.showBanner = false
       Cookies.set('begged_for_cash', 'true', { expires: 365 })
+    },
+    donate () {
+      window.open('https://allmylinks.com/sam-coan')
     }
   }
 }
@@ -49,6 +55,10 @@ export default {
     flex-direction: column;
     max-width: 300px !important;
   }
+
+  .buttons {
+    width: 100% !important;
+  }
 }
 
 .banner-content {
@@ -60,8 +70,14 @@ export default {
   margin: 0 auto;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+}
+
 .banner-content p, .banner-content h1 {
-  margin: 0;
+  margin: 3px;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
 }
