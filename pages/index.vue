@@ -1,6 +1,7 @@
 <template>
   <div>
     <notification-banner v-if="showBanner" @close="closeBanner" />
+    <virtual-panhandle />
     <top-menu />
     <game-grid :class="$style.grid" />
     <SearchDialog />
