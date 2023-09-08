@@ -18,14 +18,7 @@
                 <a href="https://allmylinks.com/sam-coan">
                     <img src="~/static/donate.png" alt="Donation Logo" />
                 </a>
-                <a class="donatelolz" @click="showDonateMenu = !showDonateMenu">
-                    <button>Donate $0.69</button>
-                </a>
             </div>
-        </div>
-        <div v-if="showDonateMenu" class="donate69">
-            <button class="venmo" @click="venmo">Venmo</button>
-            <button @click="paypal">PayPal</button>
         </div>
     </div>
 </template>
@@ -47,10 +40,6 @@
         .social-icons a {
             margin-right: 0% !important;
             margin-bottom: 20% !important;
-        }
-
-        .donatelolz {
-            width: 50% !important;
         }
     }
     .main {
@@ -93,83 +82,10 @@
         width: 30px; /* Adjust to your preference */
         height: 30px; /* Adjust to your preference */
     }
-
-    .donatelolz {
-        margin-right: 5% !important;
-        margin-bottom: 20% !important;
-    }
-
-    .donatelolz button {
-        background-color: #141421;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        margin: 0px;
-        margin-top: 0%;
-        border-radius: 5px;
-        border-width: 0;
-    }
-
-    .donatelolz button:hover {
-        background-color: #21213b;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        margin: 0px;
-        margin-top: 0%;
-        border-radius: 5px;
-        border-width: 0;
-    }
-
-    .donate69 {
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        margin-left: auto;
-        width: auto;
-        padding: 0.2%;
-        margin-top: 0%;
-        margin-right: 0.7%;
-        background-color: #2b2b46;
-    }
-
-    .donate69 button {
-        background-color: transparent;
-        width: fit-content;
-        padding: 0%;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        border-radius: 5px;
-        border-width: 0;
-    }
-
-    .venmo {
-        margin-bottom: 70% !important;
-    }
-
-    .donate69 button:hover {
-        background-color: #21213b;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-    }
 </style>
 
 <script>
 export default {
-  name: 'top-menu',
-  data () {
-    return {
-      showDonateMenu: false
-    }
-  },
-  methods: {
-    venmo () {
-      window.open('https://account.venmo.com/payment-link?audience=private&amount=0.69&recipients=Sam-Coan-1&txn=pay', '_blank')
-    },
-    paypal () {
-      window.open('https://www.paypal.com/paypalme/samcoan4/0.69', '_blank')
-    }
-  }
+  name: 'top-menu'
 }
 </script>
