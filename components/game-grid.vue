@@ -64,7 +64,7 @@
         <button v-else @click="buttonClicked('s12')" :class="$style['grid-item']" :disabled="gameOver"></button>
         <div v-if="unlimitedMode == false">
             <div :class="$style['small-text']">GUESSES</div>
-            <div :class="$style['large-text']">{{ guesses }}</div>
+            <div :class="$style['large-text']" id="guess_num">{{ guesses }}</div>
         </div>
         <div v-else>
           <div :class="$style['small-text']">GUESSES</div>
@@ -330,6 +330,7 @@
 </style>
 
 <script>
+import Cookies from 'js-cookie'
 import { EventBus } from '~/event-bus.js'
 
 export default {
@@ -375,7 +376,7 @@ export default {
       this.guesses = 0
     }
   },
-  async created () {
+  async mounted () {
     let data = ''
     if (this.$route.query.id !== undefined) {
       data = await this.$axios.get(`/get_shared_grid?id=${this.$route.query.id}`)
@@ -450,10 +451,28 @@ export default {
       const data = await this.$axios.get(`/validate_player?name=${player}&team1=${team1}&team2=${team2}&start=${start}&end=${end}`)
       if (Object.keys(data.data).length > 0) {
         this.gridStatus[location] = data.data
+      } else {
+        const guessNum = document.getElementById('guess_num')
+        guessNum.style.color = 'red'
+
+        setTimeout(() => {
+          guessNum.style.color = 'white'
+        }, 750)
       }
       this.guesses--
       if (this.guesses === 0 && this.unlimitedMode === false) {
         this.gameOver = true
+        for (const keys in this.gridStatus) {
+          if (this.gridStatus[keys] === false) {
+            return EventBus.$emit('game-over')
+          }
+        }
+        const currentStreak = Cookies.get('streak')
+        if (currentStreak === undefined) {
+          Cookies.set('streak', 1)
+        } else {
+          Cookies.set('streak', parseInt(currentStreak) + 1)
+        }
         EventBus.$emit('game-over')
       }
       if (this.gridStatus.s00 !== false && this.gridStatus.s01 !== false && this.gridStatus.s02 !== false && this.gridStatus.s10 !== false && this.gridStatus.s11 !== false && this.gridStatus.s12 !== false && this.gridStatus.s20 !== false && this.gridStatus.s21 !== false && this.gridStatus.s22 !== false && this.unlimitedMode === true) {
