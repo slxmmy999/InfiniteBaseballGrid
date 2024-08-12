@@ -101,6 +101,7 @@
     </div>
     <div :class="$style.unlimitedMode">
       <button v-if="unlimitedMode == false" @click="unlimitedMode = true" :class="$style.unlimitedModeButton">Unlimited Mode</button>
+      <button @click="modeSelect()" :class="$style.unlimitedModeButton">Mode Select</button>
     </div>
   </div>
 </template>
@@ -172,7 +173,7 @@
   }
 
     .unlimitedModeButton {
-      width: 100%;
+      width: 120%;
       height: 100%;
       border-radius: 15px;
       background-color: #00e600; /* You can adjust this color */
@@ -374,6 +375,9 @@ export default {
       this.gameOver = true
       EventBus.$emit('game-over')
       this.guesses = 0
+    },
+    modeSelect () {
+      EventBus.$emit('show-mode-select')
     }
   },
   async mounted () {

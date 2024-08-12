@@ -4,6 +4,7 @@
     <virtual-panhandle />
     <top-menu />
     <game-grid :class="$style.grid" />
+    <mode-select />
     <SearchDialog />
     <welcome-screen />
     <share-popup />
