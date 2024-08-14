@@ -43,31 +43,30 @@ class GameCategories:
     ]
 
     # create and then validate a 3D list of categories representing the grid
-    def __init__(self) -> None:
+    def __init__(self, mode) -> None:
         categories = []
         top = []
         bottom = []
+        match(mode):
+            case "players_only":
+                for _ in range(0, 3):
+                    while choice[0].endswith('.svg') != True:
+                        choice = random.choice(self.choices)
+                    while choice in top or choice in bottom:
+                        choice = random.choice(self.choices)
 
-        for _ in range(0, 3):
-            choice = random.choice(self.choices)
-            while choice in top or choice in bottom:
-                choice = random.choice(self.choices)
+                    top.append(choice)
+                    while choice[0].endswith(".svg") != True:
+                        choice = random.choice(self.choices)
+                    while choice in top or choice in bottom:
+                        choice = random.choice(self.choices)
 
-            top.append(choice)
+                    bottom.append(choice)
 
-            choice = random.choice(self.choices)
-            while choice in top or choice in bottom:
-                choice = random.choice(self.choices)
+                categories.append(top)
+                categories.append(bottom)
 
-            bottom.append(choice)
-
-        categories.append(top)
-        categories.append(bottom)
-
-        self.categories = categories
-
-        self.re_roll_unviable_stats()
-
+                self.categories = categories
     def get_grid(self):
         return self.categories
     
