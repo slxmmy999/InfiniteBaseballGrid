@@ -47,19 +47,19 @@ class GameCategories:
         categories = []
         top = []
         bottom = []
+        print(self.choices[:30])
         match(mode):
             case "players_only":
                 for _ in range(0, 3):
-                    while choice[0].endswith('.svg') != True:
-                        choice = random.choice(self.choices)
+                    choice = random.choice(self.choices[:30])
                     while choice in top or choice in bottom:
-                        choice = random.choice(self.choices)
+                        choice = random.choice(self.choices[:30])
 
                     top.append(choice)
-                    while choice[0].endswith(".svg") != True:
-                        choice = random.choice(self.choices)
+                    
+                    choice = random.choice(self.choices[:30])
                     while choice in top or choice in bottom:
-                        choice = random.choice(self.choices)
+                        choice = random.choice(self.choices[:30])
 
                     bottom.append(choice)
 
@@ -72,13 +72,13 @@ class GameCategories:
                 for _ in range(0, 3):
                     choice = random.choice(self.choices)
                     while choice in top or choice in bottom:
-                        choice = random.choice(self.choices)
+                        choice = self.filter_stats_recursively(top, bottom, choice)
 
                     top.append(choice)
 
                     choice = random.choice(self.choices)
                     while choice in top or choice in bottom:
-                        choice = random.choice(self.choices)
+                        choice = self.filter_stats_recursively(top, bottom, choice)
 
                     bottom.append(choice)
 
@@ -96,6 +96,14 @@ class GameCategories:
             return grid[:2]
         else:
             return grid[2:]
+  
+    def filter_stats_recursively(self, top, bottom, choice) -> tuple:
+        if choice[0].endswith(".svg") != True:
+            while choice[0].endswith(".svg") != True:
+                choice = random.choice(self.choices)
+            if choice in top or choice in bottom:
+                self.filter_stats_recursively(top, bottom, choice)
+        return choice
     
     def re_roll_unviable_stats(self):
         for index, cat in enumerate(self.categories):

@@ -45,7 +45,9 @@ async def after_request(response):
         return response
 
 @app.route("/get_new_grid", methods=["GET"])
-async def get_new_grid(mode: str = "players_only"):
+async def get_new_grid():
+    mode: str = request.args.get("mode")
+    print(mode)
     categories: GameCategories = GameCategories(mode)
     return jsonify(categories.get_grid())
 

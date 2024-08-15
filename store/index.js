@@ -9,7 +9,7 @@ const createStore = () => {
       selectedGridLocation: null,
       selectedPlayer: null,
       grid: null,
-      gameMode: 'players-only'
+      gameMode: 'players_only'
     },
     mutations: {
       setSelectedGridLocation (state, item) {

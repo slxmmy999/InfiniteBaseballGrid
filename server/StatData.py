@@ -33,7 +33,7 @@ class StatData():
     def verify_cy_young(player, team) -> bool:
         if player["awards"]:
             for award in player["awards"]:
-                if "Cy Young" in award["name"]:
+                if "CY" in award["id"]:
                     for word in team.split():
                         if word in award["team"]["teamName"]:
                             return True
@@ -44,9 +44,8 @@ class StatData():
     def verify_mvp(player, team) -> bool:
         if player["awards"]:
             for award in player["awards"]:
-                if "Most Valuable Player" in award["name"]:
+                if "MVP" in award["id"]:
                     for word in team.split():
-                        print(word)
                         if word in award["team"]["teamName"]:
                             return True
                 # print(award)

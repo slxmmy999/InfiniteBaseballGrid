@@ -2,15 +2,15 @@
     <div v-if="showModeSelect" :class="$style.container">
         <div :class="$style.modeSelectContainer">
             <div :class="$style.radioContainer">
-                <input type="radio" id="option1" name="mode" value="option1"  v-model="selectedMode" :class="$style.radioButton">
+                <input type="radio" id="option1" name="mode" value="players_only"  v-model="selectedMode" :class="$style.radioButton" checked>
                 <label for="option1" :class="$style.label">Players only</label>
             </div>
             <div :class="$style.radioContainer">
-                <input type="radio" id="option2" name="mode" value="option2" v-model="selectedMode" :class="$style.radioButton" disabled>
+                <input type="radio" id="option2" name="mode" value="players_stats" v-model="selectedMode" :class="$style.radioButton">
                 <label for="option2" :class="$style.label">Stats + Players (Coming Soon!)</label>
             </div>
             <div :class="$style.radioContainer">
-                <input type="radio" id="option3" name="mode" value="option3" v-model="selectedMode" :class="$style.radioButton" disabled>
+                <input type="radio" id="option3" name="mode" value="stats_only" v-model="selectedMode" :class="$style.radioButton" disabled>
                 <label for="option3" :class="$style.label">Stats only (Coming Soon!)</label>
             </div>
             <button @click="setMode" :class="$style.closeButton">Close</button>
@@ -26,7 +26,7 @@
             return {
                 selectedMode: 'option1',
                 showModeSelect: false,
-                mode: 'players-only',
+                mode: 'players_only',
             };
         },
         methods: {
@@ -36,7 +36,9 @@
                 } else {
                     this.showModeSelect = true
                 }
-                this.$store.commit('gameMode', this.modeode)
+                this.mode = this.selectedMode
+                this.$store.commit('gameMode', this.mode)
+                console.log(this.$store.state.gameMode)
             },
         },
         mounted () {

@@ -386,7 +386,7 @@ export default {
       data = await this.$axios.get(`/get_shared_grid?id=${this.$route.query.id}`)
       this.teams = data.data
     } else {
-      data = await this.$axios.get('/get_new_grid')
+      data = await this.$axios.get(`/get_new_grid?mode=${this.$store.state.gameMode}`)
       this.teams = data.data
     }
     this.$store.commit('setGrid', data.data)
