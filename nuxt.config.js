@@ -14,7 +14,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/src/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/static/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap' }
     ],
     __dangerouslyDisableSanitizers: ['script'],
