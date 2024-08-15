@@ -67,6 +67,27 @@ class GameCategories:
                 categories.append(bottom)
 
                 self.categories = categories
+
+            case "players_stats":
+                for _ in range(0, 3):
+                    choice = random.choice(self.choices)
+                    while choice in top or choice in bottom:
+                        choice = random.choice(self.choices)
+
+                    top.append(choice)
+
+                    choice = random.choice(self.choices)
+                    while choice in top or choice in bottom:
+                        choice = random.choice(self.choices)
+
+                    bottom.append(choice)
+
+                categories.append(top)
+                categories.append(bottom)
+
+                self.re_roll_unviable_stats()
+
+                self.categories = categories
     def get_grid(self):
         return self.categories
     
