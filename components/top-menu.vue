@@ -12,9 +12,15 @@
                 <a href="https://github.com/slxmmy999/InfiniteImmaculateGrid">
                     <img src="~/static/github.svg" alt="Github Logo" />
                 </a>
-                <a href="https://discord.gg/rPBuvhqG8p">
-                    <img src="~/static/discord.svg" alt="Discord" />
-                </a>
+                <div class="dropdown" @mouseenter="showItem" @mouseleave="delay">
+                    <a class="dropbtn" href="#">
+                        <img src="~/static/discord.svg" alt="Discord" />
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="https://discord.gg/rPBuvhqG8p">Infinite Baseball Grid Official</a>
+                        <a href="https://discord.gg/8yGssB5E9u">Ordinary Effort Official</a>
+                    </div>
+                </div>
                 <a href="https://allmylinks.com/sam-coan">
                     <img src="~/static/donate.png" alt="Donation Logo" />
                 </a>
@@ -82,10 +88,75 @@
         width: 30px; /* Adjust to your preference */
         height: 30px; /* Adjust to your preference */
     }
+
+
+
+    .dropdown
+    {
+        display: flex;
+        position: relative;
+        margin-right: 40%;
+    }
+  .dropbtn img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+  }
+
+  .dropbtn:hover img {
+    transform: scale(1.1);
+  }
+
+  .dropdown-content {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    background-color: #2c2f33;
+    min-width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 8px;
+    overflow: hidden;
+ /* Position below the button */
+    right: 0; /* Align to the right edge of the button */
+    transform: translateX(-20%); /* Jut out to the left */
+  }
+
+  .dropdown-content a {
+    color: #ffffff;
+    padding: 12px 100% 12px 16px;
+    width: 95%;
+    text-decoration: none;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    transition: background-color 0.2s;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #5865f2;
+  }
 </style>
 
 <script>
 export default {
-  name: 'top-menu'
+  name: 'top-menu',
+    data() {
+        return {
+            isHidden: true,
+            hideTimeout: null,
+        };
+    },
+    methods: {
+        showItem() {
+            clearTimeout(this.hideTimeout);
+            document.querySelector('.dropdown-content').style.visibility = 'visible';
+        },
+        delay() {
+        this.hideTimeout = setTimeout(() => {
+            document.querySelector('.dropdown-content').style.visibility = 'hidden';
+        }, 300);
+        },
+    },
 }
 </script>
