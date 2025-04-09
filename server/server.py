@@ -34,7 +34,7 @@ async def after_request(response):
         allowed_origins = [
             "https://www.infiniteimmaculategrid.com",
             "https://www.infinitebaseballgrid.com",
-            "http://www.api.infinitebaseballgrid.com"
+            "https://www.api.infinitebaseballgrid.com"
         ]
         
         origin = request.headers.get('Origin')
